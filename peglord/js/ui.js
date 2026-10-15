@@ -54,11 +54,12 @@ const UI = (() => {
       const id = G.jokers[i];
       if (id) {
         const J = JOKERS[id];
-        html += `<div class="joker ${J.rarity}${UI.newJoker === id ? ' pop' : ''}" id="jk-${id}" tabindex="0" data-tip="${esc(J.name)} (${J.rarity})\n${esc(J.text)}"><span class="ji" aria-hidden="true">${J.icon}</span><span class="jn">${esc(J.name)}</span></div>`;
-      } else html += `<div class="joker empty" aria-label="Empty joker slot">empty</div>`;
+        html += `<div class="joker ${J.rarity}${UI.newJoker === id ? ' pop' : ''}" id="jk-${id}" tabindex="0" data-tip="${esc(J.name)} (${J.rarity})\n${esc(J.text)}"><span class="ji" aria-hidden="true">${J.icon}</span><span class="jn">${esc(J.name)}</span><span class="jr">${J.rarity}</span></div>`;
+      } else html += `<div class="joker empty" aria-label="Empty joker slot">Joker</div>`;
     }
     UI.newJoker = null;
     render($('jokers'), html);
+    $('jokercount').textContent = `${G.jokers.length}/${MAX_JOKERS}`;
   }
   function pulseJoker(id) {
     const el = $('jk-' + id); if (!el) return;
@@ -83,11 +84,32 @@ const UI = (() => {
 
   function buildUnits() {
     $('foes').innerHTML = G.foes.map(f => `<button class="unit foe${f.boss ? ' boss' : ''}" id="foe-${f.id}" data-foe="${f.id}" data-k="foe-${f.id}">
-      <div class="urow"><span class="uicon" aria-hidden="true">${f.icon}</span><span class="uname">${esc(f.name)}</span></div>
+      <div class="urow"><canvas class="mini" width="64" height="64" data-portrait="foe:${f.boss ? 'landlord' : f.type}" aria-hidden="true"></canvas><span class="uname">${esc(f.name)}</span></div>
       ${hpBar(f.hp, f.maxHp)}<div class="hptext"></div><div class="fchips"></div></button>`).join('');
     $('party').innerHTML = G.heroes.map((h, i) => `<button class="unit hero" id="hero-${h.id}" data-hero="${i}" data-k="hero-${i}">
-      <div class="urow"><span class="uicon" aria-hidden="true">${HEROES[h.cls].icon}</span><span class="uname">${esc(h.name)}</span></div>
+      <div class="urow"><canvas class="mini" width="64" height="64" data-portrait="hero:${h.cls}" aria-hidden="true"></canvas><span class="uname">${esc(h.name)}</span></div>
       <div class="usub lvl"></div>${hpBar(h.hp, 1)}<div class="hptext"></div><div class="cmdtag"></div></button>`).join('');
+    drawPortraits(document);
+  }
+
+  // Head-and-shoulders portraits from the scene sprites.
+  function drawPortraits(root, t = 0) {
+    root.querySelectorAll('canvas[data-portrait]').forEach(cv => {
+      const [kind, type] = cv.dataset.portrait.split(':');
+      const c = cv.getContext('2d'), w = cv.width, h = cv.height;
+      const full = cv.classList.contains('portrait');
+      c.setTransform(1, 0, 0, 1, 0, 0); c.clearRect(0, 0, w, h);
+      if (!full) {
+        const g = c.createRadialGradient(w / 2, h / 2, 2, w / 2, h / 2, w / 1.3);
+        g.addColorStop(0, '#4a3a28'); g.addColorStop(1, '#1b1410'); c.fillStyle = g; c.fillRect(0, 0, w, h);
+      }
+      const sc = full ? h / 120 : h / 52;
+      c.save();
+      if (full) { c.translate(w / 2, h - 10 + Math.sin(t * 2.2) * 2); c.scale(sc, sc); }
+      else { c.translate(w / 2 - 4 * sc, h + 34 * sc); c.scale(sc, sc); }
+      Sprites.draw(c, 0, 0, { kind, type, scale: 1, arm: Sprites.idleArm(Sprites.weaponOf[kind][type]) + Math.sin(t * 2) * 0.05, glow: 0.4, time: t });
+      c.restore();
+    });
   }
 
   function units() {
@@ -121,6 +143,7 @@ const UI = (() => {
   }
 
   function unitFx(kind, id, text, cls) {
+    Scene.text(kind, id, text, cls);
     const el = $(`${kind}-${id}`); if (!el) return;
     const s = document.createElement('span');
     s.className = 'fx ' + cls; s.textContent = text;
@@ -129,6 +152,7 @@ const UI = (() => {
     setTimeout(() => s.remove(), 950);
   }
   function unitAnim(kind, id, cls) {
+    if (cls === 'lunge') Scene.attack(kind, id); else if (cls === 'hit') Scene.hurt(kind, id);
     if (G.settings.reducedMotion) return;
     const el = $(`${kind}-${id}`); if (!el) return;
     el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls);
@@ -171,50 +195,122 @@ const UI = (() => {
   function consoleView() {
     const h = G.heroes[G.selHero]; if (!h) return;
     const D = HEROES[h.cls], st = heroStats(h);
-    const manage = Game.canManage();
-    const canBuy = manage && G.bank >= LEVEL_COST && h.level < LEVEL_CAP;
-    const gearAttr = {}; ATTRS.forEach(a => (gearAttr[a] = st.attrs[a] - D.attrs[a] - h.bought[a]));
-    const attrRows = ATTRS.map(a => {
-      const v = st.attrs[a], w = Math.min(60, v) / 60 * 100;
-      const pend = G.pending.some(p => p.hid === h.id && p.attr === a);
-      const tip = `${ATTR_NAMES[a]}: ${ATTR_HELP[a]}\nBase ${D.attrs[a]} + bought ${h.bought[a]} + gear/jokers ${gearAttr[a]} = ${v}\nEffective ${Math.round(st.eff[a] * 10) / 10}${v > SOFT_CAP_1 ? ' (soft capped)' : ''}`;
-      return `<div class="attr"><span class="aname" tabindex="0" data-tip="${esc(tip)}" data-k="an-${a}">${ATTR_NAMES[a]}</span><span class="aval">${v}</span>
-        <span class="abar" aria-hidden="true"><i style="width:${w}%"></i><span class="cap1" style="left:${SOFT_CAP_1 / 60 * 100}%"></span><span class="cap2" style="left:${SOFT_CAP_2 / 60 * 100}%"></span></span>
-        <button data-act="minus" data-attr="${a}" data-k="m-${a}" ${pend && manage ? '' : 'disabled'} aria-label="Refund a level of ${ATTR_NAMES[a]}">−</button>
-        <button class="plus" data-act="plus" data-attr="${a}" data-k="p-${a}" ${canBuy ? '' : 'disabled'} aria-label="Buy a level of ${ATTR_NAMES[a]} for ${LEVEL_COST} XP (Shift for 5)">+</button></div>`;
-    }).join('');
-    const warns = [];
-    ATTRS.forEach(a => { if (st.attrs[a] > SOFT_CAP_2) warns.push(`${ATTR_NAMES[a]} past ${SOFT_CAP_2}: quarter effect`); else if (st.attrs[a] > SOFT_CAP_1) warns.push(`${ATTR_NAMES[a]} past ${SOFT_CAP_1}: half effect`); });
-    st.weapon.short.forEach(s => warns.push(`Weapon needs ${ATTR_NAMES[s.attr]} ${s.need} (have ${s.have}): −40% AR`));
     const ready = Battle.skillReady(h);
     const cdText = h.cd > 0 ? (ready ? 'Overcast' : `${h.cd} turn${h.cd > 1 ? 's' : ''}`) : 'ready';
     const cmdBtn = (c, label, n, dis, tip) => `<button data-act="cmd" data-cmd="${c}" data-k="c-${c}" aria-pressed="${h.cmd === c}" ${dis ? 'disabled' : ''} data-tip="${esc(tip)}">${n}. ${label}</button>`;
-    const perks = Object.keys(D.perks).map(l => `<li class="${h.level >= l ? '' : 'locked'}"><b>Lv ${l}</b> ${esc(D.perks[l])}</li>`).join('');
-    const pendN = G.pending.length;
+    const lv = Math.floor(G.bank / LEVEL_COST);
+    const warn = st.weapon.short.length ? `<div class="warn">Weapon below requirements: −40% AR</div>` : '';
     render($('console'), `
-      <div class="chead"><h3>${D.icon} ${esc(h.name)}</h3><span>Level ${h.level}/${LEVEL_CAP} · ${D.title}</span></div>
-      <div class="usub" data-tip="Favoured: ${D.favoured.join(', ')} (+10% AR)">${esc(D.passive)}</div>
-      <div class="attrs">${attrRows}</div>
+      <div class="chead"><h3>${esc(h.name)}</h3><span>Level ${h.level} · ${D.title}</span></div>
       <div class="derived">
         <div data-tip="Max HP = floor(10 + 2.5 × Vigor) + gear">HP <b>${h.hp}/${st.maxHp}</b></div>
         <div data-tip="${esc(arTip(h, st))}">AR <b>${st.ar}</b> ${st.dmgType}</div>
         <div data-tip="3% + 1% × Dex + 0.5% × Arcane + gear, cap 75%">Crit <b>${st.crit}%</b></div>
         <div data-tip="Physical damage taken × 40 / (40 + Defense)">Def <b>${st.def}</b></div>
         <div data-tip="Magic damage taken × 40 / (40 + Resist)">Res <b>${st.res}</b></div>
-        <div data-tip="Skill cooldown in turns">CD <b>${st.cd}</b></div>
-      </div>
-      ${warns.length ? `<div class="warn">${warns.map(esc).join('<br>')}</div>` : ''}
-      <div class="price">${h.level >= LEVEL_CAP ? 'Level cap reached.' : G.bank >= LEVEL_COST ? `${LEVEL_COST} XP: ${esc(h.name)} to level ${h.level + 1}` : `Next level costs ${LEVEL_COST} XP (bank ${G.bank}).`}
-        ${!manage ? ' <span class="usub">Levelling opens after the last ball.</span>' : ''}</div>
-      ${pendN ? `<div class="crow"><span class="usub">${pendN} level${pendN > 1 ? 's' : ''} pending (− refunds)</span><button class="btn small" data-act="confirm" data-k="confirm">Confirm</button></div>` : ''}
+      </div>${warn}
       <div class="cmds" role="group" aria-label="Command for ${esc(h.name)}">
         ${cmdBtn('attack', 'Attack', 1, h.dead, 'One hit on the target for full AR.')}
         ${cmdBtn('skill', `${D.skill.name} (${cdText})`, 2, h.dead || !ready, `${D.skill.name}: ${D.skill.text}. Usable every ${st.cd > 1 ? st.cd + ' turns' : 'turn'}.`)}
         ${cmdBtn('guard', 'Guard', 3, h.dead, 'Half damage, recover 2 HP, draw foe attacks.')}
       </div>
       <div class="plan">${planLine(h, st)}</div>
-      <ul class="perks">${perks}</ul>
-      <div class="crow"><button class="btn small" data-act="sheet" data-k="sheet">Character sheet (C)</button></div>`);
+      <div class="crow">
+        <button class="btn levelbtn${lv && Game.canManage() ? ' glow' : ''}" data-act="level" data-k="level">Level up (L)${lv ? ` <span class="badge">${lv}</span>` : ''}</button>
+        <button class="btn" data-act="sheet" data-k="sheet">Equipment (C)</button>
+      </div>`);
+  }
+
+  // ---------- Level-up screen: modelled on a site-of-grace levelling menu ----------
+  let levelPreview = null;
+  const ATTR_GLYPH = { vig: '♥', str: '⚒', dex: '➶', int: '✦', fai: '✚', arc: '☾' };
+  function statsWith(h, change) {
+    const saved = Object.assign({}, h.bought), savedLv = h.level;
+    Object.keys(change).forEach(k => { h.bought[k] += change[k]; h.level += change[k]; });
+    const st = heroStats(h);
+    h.bought = saved; h.level = savedLv;
+    return st;
+  }
+  function pendingOf(h) { const c = {}; G.pending.forEach(p => { if (p.hid === h.id) c[p.attr] = (c[p.attr] || 0) + 1; }); return c; }
+  function cmp(a, b, fmt = v => v, invert) {
+    if (a === b) return `<span class="sv">${fmt(b)}</span>`;
+    const up = invert ? b < a : b > a;
+    return `<span class="sv was">${fmt(a)}</span><span class="arrow">→</span><span class="sv ${up ? 'up' : 'down'}">${fmt(b)}</span>`;
+  }
+  function statRows(h) {
+    const pend = pendingOf(h);
+    const neg = {}; Object.keys(pend).forEach(k => (neg[k] = -pend[k]));
+    const before = statsWith(h, neg);
+    const now = heroStats(h);
+    const after = levelPreview ? statsWith(h, { [levelPreview]: 1 }) : now;
+    const from = levelPreview ? now : before;
+    const rows = [
+      ['Max HP', from.maxHp, after.maxHp], ['Attack rating', from.ar, after.ar], ['Crit chance', from.crit, after.crit, v => v + '%'],
+      ['Defense', from.def, after.def], ['Resist', from.res, after.res], ['Heal power', Math.round(from.heal * 100), Math.round(after.heal * 100), v => v + '%'],
+      ['Mend heals', from.mendAmount, after.mendAmount], ['Skill cooldown', from.cd, after.cd, v => v + (v === 1 ? ' turn' : ' turns'), true],
+    ];
+    if (h.cls === 'priest') rows.push(['Blessing', from.blessing, after.blessing, v => '+' + v]);
+    return `<div class="lvl-sub">${levelPreview ? `If ${esc(ATTR_NAMES[levelPreview])} +1` : G.pending.some(p => p.hid === h.id) ? 'Before → after pending levels' : 'Current'}</div>
+      <dl class="statlist">${rows.map(r => `<dt>${r[0]}</dt><dd>${cmp(r[1], r[2], r[3], r[4])}</dd>`).join('')}
+      <dt>Damage type</dt><dd><span class="sv">${now.dmgType}</span></dd></dl>`;
+  }
+  function levelView() {
+    const h = G.heroes[G.selHero], D = HEROES[h.cls], st = heroStats(h);
+    const manage = Game.canManage();
+    const pend = pendingOf(h);
+    const pendN = Object.values(pend).reduce((a, b) => a + b, 0);
+    const allPend = G.pending.length;
+    const canBuy = manage && G.bank >= LEVEL_COST && h.level < LEVEL_CAP;
+    const tabs = G.heroes.map((x, i) => `<button class="herotab" data-act="selhero" data-h="${i}" data-k="lt-${i}" aria-pressed="${i === G.selHero}"><canvas class="mini" width="64" height="64" data-portrait="hero:${x.cls}" aria-hidden="true"></canvas><span>${esc(x.name)}<br><small>Lv ${x.level}</small></span></button>`).join('');
+    const gearAttr = {}; ATTRS.forEach(a => (gearAttr[a] = st.attrs[a] - D.attrs[a] - h.bought[a]));
+    const attrRows = ATTRS.map(a => {
+      const v = st.attrs[a], p = pend[a] || 0;
+      const w = Math.min(60, v) / 60 * 100;
+      const tip = `${ATTR_HELP[a]}\nBase ${D.attrs[a]} + bought ${h.bought[a]} + gear/jokers ${gearAttr[a]} = ${v}\nEffective ${Math.round(st.eff[a] * 10) / 10}${v > SOFT_CAP_1 ? ' (soft capped)' : ''}`;
+      return `<div class="lrow${levelPreview === a ? ' hot' : ''}" data-preview="${a}">
+        <span class="glyph" aria-hidden="true">${ATTR_GLYPH[a]}</span>
+        <span class="lname" tabindex="0" data-tip="${esc(tip)}" data-k="ln-${a}">${ATTR_NAMES[a]}</span>
+        <span class="lval">${p ? `<span class="was">${v - p}</span><span class="arrow">→</span><span class="up">${v}</span>` : v}</span>
+        <span class="abar" aria-hidden="true"><i style="width:${w}%"></i><span class="cap1" style="left:${SOFT_CAP_1 / 60 * 100}%"></span><span class="cap2" style="left:${SOFT_CAP_2 / 60 * 100}%"></span></span>
+        <button class="lbtn" data-act="minus" data-attr="${a}" data-k="lm-${a}" ${p && manage ? '' : 'disabled'} aria-label="Refund a level of ${ATTR_NAMES[a]}">−</button>
+        <button class="lbtn plus" data-act="plus" data-attr="${a}" data-k="lp-${a}" ${canBuy ? '' : 'disabled'} aria-label="Buy a level of ${ATTR_NAMES[a]} for ${LEVEL_COST} XP (Shift for 5)">+</button>
+      </div>`;
+    }).join('');
+    const milestones = Object.keys(D.perks).map(l => `<li class="${h.level >= l ? 'on' : ''}" style="--pos:${l / LEVEL_CAP * 100}%"><b>${l}</b><span>${esc(D.perks[l])}</span></li>`).join('');
+    const body = `<div class="lvl-head"><div class="tabs" role="group" aria-label="Hero">${tabs}</div>
+        <div class="tabs" role="group" aria-label="Screen"><button class="btn small" aria-pressed="true">Level up</button><button class="btn small" data-act="sheet">Equipment</button></div></div>
+      <div class="lvl">
+        <div class="lvl-left">
+          <canvas class="portrait" width="220" height="240" data-portrait="hero:${h.cls}" aria-hidden="true"></canvas>
+          <h3>${esc(h.name)}</h3><div class="lvl-sub">${D.title} · ${esc(D.passive)}</div>
+          <dl class="statlist big">
+            <dt>Level</dt><dd>${cmp(h.level - pendN, h.level)}</dd>
+            <dt>XP held</dt><dd>${cmp(G.bank + allPend * LEVEL_COST, G.bank, v => v, true)}</dd>
+            <dt>XP needed</dt><dd><span class="sv">${LEVEL_COST}</span></dd>
+          </dl>
+          ${manage ? '' : '<p class="usub">Levelling opens after the last ball of a round and at the stage rest.</p>'}
+          <div class="crow"><button class="btn primary" data-act="confirm" ${allPend ? '' : 'disabled'}>Confirm${allPend ? ` (${allPend})` : ''}</button><button class="btn" data-act="autolevel" ${manage && G.bank >= LEVEL_COST ? '' : 'disabled'}>Auto-level</button></div>
+        </div>
+        <div class="lvl-mid"><h4>Attributes</h4><div class="lrows">${attrRows}</div>
+          <p class="usub">Hover an attribute to preview +1. Shift-click + buys five. Bars dim past ${SOFT_CAP_1} and ${SOFT_CAP_2}, where points count half and a quarter.</p>
+          <h4>Class milestones</h4><div class="track"><div class="trackfill" style="width:${h.level / LEVEL_CAP * 100}%"></div><ol class="miles">${milestones}</ol></div>
+          <ul class="perks mileperks">${Object.keys(D.perks).map(l => `<li class="${h.level >= l ? '' : 'locked'}"><b>Lv ${l}</b> ${esc(D.perks[l])}</li>`).join('')}</ul>
+        </div>
+        <div class="lvl-right"><h4>Base stats</h4><div id="lvlstats">${statRows(h)}</div>
+          <h4>Weapon</h4><p class="usub">${esc(arTip(h, st)).replace(/\n/g, '<br>')}</p></div>
+      </div>
+      <div class="mrow"><button class="btn" data-act="close">Close (Esc)</button></div>`;
+    const o = $('overlay'), modal = o.querySelector('.modal');
+    if (modal && overlayKind === 'level') render(modal, body);
+    else { open('level', body); $('overlay').querySelector('.modal').classList.add('wide'); }
+    drawPortraits($('overlay'), performance.now() / 1000);
+  }
+  function previewAttr(a) {
+    if (overlayKind !== 'level' || levelPreview === a) return;
+    levelPreview = a;
+    const h = G.heroes[G.selHero];
+    const el = $('lvlstats'); if (el) el.innerHTML = statRows(h);
+    document.querySelectorAll('.lrow').forEach(r => r.classList.toggle('hot', r.dataset.preview === a));
   }
 
   function arTip(h, st) {
@@ -244,6 +340,11 @@ const UI = (() => {
     $('btnSfx').setAttribute('aria-pressed', String(Game.settings.sfxOn));
     $('btnMusic').setAttribute('aria-pressed', String(Game.settings.musicOn));
     if (overlayKind === 'sheet') sheetView();
+    if (overlayKind === 'level') levelView();
+    const fightMode = !['aim', 'ball', 'sink', 'title'].includes(G.phase);
+    document.body.classList.toggle('mode-fight', fightMode);
+    document.body.classList.toggle('mode-board', !fightMode);
+    Sound.setMood(fightMode);
   }
   function rebuild() { buildUnits(); refresh(); }
 
@@ -294,7 +395,7 @@ const UI = (() => {
     const f = o.querySelector('[data-autofocus]') || o.querySelector('button:not([disabled]), input');
     if (f) f.focus();
   }
-  function closeAll() { overlayKind = null; $('overlay').hidden = true; $('overlay').innerHTML = ''; document.body.classList.remove('drafting'); }
+  function closeAll() { overlayKind = null; levelPreview = null; $('overlay').hidden = true; $('overlay').innerHTML = ''; document.body.classList.remove('drafting'); }
 
   function settingsHtml() {
     const s = Game.settings;
@@ -407,7 +508,8 @@ const UI = (() => {
     else if (sheetSel && typeof sheetSel === 'string' && h.gear[sheetSel]) det = itemDetail(h, h.gear[sheetSel], true);
     const st = heroStats(h);
     const sets = Object.keys(SETS).map(k => ({ k, n: setCount(h, k) })).filter(x => x.n).map(x => `${SETS[x.k].name} ${x.n}/5`).join(', ');
-    const body = `<div class="tabs" role="group" aria-label="Hero">${tabs}</div>
+    const body = `<div class="lvl-head"><div class="tabs" role="group" aria-label="Hero">${tabs}</div>
+      <div class="tabs" role="group" aria-label="Screen"><button class="btn small" data-act="level">Level up</button><button class="btn small" aria-pressed="true">Equipment</button></div></div>
       <div class="sheet">
         <div><div class="doll">${slotBtn('helm')}<div class="figure" aria-hidden="true">${HEROES[h.cls].icon}</div>${slotBtn('amulet')}
           ${slotBtn('weapon')}${slotBtn('chest')}${slotBtn('offhand')}
@@ -455,7 +557,9 @@ const UI = (() => {
       case 'minus': Game.refundLevel(h, t.dataset.attr); break;
       case 'confirm': Game.confirmLevels(); Sound.play('ui'); break;
       case 'cmd': setCmd(t.dataset.cmd); break;
-      case 'sheet': sheetSel = null; sheetView(); break;
+      case 'sheet': sheetSel = null; overlayKind = overlayKind === 'level' ? 'sheet' : overlayKind; sheetView(); break;
+      case 'level': overlayKind = overlayKind === 'sheet' ? 'level' : overlayKind; levelPreview = null; levelView(); break;
+      case 'autolevel': Game.autoLevel(); break;
       case 'close': if (overlayKind === 'draft') { hideDraft(); } else closeAll(); refresh(); break;
       case 'new': {
         const seed = ($('seedIn') && $('seedIn').value) || '';
@@ -500,10 +604,11 @@ const UI = (() => {
     if (e.key === 'Escape' && overlayKind) {
       if (overlayKind === 'draft') hideDraft();
       else if (overlayKind === 'title' && G.phase !== 'title') closeAll();
-      else if (overlayKind === 'help' || overlayKind === 'sheet') { closeAll(); refresh(); }
+      else if (overlayKind === 'help' || overlayKind === 'sheet' || overlayKind === 'level') { closeAll(); refresh(); }
       return;
     }
     if (overlayKind || typing || !G || G.phase === 'title') return;
+    if (G.phase === 'sink' && (e.key === ' ' || e.key === 'Enter')) { Board.skipReveal(); e.preventDefault(); return; }
     if (G.phase === 'aim') {
       if (e.key === 'ArrowLeft') { Board.nudgeAim(0.03); e.preventDefault(); return; }
       if (e.key === 'ArrowRight') { Board.nudgeAim(-0.03); e.preventDefault(); return; }
@@ -513,6 +618,7 @@ const UI = (() => {
     if (e.key === '2') setCmd('skill');
     if (e.key === '3') setCmd('guard');
     if (e.key === 'c' || e.key === 'C') { sheetSel = null; sheetView(); }
+    if (e.key === 'l' || e.key === 'L') { levelPreview = null; levelView(); }
   }
 
   function initTopbar() {
@@ -530,13 +636,20 @@ const UI = (() => {
   let last = performance.now();
   function frame(now) {
     const dt = Math.min(0.05, (now - last) / 1000); last = now;
-    if (G && G.phase !== 'title') { Board.update(dt); Board.draw(); if (G.phase === 'ball') hud(); }
+    if (G && G.phase !== 'title') try {
+      Board.update(dt); Board.draw(); Scene.update(dt); Scene.draw();
+      if (G.phase === 'ball') hud();
+      if (overlayKind === 'level') { const pc = document.querySelector('#overlay canvas.portrait'); if (pc) drawPortraits(pc.parentElement, now / 1000); }
+    } catch (e) { console.error(e); }
     requestAnimationFrame(frame);
   }
 
   function boot() {
     Game.boot();
     Board.init($('board'));
+    Scene.init($('scene'));
+    document.addEventListener('mouseover', e => { const r = e.target.closest && e.target.closest('.lrow'); if (r) previewAttr(r.dataset.preview); });
+    document.addEventListener('focusin', e => { const r = e.target.closest && e.target.closest('.lrow'); if (r) previewAttr(r.dataset.preview); });
     pegGuide();
     initTips(); initTopbar();
     document.addEventListener('click', onClick);

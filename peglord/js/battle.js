@@ -82,7 +82,7 @@ const Battle = (() => {
     const pr = G.heroes.find(x => x.cls === 'priest' && !x.dead && hasPerk(x, 24));
     if (over > 0 && pr && src === 'mend') { h.shield = Math.max(h.shield, over); }
     const got = h.hp - before;
-    if (got > 0) UI.unitFx('hero', h.id, '+' + got, 'heal');
+    if (got > 0) { UI.unitFx('hero', h.id, '+' + got, 'heal'); Scene.effect('hero', h.id, 'heal'); }
     return got;
   }
   function healWeakest(amt, src) {
@@ -120,6 +120,8 @@ const Battle = (() => {
     G.stats.dmg += dmg;
     UI.unitFx('foe', foe.id, (crit ? 'CRIT ' : '') + dmg, crit ? 'crit' : 'dmg');
     Sound.play(crit ? 'crit' : (type === 'magic' ? 'zap' : 'slash'));
+    if (!opts.firebolt) Scene.effect('foe', foe.id, type === 'phys' ? 'slash' : type === 'magic' ? 'zap' : 'holy');
+    Scene.hurt('foe', foe.id);
     if (crit && h.cls === 'mage' && opts.firebolt && hasPerk(h, 16)) { foe.burn = 3; foe.burnTurns = 3; UI.log(`${foe.name} is burning.`, ''); }
     if (crit && h.cls === 'rogue' && hasPerk(h, 8)) { foe.burn = 3; foe.burnTurns = 3; UI.log(`${foe.name} is bleeding.`, ''); }
     if (st.leech) heal(h, st.leech);
@@ -154,7 +156,10 @@ const Battle = (() => {
   async function heroAct(h) {
     const st = heroStats(h);
     const cmd = h.cmd;
-    UI.unitAnim('hero', h.id, 'lunge');
+    const casting = cmd === 'skill' && (h.cls === 'mage' || h.cls === 'priest');
+    if (cmd === 'guard') Scene.effect('hero', h.id, 'block');
+    else if (casting) Scene.cast('hero', h.id);
+    else { UI.unitAnim('hero', h.id, 'lunge'); if (!G.skipAnim) await sleep(170); }
     if (cmd === 'guard') {
       h.guarding = true;
       Sound.play('clank');
@@ -176,6 +181,7 @@ const Battle = (() => {
         case 'mage': {
           G.acting = 'firebolt';
           Sound.play('fire');
+          if (tgt) { Scene.projectile('hero', h.id, 'foe', tgt.id, 'fire'); await sleep(G.skipAnim ? 60 : 320); }
           const d = hitFoe(h, tgt, 2.2, { type: 'magic', firebolt: true });
           if (hasPerk(h, 36)) living(G.foes).forEach(f => { if (f !== tgt) hitFoe(h, f, 1.1, { type: 'magic', splash: true }); });
           UI.log(`${h.name} casts Firebolt for ${d}.`, '');
@@ -254,12 +260,13 @@ const Battle = (() => {
   async function foeAct(f) {
     const m = intentOf(f);
     const atk = foeAttack(f);
-    UI.unitAnim('foe', f.id, 'lunge');
+    if (intentOf(f) === MOVES.mend) Scene.cast('foe', f.id);
+    else { UI.unitAnim('foe', f.id, 'lunge'); if (!G.skipAnim) await sleep(170); }
     if (m === MOVES.mend) {
       const w = living(G.foes).reduce((a, b) => (a.hp / a.maxHp <= b.hp / b.maxHp ? a : b));
       const amt = Math.round(1.5 * atk + 3);
       w.hp = Math.min(w.maxHp, w.hp + amt);
-      UI.unitFx('foe', w.id, '+' + amt, 'heal'); Sound.play('heal');
+      UI.unitFx('foe', w.id, '+' + amt, 'heal'); Scene.effect('foe', w.id, 'heal'); Scene.cast('foe', f.id); Sound.play('heal');
       UI.log(`${f.name} mends ${w.name} for ${amt}.`, 'bad');
     } else {
       if (m.rentHike) { f.atk += 2; UI.log('Rent Hike: The Landlord gains +2 attack.', 'bad'); }

@@ -272,7 +272,7 @@ const Board = (() => {
     R.t += dt;
     if (R.t > 0.15 && !R.flipped) { R.flipped = true; Sound.play('flip'); }
     if (R.t > 0.45 && !R.applied) { R.applied = true; Game.applyPocket(R.type, R.ball); }
-    if (R.t > 1.45) {
+    if (R.t > REVEAL_HOLD || (R.skip && R.t > 0.6)) {
       B.reveal = null;
       B.pegs.forEach(p => { if (p.lit && !REARM[p.type] && p.type !== 'post' && p.type !== 'crate' && p.type !== 'chest') p.dead = true; });
       B.pegs = B.pegs.filter(p => !p.dead);
@@ -282,6 +282,8 @@ const Board = (() => {
   }
 
   // ---------- Aim ----------
+  function skipReveal() { if (B.reveal) B.reveal.skip = true; }
+
   function setAimFrom(px, py) {
     let a = Math.atan2(py - P.launcherY, px - P.launcherX);
     if (a < 0) a = px < P.launcherX ? Math.PI - P.aimClamp : P.aimClamp;
@@ -320,7 +322,7 @@ const Board = (() => {
         if (B.trail.length > 18) B.trail.shift();
       }
     }
-    if (G.phase === 'sink') updateReveal(dt * Math.min(2, G.speed));
+    if (G.phase === 'sink') updateReveal(dt);
     B.parts.forEach(q => { q.t += dt; q.x += q.vx * dt; q.y += q.vy * dt; q.vy += 400 * dt; });
     B.parts = B.parts.filter(q => q.t < q.life);
     B.floats.forEach(f => (f.t += dt));
@@ -491,15 +493,17 @@ const Board = (() => {
       // Revealed plate flips up.
       if (R && R.t > 0.15) {
         const info = POCKETS[R.type];
-        const k = Math.min(1, (R.t - 0.15) / 0.25), pw = 150, ph = 52;
+        const k = Math.min(1, (R.t - 0.15) / 0.25), pw = 196, ph = 70;
         const px = clamp(x + w / 2 - pw / 2, 4, P.W - pw - 4), py = P.pocketTop - ph - 14;
         c.save(); c.translate(px + pw / 2, py + ph); c.scale(1, k); c.translate(-(px + pw / 2), -(py + ph));
         c.fillStyle = '#2b2b2b'; c.strokeStyle = '#c9a24a'; c.lineWidth = 2;
         roundRect(c, px, py, pw, ph, 6); c.fill(); c.stroke();
-        c.fillStyle = info.kind === 'perk' ? '#7dffa6' : '#ff8a7a'; c.font = 'bold 15px Georgia, serif'; c.textAlign = 'center';
-        c.fillText(`${info.icon} ${info.name}`, px + pw / 2, py + 18);
-        c.fillStyle = '#f2ead3'; c.font = '10px system-ui, sans-serif';
-        wrapText(c, info.text, px + pw / 2, py + 35, pw - 12, 11);
+        c.fillStyle = info.kind === 'perk' ? '#7dffa6' : '#ff8a7a'; c.font = 'bold 19px Georgia, serif'; c.textAlign = 'center';
+        c.fillText(`${info.icon} ${info.name}`, px + pw / 2, py + 22);
+        c.fillStyle = '#f2ead3'; c.font = '13px system-ui, sans-serif';
+        wrapText(c, info.text, px + pw / 2, py + 44, pw - 14, 15);
+        // Countdown bar so players know the plate will close.
+        c.fillStyle = 'rgba(201,162,74,0.7)'; c.fillRect(px + 6, py + ph - 5, (pw - 12) * Math.max(0, 1 - R.t / REVEAL_HOLD), 2);
         c.restore();
       }
     }
@@ -532,6 +536,7 @@ const Board = (() => {
       if (e.pointerType !== 'mouse') { dragging = true; cv.setPointerCapture(e.pointerId); const q = toBoard(e); setAimFrom(q.x, q.y); e.preventDefault(); }
     });
     cv.addEventListener('pointerup', e => {
+      if (G.phase === 'sink') { skipReveal(); dragging = false; return; }
       if (G.phase !== 'aim') { dragging = false; return; }
       if (e.pointerType === 'mouse') { const q = toBoard(e); setAimFrom(q.x, q.y); fire(); }
       else if (dragging) { dragging = false; fire(); }
@@ -548,5 +553,5 @@ const Board = (() => {
     initInput();
   }
 
-  return { init, build, fire, update, draw, nudgeAim, splitText, B, shapePath, drawPeg, multFor };
+  return { init, build, fire, skipReveal, update, draw, nudgeAim, splitText, B, shapePath, drawPeg, multFor };
 })();

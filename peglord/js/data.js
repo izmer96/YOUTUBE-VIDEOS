@@ -8,6 +8,7 @@ const SOFT_CAP_2 = 40;   // above this it counts a quarter
 const STAGE_HEAL = 0.30; // party heal after a cleared stage
 const MAX_JOKERS = 5;
 const BASE_BALLS = 3;
+const REVEAL_HOLD = 3.0;  // seconds a revealed pocket plate stays up (click or Space skips)
 const ANIM_STEP = 0.68;  // seconds per battle action
 // Peg payout: every peg's points are multiplied by this for the current stage (shown in the HUD).
 const PAYOUT = stage => 3 + Math.floor((stage - 1) / 3);
@@ -315,5 +316,17 @@ const PEG_PACKS = {
 };
 const TANKARD_CHANCE = 0.15, WARM_BED_HEAL = 0.40;
 
-const MUSIC_CHORDS = [[57, 60, 64], [53, 57, 60], [55, 59, 62], [52, 55, 59]]; // Am F G Em
-const PENTATONIC = [0, 2, 4, 7, 9];
+// Background music: a 16-bar tavern jig in A minor, 6/8. Each bar is six eighth notes; null holds the previous note.
+const MUSIC = {
+  eighth: 0.19,           // seconds per eighth note (fight phases play a touch faster)
+  fightEighth: 0.165,
+  chords: { Am: [57, 60, 64], G: [55, 59, 62], F: [53, 57, 60], E: [52, 56, 59], C: [55, 60, 64] },
+  bars: ['Am', 'G', 'F', 'E', 'Am', 'G', 'C', 'E', 'F', 'G', 'Am', 'Am', 'F', 'G', 'E', 'Am'],
+  melody: [
+    [76, null, 69, 72, 71, 69], [71, null, 67, 74, 72, 71], [69, null, 65, 72, null, 69], [68, null, 71, 76, null, null],
+    [69, 72, 76, 81, null, 79], [77, 76, 74, 79, null, 74], [76, null, 72, 67, 69, 71], [72, 71, 68, 64, null, null],
+    [81, null, 79, 77, 76, 77], [79, null, 77, 76, 74, 71], [72, 76, 81, 76, 72, 69], [71, 72, 74, 76, null, null],
+    [77, 76, 74, 72, null, 69], [74, 72, 71, 67, null, 71], [68, 71, 76, 80, null, 76], [81, null, null, 69, null, null],
+  ],
+};
+const PENTATONIC = [0, 3, 5, 7, 10]; // A minor pentatonic, so peg notes sit in the music's key

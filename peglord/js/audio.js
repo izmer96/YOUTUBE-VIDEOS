@@ -34,7 +34,7 @@ const Sound = (() => {
   function apply() {
     if (!ctx) return;
     sfxBus.gain.setTargetAtTime(prefs.sfxOn ? prefs.sfx : 0, ctx.currentTime, 0.02);
-    musicBus.gain.setTargetAtTime(prefs.musicOn ? prefs.music * 0.5 : 0, ctx.currentTime, 0.05);
+    musicBus.gain.setTargetAtTime(prefs.musicOn ? prefs.music * 0.9 : 0, ctx.currentTime, 0.05);
   }
   function set(p) { Object.assign(prefs, p); apply(); }
 
@@ -70,13 +70,14 @@ const Sound = (() => {
     peg(combo) {
       if (!ok()) return;
       const step = Math.min(24, combo);
-      const m = 64 + 12 * Math.floor(step / 5) + PENTATONIC[step % 5];
+      const k = Math.floor(step * 0.6);
+      const m = 69 + 12 * Math.floor(k / 5) + PENTATONIC[k % 5];
       tone(mtof(m), { type: 'triangle', dur: 0.18, vol: 0.22 });
       tone(mtof(m + 12), { type: 'sine', dur: 0.08, vol: 0.06, echo: 0 });
     },
     gold(combo) {
       if (!ok()) return;
-      const m = 76 + PENTATONIC[Math.min(24, combo) % 5];
+      const m = 81 + PENTATONIC[Math.min(24, combo) % 5];
       [1, 2.76, 5.4].forEach((r, i) => tone(mtof(m) * r, { type: 'sine', dur: 0.9 - i * 0.2, vol: 0.18 / (i + 1), echo: 0.6 }));
     },
     crate() { if (ok()) { noise({ dur: 0.12, vol: 0.4, freq: 500, q: 2 }); tone(140, { type: 'square', dur: 0.06, vol: 0.08, echo: 0 }); } },
@@ -112,29 +113,112 @@ const Sound = (() => {
     flip() { if (ok()) noise({ dur: 0.12, vol: 0.25, freq: 1500, to: 600, q: 2 }); },
   };
 
-  // Quiet looping chord arpeggio: Am, F, G, Em with a bass note.
+  // ---------- Music: a tavern jig with lute, whistle, upright bass, pad and bodhran ----------
+  let musicOut = null;
+  function musicNode() {
+    if (musicOut) return musicOut;
+    const lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 5200;
+    lp.connect(musicBus);
+    const send = ctx.createGain(); send.gain.value = 0.35; lp.connect(send); send.connect(echoIn);
+    musicOut = lp; return lp;
+  }
+  function env(g, t, a, peak, d) { g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(peak, t + a); g.gain.exponentialRampToValueAtTime(0.0001, t + a + d); }
+  function pluck(m, t, vol, dur = 0.7) {
+    const f = mtof(m), out = musicNode();
+    const o1 = ctx.createOscillator(), o2 = ctx.createOscillator(), lp = ctx.createBiquadFilter(), g = ctx.createGain();
+    o1.type = 'sawtooth'; o2.type = 'square'; o1.frequency.value = f; o2.frequency.value = f * 1.003;
+    lp.type = 'lowpass'; lp.Q.value = 2; lp.frequency.setValueAtTime(3200, t); lp.frequency.exponentialRampToValueAtTime(420, t + 0.25);
+    const g2 = ctx.createGain(); g2.gain.value = 0.35;
+    env(g, t, 0.004, vol, dur);
+    o1.connect(lp); o2.connect(g2); g2.connect(lp); lp.connect(g); g.connect(out);
+    o1.start(t); o2.start(t); o1.stop(t + dur + 0.1); o2.stop(t + dur + 0.1);
+  }
+  function whistle(m, t, dur, vol) {
+    const f = mtof(m), out = musicNode();
+    const o = ctx.createOscillator(), o2 = ctx.createOscillator(), g = ctx.createGain(), lfo = ctx.createOscillator(), lg = ctx.createGain();
+    o.type = 'sine'; o2.type = 'triangle'; o.frequency.value = f; o2.frequency.value = f * 2;
+    lfo.frequency.value = 5.6; lg.gain.setValueAtTime(0, t); lg.gain.linearRampToValueAtTime(f * 0.006, t + Math.min(0.25, dur));
+    lfo.connect(lg); lg.connect(o.frequency);
+    const h = ctx.createGain(); h.gain.value = 0.08; o2.connect(h); h.connect(g);
+    g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(vol, t + 0.035);
+    g.gain.setValueAtTime(vol * 0.85, t + Math.max(0.05, dur - 0.06)); g.gain.exponentialRampToValueAtTime(0.0001, t + dur + 0.08);
+    o.connect(g); g.connect(out);
+    [o, o2, lfo].forEach(x => { x.start(t); x.stop(t + dur + 0.15); });
+    // breath
+    const s = ctx.createBufferSource(); s.buffer = noiseBuf; const bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.frequency.value = f * 2; bp.Q.value = 3;
+    const ng = ctx.createGain(); env(ng, t, 0.01, vol * 0.25, 0.08); s.connect(bp); bp.connect(ng); ng.connect(out); s.start(t, Math.random()); s.stop(t + 0.15);
+  }
+  function bass(m, t, vol) {
+    const f = mtof(m), out = musicNode();
+    const o = ctx.createOscillator(), o2 = ctx.createOscillator(), lp = ctx.createBiquadFilter(), g = ctx.createGain();
+    o.type = 'triangle'; o2.type = 'sine'; o.frequency.value = f; o2.frequency.value = f;
+    lp.type = 'lowpass'; lp.frequency.value = 700;
+    env(g, t, 0.01, vol, 0.55);
+    o.connect(lp); o2.connect(lp); lp.connect(g); g.connect(out);
+    o.start(t); o2.start(t); o.stop(t + 0.7); o2.stop(t + 0.7);
+  }
+  function pad(notes, t, dur, vol) {
+    const out = musicNode();
+    const lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 900; lp.Q.value = 0.5;
+    const g = ctx.createGain();
+    g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(vol, t + 0.5); g.gain.setValueAtTime(vol, t + dur - 0.3); g.gain.exponentialRampToValueAtTime(0.0001, t + dur + 0.4);
+    lp.connect(g); g.connect(out);
+    notes.forEach(m => [-6, 6].forEach(cents => {
+      const o = ctx.createOscillator(); o.type = 'sawtooth'; o.frequency.value = mtof(m); o.detune.value = cents;
+      o.connect(lp); o.start(t); o.stop(t + dur + 0.5);
+    }));
+  }
+  function drum(t, kind, vol) {
+    const out = musicNode();
+    if (kind === 'kick') {
+      const o = ctx.createOscillator(), g = ctx.createGain();
+      o.frequency.setValueAtTime(120, t); o.frequency.exponentialRampToValueAtTime(48, t + 0.14);
+      env(g, t, 0.003, vol, 0.22); o.connect(g); g.connect(out); o.start(t); o.stop(t + 0.3);
+    } else {
+      const s = ctx.createBufferSource(); s.buffer = noiseBuf; const f = ctx.createBiquadFilter(), g = ctx.createGain();
+      if (kind === 'shaker') { f.type = 'highpass'; f.frequency.value = 7000; env(g, t, 0.004, vol, 0.05); }
+      else { f.type = 'bandpass'; f.frequency.value = 260; f.Q.value = 1.5; env(g, t, 0.002, vol, 0.12); }
+      s.connect(f); f.connect(g); g.connect(out); s.start(t, Math.random() * 0.5); s.stop(t + 0.2);
+    }
+  }
+
+  let fight = false;
+  function setMood(isFight) { fight = !!isFight; }
   function startMusic() {
     if (musicTimer) return;
-    nextBeat = ctx.currentTime + 0.2;
-    musicTimer = setInterval(schedule, 60);
+    nextBeat = ctx.currentTime + 0.3;
+    musicTimer = setInterval(schedule, 50);
   }
   function schedule() {
-    const spb = 0.3;
-    while (nextBeat < ctx.currentTime + 0.25) {
-      const bar = Math.floor(beat / 8) % 4, step = beat % 8;
-      const chord = MUSIC_CHORDS[bar];
-      const at = nextBeat - ctx.currentTime;
+    while (nextBeat < ctx.currentTime + 0.3) {
+      const step = beat % 6, barIdx = Math.floor(beat / 6) % MUSIC.bars.length, loop = Math.floor(beat / (6 * MUSIC.bars.length));
+      const len = fight ? MUSIC.fightEighth : MUSIC.eighth;
+      const t = nextBeat;
       if (prefs.musicOn && prefs.music > 0) {
-        const pattern = [0, 1, 2, 1, 0, 1, 2, 1];
-        const note = chord[pattern[step]] + (step >= 4 ? 12 : 0);
-        tone(mtof(note), { type: 'triangle', dur: 0.32, vol: 0.12, at, bus: musicBus, attack: 0.01 });
-        if (step === 0) tone(mtof(chord[0] - 24), { type: 'sine', dur: 2.2, vol: 0.25, at, bus: musicBus, attack: 0.05 });
-        if (step === 4) tone(mtof(chord[0] - 17), { type: 'sine', dur: 1.0, vol: 0.12, at, bus: musicBus, attack: 0.05 });
+        const chord = MUSIC.chords[MUSIC.bars[barIdx]];
+        // Upright bass: root on 1, fifth on 4.
+        if (step === 0) bass(chord[0] - 12, t, 0.32);
+        if (step === 3) bass(chord[0] - 5, t, 0.24);
+        // Lute: chord tones on the off-beats.
+        if (step !== 0 && step !== 3) pluck(chord[[0, 1, 2, 0, 2, 1][step]] + 12, t, step === 1 || step === 4 ? 0.07 : 0.05, 0.35);
+        if (step === 0 && loop % 2 === 1) pad(chord, t, len * 6, 0.022);
+        // Bodhran and shaker.
+        if (step === 0 || step === 3) drum(t, 'kick', step === 0 ? 0.35 : 0.22);
+        if (step === 2 || step === 5) drum(t, 'tap', 0.18);
+        drum(t, 'shaker', step % 3 === 0 ? 0.05 : 0.025);
+        if (fight && step % 3 === 1) drum(t, 'tap', 0.12);
+        // Melody: whistle on even loops, lute an octave down on odd loops.
+        const note = MUSIC.melody[barIdx][step];
+        if (note != null) {
+          let hold = 1; while (step + hold < 6 && MUSIC.melody[barIdx][step + hold] === null) hold++;
+          if (loop % 2 === 0) whistle(note, t, hold * len * 0.95, 0.075);
+          else pluck(note, t, 0.09, 0.3 + hold * len);
+        }
       }
-      nextBeat += spb; beat++;
+      nextBeat += len; beat++;
     }
   }
 
   function play(name, ...args) { if (ctx && fx[name]) { try { fx[name](...args); } catch (e) { /* audio is best effort */ } } }
-  return { init, play, set, prefs };
+  return { init, play, set, prefs, setMood };
 })();
