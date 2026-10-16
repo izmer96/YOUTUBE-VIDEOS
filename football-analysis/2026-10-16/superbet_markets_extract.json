@@ -1,0 +1,8345 @@
+{
+"14127662": {
+"eventId": 14127662,
+"matchName": "Bayern Munchen·RB Leipzig",
+"utcDate": "2026-10-17T16:30:00Z",
+"tournamentId": 245,
+"betradarId": "72513238",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.23,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 7.7,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 9,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.4,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.9,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 5.65,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.14,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 3,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 1.4,
+"status": "active"
+}
+]
+},
+"14127663": {
+"eventId": 14127663,
+"matchName": "Bayer Leverkusen·Freiburg",
+"utcDate": "2026-10-18T13:30:00Z",
+"tournamentId": 245,
+"betradarId": "72513240",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.73,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.2,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 4.25,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.5,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.55,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.67,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.48,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.7,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.17,
+"status": "active"
+}
+]
+},
+"14127664": {
+"eventId": 14127664,
+"matchName": "Eintracht Frankfurt·FC Koln",
+"utcDate": "2026-10-16T18:30:00Z",
+"tournamentId": 245,
+"betradarId": "72513242",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.87,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.25,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 3.6,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.35,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 3.1,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 3.35,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.33,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 1.82,
+"status": "active"
+}
+]
+},
+"14127665": {
+"eventId": 14127665,
+"matchName": "Union Berlin·Borussia Dortmund",
+"utcDate": "2026-10-17T13:30:00Z",
+"tournamentId": 245,
+"betradarId": "72513244",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 5,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.4,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.59,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.58,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.35,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.57,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.51,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.65,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.25,
+"status": "active"
+}
+]
+},
+"14127666": {
+"eventId": 14127666,
+"matchName": "Borussia Monchengladbach·Hoffenheim",
+"utcDate": "2026-10-18T15:30:00Z",
+"tournamentId": 245,
+"betradarId": "72513246",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 3.05,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.12,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.39,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.92,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.92,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.41,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.82,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2,
+"status": "active"
+}
+]
+},
+"14127667": {
+"eventId": 14127667,
+"matchName": "Hamburger·Stuttgart",
+"utcDate": "2026-10-17T13:30:00Z",
+"tournamentId": 245,
+"betradarId": "72513248",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 3.85,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.1,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.83,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.42,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.82,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.92,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.41,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.82,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2,
+"status": "active"
+}
+]
+},
+"14127668": {
+"eventId": 14127668,
+"matchName": "Werder Bremen·Paderborn",
+"utcDate": "2026-10-17T13:30:00Z",
+"tournamentId": 245,
+"betradarId": "72513250",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.82,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 4,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.53,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.47,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.5,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.54,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.62,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.32,
+"status": "active"
+}
+]
+},
+"14127669": {
+"eventId": 14127669,
+"matchName": "Schalke·Mainz",
+"utcDate": "2026-10-17T13:30:00Z",
+"tournamentId": 245,
+"betradarId": "72513252",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.95,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.6,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.3,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.52,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.47,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.32,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.61,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.54,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.5,
+"status": "active"
+}
+]
+},
+"14127670": {
+"eventId": 14127670,
+"matchName": "Elversberg·Augsburg",
+"utcDate": "2026-10-17T13:30:00Z",
+"tournamentId": 245,
+"betradarId": "72513254",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.5,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.75,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.6,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.41,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.85,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.72,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.46,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.73,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.12,
+"status": "active"
+}
+]
+},
+"14127680": {
+"eventId": 14127680,
+"matchName": "Bologna·Inter Milano",
+"utcDate": "2026-10-17T16:00:00Z",
+"tournamentId": 104,
+"betradarId": "71945306",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 5.2,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.1,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.62,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.7,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.12,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.22,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.66,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.5,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.62,
+"status": "active"
+}
+]
+},
+"14127681": {
+"eventId": 14127681,
+"matchName": "Fiorentina·Como",
+"utcDate": "2026-10-18T13:00:00Z",
+"tournamentId": 104,
+"betradarId": "71945308",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 3.4,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.65,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.07,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.57,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.37,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.25,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.66,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.5,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.6,
+"status": "active"
+}
+]
+},
+"14127682": {
+"eventId": 14127682,
+"matchName": "Frosinone·Sassuolo",
+"utcDate": "2026-10-16T18:45:00Z",
+"tournamentId": 104,
+"betradarId": "71945310",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.4,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.75,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.72,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.38,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 3,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.9,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.42,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.8,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.02,
+"status": "active"
+}
+]
+},
+"14127683": {
+"eventId": 14127683,
+"matchName": "Juventus·Lazio",
+"utcDate": "2026-10-18T18:45:00Z",
+"tournamentId": 104,
+"betradarId": "71945312",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.69,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.8,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 5,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.9,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.87,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.88,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.92,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.34,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3.3,
+"status": "active"
+}
+]
+},
+"14127684": {
+"eventId": 14127684,
+"matchName": "AC Milan·Atalanta",
+"utcDate": "2026-10-18T16:00:00Z",
+"tournamentId": 104,
+"betradarId": "71945314",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.82,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.75,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 4.25,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.68,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.15,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.1,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.74,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.44,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.8,
+"status": "active"
+}
+]
+},
+"14127685": {
+"eventId": 14127685,
+"matchName": "Monza·Cagliari",
+"utcDate": "2026-10-19T16:30:00Z",
+"tournamentId": 104,
+"betradarId": "71945316",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.42,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.2,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 3.1,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.82,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.95,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.75,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 2.1,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.28,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3.7,
+"status": "active"
+}
+]
+},
+"14127686": {
+"eventId": 14127686,
+"matchName": "Parma·Torino FC",
+"utcDate": "2026-10-19T18:45:00Z",
+"tournamentId": 104,
+"betradarId": "71945318",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 3.2,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.05,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.42,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 2,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.78,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.59,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 2.37,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.21,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 4.45,
+"status": "active"
+}
+]
+},
+"14127687": {
+"eventId": 14127687,
+"matchName": "AS Roma·Genoa",
+"utcDate": "2026-10-17T18:45:00Z",
+"tournamentId": 104,
+"betradarId": "71945320",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.54,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.35,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 5.8,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.85,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.92,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.12,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.73,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.44,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.82,
+"status": "active"
+}
+]
+},
+"14127688": {
+"eventId": 14127688,
+"matchName": "Udinese·Lecce",
+"utcDate": "2026-10-18T10:30:00Z",
+"tournamentId": 104,
+"betradarId": "71945322",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.9,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.5,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 4.15,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.88,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.9,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.78,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 2.05,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.3,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3.55,
+"status": "active"
+}
+]
+},
+"14127689": {
+"eventId": 14127689,
+"matchName": "Venezia·Napoli",
+"utcDate": "2026-10-17T13:00:00Z",
+"tournamentId": 104,
+"betradarId": "71945324",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 4.55,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.9,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.73,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.7,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.12,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.15,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.71,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.46,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.75,
+"status": "active"
+}
+]
+},
+"14127707": {
+"eventId": 14127707,
+"matchName": "Bournemouth·Sunderland",
+"utcDate": "2026-10-18T13:00:00Z",
+"tournamentId": 106,
+"betradarId": "72221312",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.12,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.5,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 3.4,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.68,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.15,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.82,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.4,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3,
+"status": "active"
+}
+]
+},
+"14127708": {
+"eventId": 14127708,
+"matchName": "Brentford·Liverpool",
+"utcDate": "2026-10-17T14:00:00Z",
+"tournamentId": 106,
+"betradarId": "72221314",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.42,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.65,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.75,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.49,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.57,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.4,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.58,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.58,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.4,
+"status": "active"
+}
+]
+},
+"14127709": {
+"eventId": 14127709,
+"matchName": "Brighton·Crystal Palace",
+"utcDate": "2026-10-18T13:00:00Z",
+"tournamentId": 106,
+"betradarId": "72221316",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.55,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.5,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 5.4,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.65,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.47,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.55,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.6,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.35,
+"status": "active"
+}
+]
+},
+"14127710": {
+"eventId": 14127710,
+"matchName": "Everton·Chelsea",
+"utcDate": "2026-10-17T11:30:00Z",
+"tournamentId": 106,
+"betradarId": "72221318",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 3.15,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.65,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.17,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.59,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.32,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.69,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.48,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.67,
+"status": "active"
+}
+]
+},
+"14127711": {
+"eventId": 14127711,
+"matchName": "Fulham·Hull City",
+"utcDate": "2026-10-17T14:00:00Z",
+"tournamentId": 106,
+"betradarId": "72221320",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.73,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.9,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 4.55,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.73,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.07,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.1,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.74,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.44,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.82,
+"status": "active"
+}
+]
+},
+"14127712": {
+"eventId": 14127712,
+"matchName": "Leeds United·Manchester United",
+"utcDate": "2026-10-18T13:00:00Z",
+"tournamentId": 106,
+"betradarId": "72221322",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.37,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.55,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.87,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.54,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.45,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.27,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.65,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.52,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.55,
+"status": "active"
+}
+]
+},
+"14127713": {
+"eventId": 14127713,
+"matchName": "Manchester City·Ipswich",
+"utcDate": "2026-10-17T14:00:00Z",
+"tournamentId": 106,
+"betradarId": "72221324",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.25,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 6.6,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 9.4,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.8,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.97,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 3,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.39,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.83,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2,
+"status": "active"
+}
+]
+},
+"14127714": {
+"eventId": 14127714,
+"matchName": "Newcastle·Aston Villa",
+"utcDate": "2026-10-17T16:30:00Z",
+"tournamentId": 106,
+"betradarId": "72221326",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.3,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.65,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.92,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.51,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.5,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.35,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.6,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.56,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.45,
+"status": "active"
+}
+]
+},
+"14127715": {
+"eventId": 14127715,
+"matchName": "Nottingham Forest·Arsenal",
+"utcDate": "2026-10-18T15:30:00Z",
+"tournamentId": 106,
+"betradarId": "72221328",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 5.55,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.9,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.62,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.95,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.83,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.9,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.92,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.34,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3.3,
+"status": "active"
+}
+]
+},
+"14127716": {
+"eventId": 14127716,
+"matchName": "Tottenham·Coventry City",
+"utcDate": "2026-10-19T19:00:00Z",
+"tournamentId": 106,
+"betradarId": "72221330",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.49,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.65,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 5.9,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.72,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.07,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.4,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.58,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.56,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.45,
+"status": "active"
+}
+]
+},
+"14127838": {
+"eventId": 14127838,
+"matchName": "Angers·Olympique Marseille",
+"utcDate": "2026-10-18T13:00:00Z",
+"tournamentId": 100,
+"betradarId": "72036220",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 3.25,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.7,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.12,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.53,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.45,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.32,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.61,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.55,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.47,
+"status": "active"
+}
+]
+},
+"14127839": {
+"eventId": 14127839,
+"matchName": "Le Havre·Auxerre",
+"utcDate": "2026-10-18T15:15:00Z",
+"tournamentId": 100,
+"betradarId": "72036222",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.3,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.4,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 3.1,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.69,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.12,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.95,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.87,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.37,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3.15,
+"status": "active"
+}
+]
+},
+"14127840": {
+"eventId": 14127840,
+"matchName": "Le Mans·Toulouse",
+"utcDate": "2026-10-16T18:45:00Z",
+"tournamentId": 100,
+"betradarId": "72036224",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 3,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.55,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.3,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.54,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.42,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.25,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.65,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.52,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.55,
+"status": "active"
+}
+]
+},
+"14127841": {
+"eventId": 14127841,
+"matchName": "Lille·Brest",
+"utcDate": "2026-10-17T18:45:00Z",
+"tournamentId": 100,
+"betradarId": "72036226",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.88,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.75,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 3.9,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.63,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.25,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.68,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.48,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.67,
+"status": "active"
+}
+]
+},
+"14127842": {
+"eventId": 14127842,
+"matchName": "Lorient·Monaco",
+"utcDate": "2026-10-18T15:15:00Z",
+"tournamentId": 100,
+"betradarId": "72036228",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 3.55,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.4,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.1,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.75,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.05,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.88,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.92,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.34,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3.25,
+"status": "active"
+}
+]
+},
+"14127843": {
+"eventId": 14127843,
+"matchName": "Olympique Lyon·Nice",
+"utcDate": "2026-10-18T18:45:00Z",
+"tournamentId": 100,
+"betradarId": "72036230",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.69,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.1,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 4.6,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.66,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.17,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.27,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.65,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.51,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.6,
+"status": "active"
+}
+]
+},
+"14127844": {
+"eventId": 14127844,
+"matchName": "Paris FC·Rennes",
+"utcDate": "2026-10-18T15:15:00Z",
+"tournamentId": 100,
+"betradarId": "72036232",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.32,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.55,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.95,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.54,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.42,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.25,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.65,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.51,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.57,
+"status": "active"
+}
+]
+},
+"14127845": {
+"eventId": 14127845,
+"matchName": "Strasbourg·PSG",
+"utcDate": "2026-10-17T15:15:00Z",
+"tournamentId": 100,
+"betradarId": "72036234",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 6.3,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 5.4,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.4,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.54,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.45,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 3.2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.35,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.92,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 1.88,
+"status": "active"
+}
+]
+},
+"14127846": {
+"eventId": 14127846,
+"matchName": "Troyes·Lens",
+"utcDate": "2026-10-17T18:45:00Z",
+"tournamentId": 100,
+"betradarId": "72036236",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 3.85,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.85,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.87,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.55,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.42,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.4,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.58,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.58,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.4,
+"status": "active"
+}
+]
+},
+"14142769": {
+"eventId": 14142769,
+"matchName": "Trabzonspor·Besiktas",
+"utcDate": "2026-10-19T17:00:00Z",
+"tournamentId": 323,
+"betradarId": "72723250",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.87,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.65,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.27,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.49,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.52,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.4,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.57,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.58,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.4,
+"status": "active"
+}
+]
+},
+"14142770": {
+"eventId": 14142770,
+"matchName": "Kasımpasa·Samsunspor",
+"utcDate": "2026-10-18T10:30:00Z",
+"tournamentId": 323,
+"betradarId": "72723252",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.5,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.35,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.77,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.77,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.97,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.82,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.31,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3.5,
+"status": "active"
+}
+]
+},
+"14142771": {
+"eventId": 14142771,
+"matchName": "Basaksehir·Gaziantep",
+"utcDate": "2026-10-18T16:00:00Z",
+"tournamentId": 323,
+"betradarId": "72723254",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.68,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 4.55,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.61,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.22,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.35,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.6,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.55,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.47,
+"status": "active"
+}
+]
+},
+"14142772": {
+"eventId": 14142772,
+"matchName": "Amedspor·Konyaspor",
+"utcDate": "2026-10-17T13:00:00Z",
+"tournamentId": 323,
+"betradarId": "72723256",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.92,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.45,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 4,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.76,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.9,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.92,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.35,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3.25,
+"status": "active"
+}
+]
+},
+"14142773": {
+"eventId": 14142773,
+"matchName": "Genclerbirligi·Galatasaray",
+"utcDate": "2026-10-17T13:00:00Z",
+"tournamentId": 323,
+"betradarId": "72723258",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 6.4,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 5,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.41,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.69,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.1,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.65,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.49,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.68,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.2,
+"status": "active"
+}
+]
+},
+"14142774": {
+"eventId": 14142774,
+"matchName": "Corum FK·Rizespor",
+"utcDate": "2026-10-16T17:00:00Z",
+"tournamentId": 323,
+"betradarId": "72723260",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.07,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.65,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 3.35,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.55,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.35,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.27,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.64,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.52,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.57,
+"status": "active"
+}
+]
+},
+"14142775": {
+"eventId": 14142775,
+"matchName": "Fenerbahce·Alanyaspor",
+"utcDate": "2026-10-17T16:00:00Z",
+"tournamentId": 323,
+"betradarId": "72723262",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.3,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 5.6,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 8.6,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.95,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.8,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.42,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.57,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.57,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.42,
+"status": "active"
+}
+]
+},
+"14142776": {
+"eventId": 14142776,
+"matchName": "Kocaelispor·Goztepe",
+"utcDate": "2026-10-18T13:00:00Z",
+"tournamentId": 323,
+"betradarId": "72723264",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.87,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.4,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.37,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.71,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.07,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.9,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.9,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.35,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3.25,
+"status": "active"
+}
+]
+},
+"14142777": {
+"eventId": 14142777,
+"matchName": "Erzurumspor·Eyupspor",
+"utcDate": "2026-10-17T10:30:00Z",
+"tournamentId": 323,
+"betradarId": "72723266",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.63,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.8,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 5.35,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 2.05,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.72,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.76,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 2.07,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.28,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3.7,
+"status": "active"
+}
+]
+},
+"14142827": {
+"eventId": 14142827,
+"matchName": "Betis·Barcelona",
+"utcDate": "2026-10-17T16:30:00Z",
+"tournamentId": 98,
+"betradarId": "72478626",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 5.6,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 5.45,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.44,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.4,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.87,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 3.85,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.26,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 2.2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 1.67,
+"status": "active"
+}
+]
+},
+"14142828": {
+"eventId": 14142828,
+"matchName": "Celta Vigo·Alaves",
+"utcDate": "2026-10-18T14:15:00Z",
+"tournamentId": 98,
+"betradarId": "72478628",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.17,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.3,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 3.5,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.95,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.83,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.67,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 2.22,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.24,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 4.1,
+"status": "active"
+}
+]
+},
+"14142829": {
+"eventId": 14142829,
+"matchName": "Deportivo de A Coruna·Levante",
+"utcDate": "2026-10-16T19:00:00Z",
+"tournamentId": 98,
+"betradarId": "72478630",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.1,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.45,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 3.5,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.72,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.1,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.95,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.87,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.37,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3.15,
+"status": "active"
+}
+]
+},
+"14142830": {
+"eventId": 14142830,
+"matchName": "Espanyol·Atletico Madrid",
+"utcDate": "2026-10-17T12:00:00Z",
+"tournamentId": 98,
+"betradarId": "72478632",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 4.65,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.9,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.72,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.78,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.02,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.8,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.4,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3,
+"status": "active"
+}
+]
+},
+"14142831": {
+"eventId": 14142831,
+"matchName": "Getafe·Rayo Vallecano",
+"utcDate": "2026-10-19T19:00:00Z",
+"tournamentId": 98,
+"betradarId": "72478634",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.9,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.7,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 2.15,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.69,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.49,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 2.62,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.17,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 5.15,
+"status": "active"
+}
+]
+},
+"14142832": {
+"eventId": 14142832,
+"matchName": "Malaga·Real Sociedad",
+"utcDate": "2026-10-18T16:30:00Z",
+"tournamentId": 98,
+"betradarId": "72478636",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 3.2,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.5,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.2,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.65,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.05,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.78,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.41,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.92,
+"status": "active"
+}
+]
+},
+"14142833": {
+"eventId": 14142833,
+"matchName": "Osasuna·Racing Santander",
+"utcDate": "2026-10-18T12:00:00Z",
+"tournamentId": 98,
+"betradarId": "72478638",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.05,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.65,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 3.5,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.56,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.4,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.27,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.64,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.52,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.55,
+"status": "active"
+}
+]
+},
+"14142834": {
+"eventId": 14142834,
+"matchName": "Real Madrid·Sevilla",
+"utcDate": "2026-10-18T19:00:00Z",
+"tournamentId": 98,
+"betradarId": "72478640",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.22,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 6.9,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 11,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.95,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.83,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.87,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.42,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.77,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.07,
+"status": "active"
+}
+]
+},
+"14142835": {
+"eventId": 14142835,
+"matchName": "Valencia·Athletic Bilbao",
+"utcDate": "2026-10-17T19:00:00Z",
+"tournamentId": 98,
+"betradarId": "72478642",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 3.3,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.25,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.27,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.85,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.92,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.74,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 2.1,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.28,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3.75,
+"status": "active"
+}
+]
+},
+"14142836": {
+"eventId": 14142836,
+"matchName": "Villarreal·Elche",
+"utcDate": "2026-10-17T14:15:00Z",
+"tournamentId": 98,
+"betradarId": "72478644",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.46,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.9,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 5.9,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.64,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.22,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.67,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.48,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.69,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.17,
+"status": "active"
+}
+]
+},
+"14738976": {
+"eventId": 14738976,
+"matchName": "Sabah Baku·Borussia Dortmund",
+"utcDate": "2026-10-20T16:45:00Z",
+"tournamentId": 80794,
+"betradarId": "74165942",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 8.3,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 5.9,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.3,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.74,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.05,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.9,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.42,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.78,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.05,
+"status": "active"
+}
+]
+},
+"14738977": {
+"eventId": 14738977,
+"matchName": "Porto·PSV Eindhoven",
+"utcDate": "2026-10-20T19:00:00Z",
+"tournamentId": 80794,
+"betradarId": "74165946",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.8,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 4.1,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.57,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.37,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.42,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.57,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.58,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.4,
+"status": "active"
+}
+]
+},
+"14738978": {
+"eventId": 14738978,
+"matchName": "PSG·Barcelona",
+"utcDate": "2026-10-20T19:00:00Z",
+"tournamentId": 80794,
+"betradarId": "74165952",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.45,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.1,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.52,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.23,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 4,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 4.3,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.22,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 2.45,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 1.56,
+"status": "active"
+}
+]
+},
+"14738979": {
+"eventId": 14738979,
+"matchName": "Stuttgart·Atletico Madrid",
+"utcDate": "2026-10-20T19:00:00Z",
+"tournamentId": 80794,
+"betradarId": "74165956",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.87,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.7,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.3,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.48,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.6,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.47,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.55,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.61,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.35,
+"status": "active"
+}
+]
+},
+"14738980": {
+"eventId": 14738980,
+"matchName": "Liverpool·Villarreal",
+"utcDate": "2026-10-20T19:00:00Z",
+"tournamentId": 80794,
+"betradarId": "74165948",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.51,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.6,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 5.65,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.65,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.52,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.53,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.62,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.32,
+"status": "active"
+}
+]
+},
+"14738981": {
+"eventId": 14738981,
+"matchName": "Club Brugge·Lens",
+"utcDate": "2026-10-21T19:00:00Z",
+"tournamentId": 80794,
+"betradarId": "74165964",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.15,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.7,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 3.15,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.53,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.45,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.32,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.61,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.55,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.47,
+"status": "active"
+}
+]
+},
+"14738982": {
+"eventId": 14738982,
+"matchName": "Aston Villa·Viking",
+"utcDate": "2026-10-21T19:00:00Z",
+"tournamentId": 80794,
+"betradarId": "74165962",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.25,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 6.4,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 9.9,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.68,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.15,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 3.35,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.33,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 1.82,
+"status": "active"
+}
+]
+},
+"14738983": {
+"eventId": 14738983,
+"matchName": "Inter Milano·Shakhtar Donetsk",
+"utcDate": "2026-10-21T19:00:00Z",
+"tournamentId": 80794,
+"betradarId": "74165968",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.22,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 7.2,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 10,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.75,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.05,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 3.4,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.32,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 1.82,
+"status": "active"
+}
+]
+},
+"14738984": {
+"eventId": 14738984,
+"matchName": "Fenerbahce·Slavia Praga",
+"utcDate": "2026-10-20T16:45:00Z",
+"tournamentId": 80794,
+"betradarId": "74165940",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.68,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.1,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 4.7,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.65,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.3,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.63,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.53,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.52,
+"status": "active"
+}
+]
+},
+"14738985": {
+"eventId": 14738985,
+"matchName": "AS Roma·Slovan Bratislava",
+"utcDate": "2026-10-20T19:00:00Z",
+"tournamentId": 80794,
+"betradarId": "74165944",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.16,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 8.3,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 13,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.9,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.87,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 3.45,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.31,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 2.02,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 1.8,
+"status": "active"
+}
+]
+},
+"14738986": {
+"eventId": 14738986,
+"matchName": "Manchester City·AEK Atena",
+"utcDate": "2026-10-20T19:00:00Z",
+"tournamentId": 80794,
+"betradarId": "74165950",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.07,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 13,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 27,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 2.57,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.49,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 3.7,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.28,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 2.15,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 1.72,
+"status": "active"
+}
+]
+},
+"14738987": {
+"eventId": 14738987,
+"matchName": "Napoli·Bodo/Glimt",
+"utcDate": "2026-10-20T19:00:00Z",
+"tournamentId": 80794,
+"betradarId": "74165954",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.6,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.45,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 4.9,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.57,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.37,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.62,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.49,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.67,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.22,
+"status": "active"
+}
+]
+},
+"14738988": {
+"eventId": 14738988,
+"matchName": "Como·Manchester United",
+"utcDate": "2026-10-21T16:45:00Z",
+"tournamentId": 80794,
+"betradarId": "74165958",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.3,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.65,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.92,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.55,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.42,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.27,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.64,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.52,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.55,
+"status": "active"
+}
+]
+},
+"14738989": {
+"eventId": 14738989,
+"matchName": "Lille·Galatasaray",
+"utcDate": "2026-10-21T16:45:00Z",
+"tournamentId": 80794,
+"betradarId": "74165960",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.25,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.55,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 3.05,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.55,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.42,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.25,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.65,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.51,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.57,
+"status": "active"
+}
+]
+},
+"14738990": {
+"eventId": 14738990,
+"matchName": "Bayern Munchen·Arsenal",
+"utcDate": "2026-10-21T19:00:00Z",
+"tournamentId": 80794,
+"betradarId": "74165966",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.2,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.6,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 3.15,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.52,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.5,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.35,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.61,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.56,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.45,
+"status": "active"
+}
+]
+},
+"14738991": {
+"eventId": 14738991,
+"matchName": "Betis·Feyenoord Rotterdam",
+"utcDate": "2026-10-21T19:00:00Z",
+"tournamentId": 80794,
+"betradarId": "74165972",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.54,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.75,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 5.2,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.53,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.47,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.9,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.42,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.78,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.05,
+"status": "active"
+}
+]
+},
+"14738994": {
+"eventId": 14738994,
+"matchName": "Real Madrid·RB Leipzig",
+"utcDate": "2026-10-21T19:00:00Z",
+"tournamentId": 80794,
+"betradarId": "74165970",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.27,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 6.5,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 8.6,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.56,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.37,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 3.75,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.28,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 2.17,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 1.7,
+"status": "active"
+}
+]
+},
+"14739000": {
+"eventId": 14739000,
+"matchName": "Sporting Lisabona·LASK Linz",
+"utcDate": "2026-10-21T19:00:00Z",
+"tournamentId": 80794,
+"betradarId": "74165974",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.28,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 6.4,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 8.6,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.7,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.12,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 3.2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.36,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.9,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 1.9,
+"status": "active"
+}
+]
+},
+"14744321": {
+"eventId": 14744321,
+"matchName": "Ferencvaros·SCU Torreense",
+"utcDate": "2026-10-22T16:45:00Z",
+"tournamentId": 688,
+"betradarId": "74172988",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.37,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 5.2,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 7.4,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.92,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.87,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.32,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.62,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.52,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.55,
+"status": "active"
+}
+]
+},
+"14744322": {
+"eventId": 14744322,
+"matchName": "Juventus·Rennes",
+"utcDate": "2026-10-22T16:45:00Z",
+"tournamentId": 688,
+"betradarId": "74172992",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.62,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.15,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 5.15,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.8,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.1,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.75,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.43,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.85,
+"status": "active"
+}
+]
+},
+"14744323": {
+"eventId": 14744323,
+"matchName": "Sturm Graz·Olympique Marseille",
+"utcDate": "2026-10-22T16:45:00Z",
+"tournamentId": 688,
+"betradarId": "74173000",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 3.55,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.6,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.02,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.62,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.27,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.15,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.71,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.46,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.72,
+"status": "active"
+}
+]
+},
+"14744324": {
+"eventId": 14744324,
+"matchName": "Dinamo Zagreb·NEC Nijmegen",
+"utcDate": "2026-10-22T16:45:00Z",
+"tournamentId": 688,
+"betradarId": "74172990",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.74,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.1,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 4.35,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.56,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.37,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.47,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.55,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.6,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.35,
+"status": "active"
+}
+]
+},
+"14744325": {
+"eventId": 14744325,
+"matchName": "Ararat Armenia·AZ Alkmaar",
+"utcDate": "2026-10-22T16:45:00Z",
+"tournamentId": 688,
+"betradarId": "74172986",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 6,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.55,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.5,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.7,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.12,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.42,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.57,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.58,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.4,
+"status": "active"
+}
+]
+},
+"14744326": {
+"eventId": 14744326,
+"matchName": "Besiktas·Crystal Palace",
+"utcDate": "2026-10-22T19:00:00Z",
+"tournamentId": 688,
+"betradarId": "74173004",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.2,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.75,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 3.05,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.52,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.5,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.37,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.59,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.56,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.45,
+"status": "active"
+}
+]
+},
+"14744327": {
+"eventId": 14744327,
+"matchName": "Lech Poznan·Sunderland",
+"utcDate": "2026-10-22T16:45:00Z",
+"tournamentId": 688,
+"betradarId": "74172994",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 4.85,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.1,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.66,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.82,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.95,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.02,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.8,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.39,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3,
+"status": "active"
+}
+]
+},
+"14744328": {
+"eventId": 14744328,
+"matchName": "Celtic·Celta Vigo",
+"utcDate": "2026-10-22T19:00:00Z",
+"tournamentId": 688,
+"betradarId": "74173006",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 3,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.5,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.32,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.66,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.02,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.8,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.4,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.95,
+"status": "active"
+}
+]
+},
+"14744329": {
+"eventId": 14744329,
+"matchName": "Viktoria Plzen·Levski Sofia",
+"utcDate": "2026-10-22T19:00:00Z",
+"tournamentId": 688,
+"betradarId": "74173008",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.72,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.9,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 4.65,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.71,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.12,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.15,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.71,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.46,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.75,
+"status": "active"
+}
+]
+},
+"14744330": {
+"eventId": 14744330,
+"matchName": "OFI Crete·Bayer Leverkusen",
+"utcDate": "2026-10-22T16:45:00Z",
+"tournamentId": 688,
+"betradarId": "74172996",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 9.6,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 6.3,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.26,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.78,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 3,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.4,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.83,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2,
+"status": "active"
+}
+]
+},
+"14744331": {
+"eventId": 14744331,
+"matchName": "Jagiellonia Bialystok·Anderlecht",
+"utcDate": "2026-10-22T19:00:00Z",
+"tournamentId": 688,
+"betradarId": "74173010",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 3.05,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.5,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.3,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.63,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.25,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.07,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.77,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.43,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.87,
+"status": "active"
+}
+]
+},
+"14744332": {
+"eventId": 14744332,
+"matchName": "Bournemouth·AC Milan",
+"utcDate": "2026-10-22T19:00:00Z",
+"tournamentId": 688,
+"betradarId": "74173002",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.2,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.6,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 3.15,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.61,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.27,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.12,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.72,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.45,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.77,
+"status": "active"
+}
+]
+},
+"14744333": {
+"eventId": 14744333,
+"matchName": "Royale Union SG·Hapoel Beer Sheva",
+"utcDate": "2026-10-22T16:45:00Z",
+"tournamentId": 688,
+"betradarId": "74172998",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.31,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 5.75,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 8.3,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.85,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.92,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.62,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.5,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.65,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.25,
+"status": "active"
+}
+]
+},
+"14744336": {
+"eventId": 14744336,
+"matchName": "Celje·RB Salzburg",
+"utcDate": "2026-10-22T19:00:00Z",
+"tournamentId": 688,
+"betradarId": "74173014",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 3.9,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.75,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.9,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.66,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.12,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.73,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.45,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.77,
+"status": "active"
+}
+]
+},
+"14744337": {
+"eventId": 14744337,
+"matchName": "Lillestrom·Real Sociedad",
+"utcDate": "2026-10-22T19:00:00Z",
+"tournamentId": 688,
+"betradarId": "74173012",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 5.5,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.5,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.54,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.73,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.07,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.3,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.63,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.52,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.55,
+"status": "active"
+}
+]
+},
+"14744344": {
+"eventId": 14744344,
+"matchName": "Omonia Nicosia·Benfica",
+"utcDate": "2026-10-22T19:00:00Z",
+"tournamentId": 688,
+"betradarId": "74173018",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 6.5,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.75,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.45,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.85,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.92,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.22,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.66,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.49,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.65,
+"status": "active"
+}
+]
+},
+"14744345": {
+"eventId": 14744345,
+"matchName": "Hoffenheim·Olympique Lyon",
+"utcDate": "2026-10-22T19:00:00Z",
+"tournamentId": 688,
+"betradarId": "74173020",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.05,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.85,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 3.3,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.5,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.55,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.47,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.55,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.61,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.35,
+"status": "active"
+}
+]
+},
+"14744349": {
+"eventId": 14744349,
+"matchName": "Olympiacos·Sparta Praga",
+"utcDate": "2026-10-22T19:00:00Z",
+"tournamentId": 688,
+"betradarId": "74173016",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.62,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 5.3,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.83,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.95,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.02,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.8,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.4,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3,
+"status": "active"
+}
+]
+},
+"14744376": {
+"eventId": 14744376,
+"matchName": "Nordsjalland·CSKA Sofia FC",
+"utcDate": "2026-10-22T16:45:00Z",
+"tournamentId": 80813,
+"betradarId": "74173220",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.53,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.45,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 5.65,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.72,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.07,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.32,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.62,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.53,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.52,
+"status": "active"
+}
+]
+},
+"14744381": {
+"eventId": 14744381,
+"matchName": "Kairat Almaty·Panathinaikos",
+"utcDate": "2026-10-22T14:30:00Z",
+"tournamentId": 80813,
+"betradarId": "74173212",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 4.1,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.7,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.85,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.75,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.05,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.97,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.83,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.38,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3.05,
+"status": "active"
+}
+]
+},
+"14744383": {
+"eventId": 14744383,
+"matchName": "Inter Escaldes·Universitatea Craiova",
+"utcDate": "2026-10-22T16:45:00Z",
+"tournamentId": 80813,
+"betradarId": "74173240",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 5.4,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.85,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.65,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.95,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.83,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.87,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.95,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.34,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3.3,
+"status": "active"
+}
+]
+},
+"14744386": {
+"eventId": 14744386,
+"matchName": "Monaco·Freiburg",
+"utcDate": "2026-10-22T19:00:00Z",
+"tournamentId": 80813,
+"betradarId": "74173258",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.27,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.7,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.95,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.55,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.42,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.27,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.64,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.52,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.55,
+"status": "active"
+}
+]
+},
+"14744387": {
+"eventId": 14744387,
+"matchName": "Ajax Amsterdam·Atalanta",
+"utcDate": "2026-10-22T19:00:00Z",
+"tournamentId": 80813,
+"betradarId": "74173250",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.47,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.6,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.7,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.63,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.25,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.1,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.75,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.43,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.85,
+"status": "active"
+}
+]
+},
+"14744389": {
+"eventId": 14744389,
+"matchName": "Crvena Zvezda·FC Copenhaga",
+"utcDate": "2026-10-22T16:45:00Z",
+"tournamentId": 80813,
+"betradarId": "74173224",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 2.45,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.55,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 2.77,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.58,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.35,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.17,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.7,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.47,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.7,
+"status": "active"
+}
+]
+},
+"14744390": {
+"eventId": 14744390,
+"matchName": "Jablonec·Brighton",
+"utcDate": "2026-10-22T16:45:00Z",
+"tournamentId": 80813,
+"betradarId": "74173228",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 6.6,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.9,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 1.43,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.7,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.12,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.55,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.52,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.64,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.27,
+"status": "active"
+}
+]
+},
+"14744391": {
+"eventId": 14744391,
+"matchName": "Pafos·Riga FC",
+"utcDate": "2026-10-22T16:45:00Z",
+"tournamentId": 80813,
+"betradarId": "74173242",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.57,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 4.25,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 5.55,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.83,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 1.95,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.1,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.75,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.43,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.85,
+"status": "active"
+}
+]
+},
+"14744394": {
+"eventId": 14744394,
+"matchName": "Braga·Gent",
+"utcDate": "2026-10-22T19:00:00Z",
+"tournamentId": 80813,
+"betradarId": "74173274",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.82,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.75,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 4.3,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.78,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 1.97,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.85,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.37,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 3.1,
+"status": "active"
+}
+]
+},
+"14744399": {
+"eventId": 14744399,
+"matchName": "Midtjylland·Sint-Truiden",
+"utcDate": "2026-10-22T19:00:00Z",
+"tournamentId": 80813,
+"betradarId": "74173262",
+"markets": [
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "1",
+"specialBetValue": null,
+"price": 1.85,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "X",
+"specialBetValue": null,
+"price": 3.85,
+"status": "active"
+},
+{
+"marketId": 547,
+"marketName": "Final",
+"name": "2",
+"specialBetValue": null,
+"price": 4,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Da",
+"specialBetValue": null,
+"price": 1.55,
+"status": "active"
+},
+{
+"marketId": 539,
+"marketName": "Ambele echipe marchează (GG)",
+"name": "Nu",
+"specialBetValue": null,
+"price": 2.42,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 2.5",
+"specialBetValue": "2.5",
+"price": 2.37,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 2.5",
+"specialBetValue": "2.5",
+"price": 1.59,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Sub 3.5",
+"specialBetValue": "3.5",
+"price": 1.57,
+"status": "active"
+},
+{
+"marketId": 200734,
+"marketName": "Total goluri",
+"name": "Peste 3.5",
+"specialBetValue": "3.5",
+"price": 2.42,
+"status": "active"
+}
+]
+}
+}

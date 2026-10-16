@@ -25,8 +25,8 @@ C = {
  assessment="Inter beat every comparable Serie A opponent (Udinese 5-3, Cagliari 1-0, Monza 4-1, Parma 3-0), and Shakhtar's record comes from a weak domestic schedule (average opponent strength 0.51); they lost 1-3 and 1-2 to Crystal Palace last season. The model (69.5%) sits 9 points below the market (78%), hence Medium."),
 'Manchester City|home#ips': None,
 'FK Jablonec|away': dict(
- counter="Rotation is the main risk. Brighton play at Liverpool three days later and drew 0-0 away at Tromsø in qualifying. Jablonec are strong at home: 6-1-1, 4 goals conceded in 8, clean sheets in 62%. No market price yet.",
- assessment="Brighton have won five in a row (17-2) and have one of the largest quality edges among the UECL fixtures (expected goals 0.70 vs 2.46). Medium reliability: the number is model-only and depends on how strong Brighton's XI is."),
+ counter="Rotation is the main risk. Brighton play at Liverpool three days later and drew 0-0 away at Tromsø in qualifying. Jablonec are strong at home: 6-1-1, 4 goals conceded in 8, clean sheets in 62%. Superbet (66% de-vigged) is clearly less confident than the model (76%).",
+ assessment="Brighton have won five in a row (17-2), including 4-0 v Kauno Žalgiris in MD1 (xG 4.02-0.04). Expected goals in the final distribution are 0.90 v 2.32. Medium reliability: the market anchor is a single bookmaker priced six days out, the model-Superbet gap is 10 points, and the result depends on how strong Brighton's XI is."),
 'Real Madrid|home': dict(
  counter="Vinícius Júnior is suspended for this league match (81% of minutes, 1 goal 3 assists), so Real's attack is cut by 5%. Real host Leipzig on Wednesday and visit Barcelona next Sunday, so rotation is plausible. Sevilla have scored in every match this season (8 of 8).",
  assessment="Real are 5-0-0 at home (15-3, xG 2.52 for / 1.00 against) and have beaten Sevilla in each of the last four meetings. Sevilla lost 1-3 to both Atlético and Barcelona, their two most comparable opponents, and are without Sierra (78% of minutes) and the suspended Isaac Romero. Model 71.5%, market 76%."),
@@ -62,8 +62,8 @@ C = {
  counter="Shakhtar's away games are low-scoring: over 2.5 in 50%, over 3.5 in 0%, and 0.33 goals conceded per away game. Their comparable trip to PSV ended 1-1 (xG 0.62-0.44). Lautaro's absence lowers Inter's ceiling.",
  assessment="Inter have gone over in 7 of 8, including all 5 home games, and 4 of those 5 had 4+ goals. Model 62%, market 72%."),
 'OFI Crete|away': dict(
- counter="OFI are 5-1-0 at home with 2 goals conceded and beat Hoffenheim 2-0 in Heraklion in MD1, a direct example of an upset against Bundesliga opposition. Leverkusen play Hoffenheim three days later. No market price yet.",
- assessment="OFI's chance creation is weak (0.98 xG for, 1.30 against per game). Against better sides they lost 1-2 at Rennes (xG 0.06-1.46) and 0-3 at AEK. Leverkusen are 6-1-1 and average 3.2 goals away from home. Medium reliability (model-only)."),
+ counter="OFI are 5-1-0 at home with 2 goals conceded and beat Hoffenheim 2-0 in Heraklion in MD1, a direct example of an upset against Bundesliga opposition. Leverkusen play Hoffenheim three days later.",
+ assessment="OFI's chance creation is weak (0.98 xG for, 1.30 against per game). Against better sides they lost 1-2 at Rennes (xG 0.06-1.46) and 0-3 at AEK. Leverkusen are 6-1-1, average 3.2 goals away from home, and won 4-0 at Lech Poznań in MD2 (xG 5.16-0.50). Model (70%) and Superbet (75% de-vigged) agree; Medium reliability because the market anchor is a single bookmaker priced six days out."),
 'Lincoln Red Imps|o25': dict(
  counter="Lincoln's matches are low-scoring: over 2.5 in 36% overall and 33% in UEFA ties. Twente's last five went over only once. This selection depends almost entirely on Twente scoring three or more.",
  assessment="Weaker than the Twente win it is correlated with. Model-only and Low reliability; treat it as a byproduct of the large expected-goals gap rather than an independent edge."),
@@ -80,8 +80,8 @@ C = {
  counter="Bayern have kept clean sheets in 2 of 3 home games, and Leipzig's games are often one-sided (BTTS 25% this season). Leipzig's away xG is only 1.28 per game.",
  assessment="Leipzig have scored in 7 of 8, and Bayern conceded in 6 of 9 overall. The model (66%) and market (69%) agree, with no flags."),
 'FC Ararat-Armenia|away': dict(
- counter="AZ's away form is ordinary (3-0-2, failing to score in 40% of away games), and Ararat are 7-2-1 at home. AZ host Twente three days later. No market price.",
- assessment="Against comparable opposition Ararat lost 1-4 at home to Sparta Prague and 1-3 at Jagiellonia. AZ create 2.45 xG per game. Medium reliability (model-only)."),
+ counter="AZ's away form is ordinary (3-0-2, failing to score in 40% of away games), and Ararat are 7-2-1 at home. AZ host Twente three days later. Superbet is less confident (63% de-vigged v the model's 69%).",
+ assessment="Against comparable opposition Ararat lost 1-4 at home to Sparta Prague and 1-3 at Jagiellonia. AZ create 2.45 xG per game. Medium reliability: the market anchor is a single bookmaker (Superbet.ro)."),
 'Eintracht Frankfurt|btts': dict(
  counter="Köln's striker options are depleted (Ache, Dallinga and Rondić all out), so their scoring run could stop. The model has 59% against the market's 71%.",
  assessment="Köln have had BTTS in every match (6 of 6) and kept no clean sheets. Frankfurt have kept 1 clean sheet in 6 and concede 2.44 xG per game."),
@@ -99,8 +99,8 @@ C = {
  counter="Strasbourg beat PSG 2-1 in May 2025 and drew 3-3 at the Parc in October 2025. PSG have drawn 2 of their 5 away matches this season, and Barcelona come to Paris on Tuesday.",
  assessment="PSG have won five in a row. Strasbourg concede 2.0 per game (1.84 xGA), and the model and market agree (63% vs 68%)."),
 'FK Crvena zvezda|btts': dict(
- counter="Venue-specific records contradict this. Crvena's home games had BTTS in only 22% (clean sheets in 67%), and Copenhagen's away games only 30% (clean sheets in 60%). Osman Bukari is suspended. No market price.",
- assessment="The 66% comes from the two teams' cross-league ratings being nearly equal (expected goals 1.62 vs 1.72), not from BTTS history. This is a good example of a probability that ranks high but rests on contested evidence."),
+ counter="Venue-specific records contradict this. Crvena's home games had BTTS in only 22% (clean sheets in 67%), and Copenhagen's away games only 30% (clean sheets in 60%). Osman Bukari is suspended. Superbet prices GG at 1.58 (60% de-vigged), below the model's 66%.",
+ assessment="The estimate comes from the two teams' cross-league ratings being nearly equal (model expected goals 1.62 vs 1.72), not from BTTS history. This is a good example of a probability that ranks high but rests on contested evidence."),
 }
 
 C.update({
@@ -136,6 +136,14 @@ C['Manchester City|o25__Ipswich Town'] = dict(
  counter="City's league games are more controlled (over 2.5 in 67%, over 3.5 in 33%), and rotation between the PSG and AEK games could slow the tempo. 2-0 (10.8%) is the most likely score and 1-0 (8.3%) is fourth.",
  assessment="City have gone over in 4 of 5 home games, Ipswich in 6 of 8 (no clean sheets), and the last two meetings ended 4-1 and 6-0.")
 C['Real Madrid|o25__RB Leipzig'] = C['Real Madrid|o25']
+
+
+C['Royale Union Saint-Gilloise|home__Hapoel Be\'er Sheva'] = dict(
+ counter="Union are without three regulars: Mac Allister (69% of minutes, cruciate ligament), Zorgane (52%) and Kricfalusi (49%). That cuts their attack by 7% and lifts Hapoel's by 6%. This home tie is played in Düsseldorf, not Brussels, which weakens home advantage. Union have drawn 4 of 6 home games (2-4-0), including 1-1 v Leuven and 1-1 v Real Sociedad in the last week. Sofascore also lists a league game for Union the next day, which, if correct, means heavy rotation.",
+ assessment="Union are unbeaten in 13 (7-6-0, xG 2.14 for / 1.11 against) and beat comparable sides Antwerp 2-0, Plzeň 3-0 away and Anderlecht 3-0. Hapoel's xG is recorded for only 3 of 16 matches, and their only comparable result was a 1-2 loss at AZ (xG 1.07-2.71). The final figure leans on Superbet's price (72% de-vigged) more than on the model (66%), so reliability is Low.")
+C['Ferencváros TC|home__Torreense'] = dict(
+ counter="Ferencváros draw often at home (4-4-0; 3-4-1 in the league) and concede chances, with 1.93 xG against per home game where measured. Torreense, a second-tier Portuguese side, won 2-1 at Lillestrøm in MD1, and their xG is recorded for only 2 of 10 matches, so their strength is poorly measured.",
+ assessment="Ferencváros have lost once in 19 and are 8-2-0 in European ties this season, including 3-1 at Celtic and 2-1 v Plzeň. Torreense have won 2 of 10, failed to score in 40%, and lost 1-2 at home to Sunderland on xG 0.04-1.79. The model (64%) and Superbet (69% de-vigged) broadly agree; reliability is Low because both teams' xG coverage is thin.")
 
 # Clubs that are the home side in two uploaded fixtures: generic keys above refer to one specific opponent.
 DEFAULT_AWAY = {'FC Bayern München': 'RB Leipzig', 'AS Roma': 'ŠK Slovan Bratislava', 'Fenerbahçe': 'Alanyaspor',

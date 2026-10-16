@@ -48,11 +48,29 @@ def real_coach_change(mg):
 
 lu_up = json.load(open('lineups_upcoming.json'))
 NEWS_NOTE = {16938775: {'home': "No absentee feed was published for this UCL fixture. Manchester City's list for their 17 Oct league game shows no injured regulars (Foden's suspension there is domestic and does not carry into the Champions League)."}}
+SB = json.load(open('sb_odds.json'))['events']
+
+def superbet_devig(fid):
+    """De-vigged (proportional) Superbet.ro probabilities, or None if the fixture is not offered."""
+    v = SB.get(str(fid))
+    if not v or v['status'] != 'ok':
+        return None
+    o = v['odds']
+    s3 = 1 / o['home'] + 1 / o['draw'] + 1 / o['away']
+    pair = lambda a, b: (1 / o[a]) / (1 / o[a] + 1 / o[b])
+    return dict(home=(1 / o['home']) / s3, draw=(1 / o['draw']) / s3, away=(1 / o['away']) / s3,
+                o25=pair('o25', 'u25'), o35=pair('o35', 'u35'), btts=pair('btts_yes', 'btts_no'), margin_1x2=s3 - 1)
+
 out = []
 for i, r in enumerate(R):
     f = r['fixture']
     mod, mk = r['model'], r['market']
-    has_mkt = all(k in mk for k in KEYS)
+    market_source = 'sofascore' if all(k in mk for k in KEYS) else None
+    if market_source is None:
+        sbp = superbet_devig(f['id'])
+        if sbp:
+            mk, market_source = sbp, 'superbet'
+    has_mkt = market_source is not None
     if has_mkt:
         tgt = {k: W * mod[k] + (1 - W) * mk[k] for k in KEYS}
         lh, la, rho, P, err = fit_dc(tgt, r['lam'][0], r['lam'][1])
@@ -89,16 +107,19 @@ for i, r in enumerate(R):
         lam_final=[r3(lh), r3(la)], rho=r3(rho), fit_err=r3(err), lam_model=[r3(x) for x in r['lam']], lam_model_base=[r3(x) for x in r['lam_base']],
         p_h_scores=r3(p_h_scores), p_a_scores=r3(p_a_scores), top_scores=ts,
         teams=teams, h2h=r['h2h'], weather=r['weather'], baseline=r['baseline'], lineup_confirmed=r['lineup_confirmed'],
-        has_market=has_mkt, news_available=('home' in (lu_up.get(str(f['id'])) or {})), news_note=NEWS_NOTE.get(f['id'], {})))
+        has_market=has_mkt, market_source=market_source, news_available=('home' in (lu_up.get(str(f['id'])) or {})), news_note=NEWS_NOTE.get(f['id'], {})))
 
 # reliability per (fixture, market)
 MK = {'o25': 'Over 2.5', 'o35': 'Over 3.5', 'btts': 'BTTS Yes', 'home': 'Home Win', 'away': 'Away Win'}
 def reliability(fx, k):
     issues = []
     if fx['has_market']:
+        lbl = 'market' if fx['market_source'] == 'sofascore' else 'Superbet'
         gap = abs(fx['model'][k] - fx['market'][k])
-        if gap > 0.10: issues.append(('major', f"model {fx['model'][k]*100:.0f}% vs market {fx['market'][k]*100:.0f}% ({gap*100:.0f}-pt gap)"))
-        elif gap > 0.05: issues.append(('minor', f"model {fx['model'][k]*100:.0f}% vs market {fx['market'][k]*100:.0f}%"))
+        if gap > 0.10: issues.append(('major', f"model {fx['model'][k]*100:.0f}% vs {lbl} {fx['market'][k]*100:.0f}% ({gap*100:.0f}-pt gap)"))
+        elif gap > 0.05: issues.append(('minor', f"model {fx['model'][k]*100:.0f}% vs {lbl} {fx['market'][k]*100:.0f}%"))
+        if fx['market_source'] == 'superbet':
+            issues.append(('minor', 'market anchor is a single bookmaker (Superbet.ro), priced six days before kickoff'))
     else:
         issues.append(('minor', 'no bookmaker price published yet: model-only estimate'))
     if not fx['news_available']:

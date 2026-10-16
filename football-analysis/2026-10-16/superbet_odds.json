@@ -1,0 +1,2119 @@
+{
+ "fetched_at": "2026-10-16 11:08 UTC",
+ "events": {
+  "16363884": {
+   "status": "ok",
+   "eventId": 14127710,
+   "matchName": "Everton\u00b7Chelsea",
+   "utcDate": "2026-10-17T11:30:00Z",
+   "tournamentId": 106,
+   "betradarId": "72221318",
+   "odds": {
+    "home": 3.15,
+    "draw": 3.65,
+    "away": 2.17,
+    "btts_yes": 1.59,
+    "btts_no": 2.32,
+    "u25": 2.2,
+    "o25": 1.69,
+    "u35": 1.48,
+    "o35": 2.67
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127710"
+  },
+  "16363887": {
+   "status": "ok",
+   "eventId": 14127713,
+   "matchName": "Manchester City\u00b7Ipswich",
+   "utcDate": "2026-10-17T14:00:00Z",
+   "tournamentId": 106,
+   "betradarId": "72221324",
+   "odds": {
+    "home": 1.25,
+    "draw": 6.6,
+    "away": 9.4,
+    "btts_yes": 1.8,
+    "btts_no": 1.97,
+    "u25": 3,
+    "o25": 1.39,
+    "u35": 1.83,
+    "o35": 2
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127713"
+  },
+  "16363882": {
+   "status": "ok",
+   "eventId": 14127708,
+   "matchName": "Brentford\u00b7Liverpool",
+   "utcDate": "2026-10-17T14:00:00Z",
+   "tournamentId": 106,
+   "betradarId": "72221314",
+   "odds": {
+    "home": 2.42,
+    "draw": 3.65,
+    "away": 2.75,
+    "btts_yes": 1.49,
+    "btts_no": 2.57,
+    "u25": 2.4,
+    "o25": 1.58,
+    "u35": 1.58,
+    "o35": 2.4
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127708"
+  },
+  "16363885": {
+   "status": "ok",
+   "eventId": 14127711,
+   "matchName": "Fulham\u00b7Hull City",
+   "utcDate": "2026-10-17T14:00:00Z",
+   "tournamentId": 106,
+   "betradarId": "72221320",
+   "odds": {
+    "home": 1.73,
+    "draw": 3.9,
+    "away": 4.55,
+    "btts_yes": 1.73,
+    "btts_no": 2.07,
+    "u25": 2.1,
+    "o25": 1.74,
+    "u35": 1.44,
+    "o35": 2.82
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127711"
+  },
+  "16363888": {
+   "status": "ok",
+   "eventId": 14127714,
+   "matchName": "Newcastle\u00b7Aston Villa",
+   "utcDate": "2026-10-17T16:30:00Z",
+   "tournamentId": 106,
+   "betradarId": "72221326",
+   "odds": {
+    "home": 2.3,
+    "draw": 3.65,
+    "away": 2.92,
+    "btts_yes": 1.51,
+    "btts_no": 2.5,
+    "u25": 2.35,
+    "o25": 1.6,
+    "u35": 1.56,
+    "o35": 2.45
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127714"
+  },
+  "16363886": {
+   "status": "ok",
+   "eventId": 14127712,
+   "matchName": "Leeds United\u00b7Manchester United",
+   "utcDate": "2026-10-18T13:00:00Z",
+   "tournamentId": 106,
+   "betradarId": "72221322",
+   "odds": {
+    "home": 2.37,
+    "draw": 3.55,
+    "away": 2.87,
+    "btts_yes": 1.54,
+    "btts_no": 2.45,
+    "u25": 2.27,
+    "o25": 1.65,
+    "u35": 1.52,
+    "o35": 2.55
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127712"
+  },
+  "16363883": {
+   "status": "ok",
+   "eventId": 14127709,
+   "matchName": "Brighton\u00b7Crystal Palace",
+   "utcDate": "2026-10-18T13:00:00Z",
+   "tournamentId": 106,
+   "betradarId": "72221316",
+   "odds": {
+    "home": 1.55,
+    "draw": 4.5,
+    "away": 5.4,
+    "btts_yes": 1.65,
+    "btts_no": 2.2,
+    "u25": 2.47,
+    "o25": 1.55,
+    "u35": 1.6,
+    "o35": 2.35
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127709"
+  },
+  "16363881": {
+   "status": "ok",
+   "eventId": 14127707,
+   "matchName": "Bournemouth\u00b7Sunderland",
+   "utcDate": "2026-10-18T13:00:00Z",
+   "tournamentId": 106,
+   "betradarId": "72221312",
+   "odds": {
+    "home": 2.12,
+    "draw": 3.5,
+    "away": 3.4,
+    "btts_yes": 1.68,
+    "btts_no": 2.15,
+    "u25": 2,
+    "o25": 1.82,
+    "u35": 1.4,
+    "o35": 3
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127707"
+  },
+  "16363889": {
+   "status": "ok",
+   "eventId": 14127715,
+   "matchName": "Nottingham Forest\u00b7Arsenal",
+   "utcDate": "2026-10-18T15:30:00Z",
+   "tournamentId": 106,
+   "betradarId": "72221328",
+   "odds": {
+    "home": 5.55,
+    "draw": 3.9,
+    "away": 1.62,
+    "btts_yes": 1.95,
+    "btts_no": 1.83,
+    "u25": 1.9,
+    "o25": 1.92,
+    "u35": 1.34,
+    "o35": 3.3
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127715"
+  },
+  "16363890": {
+   "status": "ok",
+   "eventId": 14127716,
+   "matchName": "Tottenham\u00b7Coventry City",
+   "utcDate": "2026-10-19T19:00:00Z",
+   "tournamentId": 106,
+   "betradarId": "72221330",
+   "odds": {
+    "home": 1.49,
+    "draw": 4.65,
+    "away": 5.9,
+    "btts_yes": 1.72,
+    "btts_no": 2.07,
+    "u25": 2.4,
+    "o25": 1.58,
+    "u35": 1.56,
+    "o35": 2.45
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127716"
+  },
+  "16421070": {
+   "status": "ok",
+   "eventId": 14142829,
+   "matchName": "Deportivo de A Coruna\u00b7Levante",
+   "utcDate": "2026-10-16T19:00:00Z",
+   "tournamentId": 98,
+   "betradarId": "72478630",
+   "odds": {
+    "home": 2.1,
+    "draw": 3.45,
+    "away": 3.5,
+    "btts_yes": 1.72,
+    "btts_no": 2.1,
+    "u25": 1.95,
+    "o25": 1.87,
+    "u35": 1.37,
+    "o35": 3.15
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142829"
+  },
+  "16421071": {
+   "status": "ok",
+   "eventId": 14142830,
+   "matchName": "Espanyol\u00b7Atletico Madrid",
+   "utcDate": "2026-10-17T12:00:00Z",
+   "tournamentId": 98,
+   "betradarId": "72478632",
+   "odds": {
+    "home": 4.65,
+    "draw": 3.9,
+    "away": 1.72,
+    "btts_yes": 1.78,
+    "btts_no": 2,
+    "u25": 2.02,
+    "o25": 1.8,
+    "u35": 1.4,
+    "o35": 3
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142830"
+  },
+  "16421076": {
+   "status": "ok",
+   "eventId": 14142836,
+   "matchName": "Villarreal\u00b7Elche",
+   "utcDate": "2026-10-17T14:15:00Z",
+   "tournamentId": 98,
+   "betradarId": "72478644",
+   "odds": {
+    "home": 1.46,
+    "draw": 4.9,
+    "away": 5.9,
+    "btts_yes": 1.64,
+    "btts_no": 2.22,
+    "u25": 2.67,
+    "o25": 1.48,
+    "u35": 1.69,
+    "o35": 2.17
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142836"
+  },
+  "16421068": {
+   "status": "ok",
+   "eventId": 14142827,
+   "matchName": "Betis\u00b7Barcelona",
+   "utcDate": "2026-10-17T16:30:00Z",
+   "tournamentId": 98,
+   "betradarId": "72478626",
+   "odds": {
+    "home": 5.6,
+    "draw": 5.45,
+    "away": 1.44,
+    "btts_yes": 1.4,
+    "btts_no": 2.87,
+    "u25": 3.85,
+    "o25": 1.26,
+    "u35": 2.2,
+    "o35": 1.67
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142827"
+  },
+  "16421074": {
+   "status": "ok",
+   "eventId": 14142835,
+   "matchName": "Valencia\u00b7Athletic Bilbao",
+   "utcDate": "2026-10-17T19:00:00Z",
+   "tournamentId": 98,
+   "betradarId": "72478642",
+   "odds": {
+    "home": 3.3,
+    "draw": 3.25,
+    "away": 2.27,
+    "btts_yes": 1.85,
+    "btts_no": 1.92,
+    "u25": 1.74,
+    "o25": 2.1,
+    "u35": 1.28,
+    "o35": 3.75
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142835"
+  },
+  "16421078": {
+   "status": "ok",
+   "eventId": 14142833,
+   "matchName": "Osasuna\u00b7Racing Santander",
+   "utcDate": "2026-10-18T12:00:00Z",
+   "tournamentId": 98,
+   "betradarId": "72478638",
+   "odds": {
+    "home": 2.05,
+    "draw": 3.65,
+    "away": 3.5,
+    "btts_yes": 1.56,
+    "btts_no": 2.4,
+    "u25": 2.27,
+    "o25": 1.64,
+    "u35": 1.52,
+    "o35": 2.55
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142833"
+  },
+  "16421069": {
+   "status": "ok",
+   "eventId": 14142828,
+   "matchName": "Celta Vigo\u00b7Alaves",
+   "utcDate": "2026-10-18T14:15:00Z",
+   "tournamentId": 98,
+   "betradarId": "72478628",
+   "odds": {
+    "home": 2.17,
+    "draw": 3.3,
+    "away": 3.5,
+    "btts_yes": 1.95,
+    "btts_no": 1.83,
+    "u25": 1.67,
+    "o25": 2.22,
+    "u35": 1.24,
+    "o35": 4.1
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142828"
+  },
+  "16421073": {
+   "status": "ok",
+   "eventId": 14142832,
+   "matchName": "Malaga\u00b7Real Sociedad",
+   "utcDate": "2026-10-18T16:30:00Z",
+   "tournamentId": 98,
+   "betradarId": "72478636",
+   "odds": {
+    "home": 3.2,
+    "draw": 3.5,
+    "away": 2.2,
+    "btts_yes": 1.65,
+    "btts_no": 2.2,
+    "u25": 2.05,
+    "o25": 1.78,
+    "u35": 1.41,
+    "o35": 2.92
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142832"
+  },
+  "16421075": {
+   "status": "ok",
+   "eventId": 14142834,
+   "matchName": "Real Madrid\u00b7Sevilla",
+   "utcDate": "2026-10-18T19:00:00Z",
+   "tournamentId": 98,
+   "betradarId": "72478640",
+   "odds": {
+    "home": 1.22,
+    "draw": 6.9,
+    "away": 11,
+    "btts_yes": 1.95,
+    "btts_no": 1.83,
+    "u25": 2.87,
+    "o25": 1.42,
+    "u35": 1.77,
+    "o35": 2.07
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142834"
+  },
+  "16421072": {
+   "status": "ok",
+   "eventId": 14142831,
+   "matchName": "Getafe\u00b7Rayo Vallecano",
+   "utcDate": "2026-10-19T19:00:00Z",
+   "tournamentId": 98,
+   "betradarId": "72478634",
+   "odds": {
+    "home": 2.9,
+    "draw": 3,
+    "away": 2.7,
+    "btts_yes": 2.15,
+    "btts_no": 1.69,
+    "u25": 1.49,
+    "o25": 2.62,
+    "u35": 1.17,
+    "o35": 5.15
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142831"
+  },
+  "16285041": {
+   "status": "ok",
+   "eventId": 14127682,
+   "matchName": "Frosinone\u00b7Sassuolo",
+   "utcDate": "2026-10-16T18:45:00Z",
+   "tournamentId": 104,
+   "betradarId": "71945310",
+   "odds": {
+    "home": 2.4,
+    "draw": 3.75,
+    "away": 2.72,
+    "btts_yes": 1.38,
+    "btts_no": 3,
+    "u25": 2.9,
+    "o25": 1.42,
+    "u35": 1.8,
+    "o35": 2.02
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127682"
+  },
+  "16285047": {
+   "status": "ok",
+   "eventId": 14127689,
+   "matchName": "Venezia\u00b7Napoli",
+   "utcDate": "2026-10-17T13:00:00Z",
+   "tournamentId": 104,
+   "betradarId": "71945324",
+   "odds": {
+    "home": 4.55,
+    "draw": 3.9,
+    "away": 1.73,
+    "btts_yes": 1.7,
+    "btts_no": 2.12,
+    "u25": 2.15,
+    "o25": 1.71,
+    "u35": 1.46,
+    "o35": 2.75
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127689"
+  },
+  "16285039": {
+   "status": "ok",
+   "eventId": 14127680,
+   "matchName": "Bologna\u00b7Inter Milano",
+   "utcDate": "2026-10-17T16:00:00Z",
+   "tournamentId": 104,
+   "betradarId": "71945306",
+   "odds": {
+    "home": 5.2,
+    "draw": 4.1,
+    "away": 1.62,
+    "btts_yes": 1.7,
+    "btts_no": 2.12,
+    "u25": 2.22,
+    "o25": 1.66,
+    "u35": 1.5,
+    "o35": 2.62
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127680"
+  },
+  "16285043": {
+   "status": "ok",
+   "eventId": 14127687,
+   "matchName": "AS Roma\u00b7Genoa",
+   "utcDate": "2026-10-17T18:45:00Z",
+   "tournamentId": 104,
+   "betradarId": "71945320",
+   "odds": {
+    "home": 1.54,
+    "draw": 4.35,
+    "away": 5.8,
+    "btts_yes": 1.85,
+    "btts_no": 1.92,
+    "u25": 2.12,
+    "o25": 1.73,
+    "u35": 1.44,
+    "o35": 2.82
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127687"
+  },
+  "16285049": {
+   "status": "ok",
+   "eventId": 14127688,
+   "matchName": "Udinese\u00b7Lecce",
+   "utcDate": "2026-10-18T10:30:00Z",
+   "tournamentId": 104,
+   "betradarId": "71945322",
+   "odds": {
+    "home": 1.9,
+    "draw": 3.5,
+    "away": 4.15,
+    "btts_yes": 1.88,
+    "btts_no": 1.9,
+    "u25": 1.78,
+    "o25": 2.05,
+    "u35": 1.3,
+    "o35": 3.55
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127688"
+  },
+  "16285038": {
+   "status": "ok",
+   "eventId": 14127681,
+   "matchName": "Fiorentina\u00b7Como",
+   "utcDate": "2026-10-18T13:00:00Z",
+   "tournamentId": 104,
+   "betradarId": "71945308",
+   "odds": {
+    "home": 3.4,
+    "draw": 3.65,
+    "away": 2.07,
+    "btts_yes": 1.57,
+    "btts_no": 2.37,
+    "u25": 2.25,
+    "o25": 1.66,
+    "u35": 1.5,
+    "o35": 2.6
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127681"
+  },
+  "16285040": {
+   "status": "ok",
+   "eventId": 14127684,
+   "matchName": "AC Milan\u00b7Atalanta",
+   "utcDate": "2026-10-18T16:00:00Z",
+   "tournamentId": 104,
+   "betradarId": "71945314",
+   "odds": {
+    "home": 1.82,
+    "draw": 3.75,
+    "away": 4.25,
+    "btts_yes": 1.68,
+    "btts_no": 2.15,
+    "u25": 2.1,
+    "o25": 1.74,
+    "u35": 1.44,
+    "o35": 2.8
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127684"
+  },
+  "16285044": {
+   "status": "ok",
+   "eventId": 14127683,
+   "matchName": "Juventus\u00b7Lazio",
+   "utcDate": "2026-10-18T18:45:00Z",
+   "tournamentId": 104,
+   "betradarId": "71945312",
+   "odds": {
+    "home": 1.69,
+    "draw": 3.8,
+    "away": 5,
+    "btts_yes": 1.9,
+    "btts_no": 1.87,
+    "u25": 1.88,
+    "o25": 1.92,
+    "u35": 1.34,
+    "o35": 3.3
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127683"
+  },
+  "16285045": {
+   "status": "ok",
+   "eventId": 14127685,
+   "matchName": "Monza\u00b7Cagliari",
+   "utcDate": "2026-10-19T16:30:00Z",
+   "tournamentId": 104,
+   "betradarId": "71945316",
+   "odds": {
+    "home": 2.42,
+    "draw": 3.2,
+    "away": 3.1,
+    "btts_yes": 1.82,
+    "btts_no": 1.95,
+    "u25": 1.75,
+    "o25": 2.1,
+    "u35": 1.28,
+    "o35": 3.7
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127685"
+  },
+  "16285042": {
+   "status": "ok",
+   "eventId": 14127686,
+   "matchName": "Parma\u00b7Torino FC",
+   "utcDate": "2026-10-19T18:45:00Z",
+   "tournamentId": 104,
+   "betradarId": "71945318",
+   "odds": {
+    "home": 3.2,
+    "draw": 3.05,
+    "away": 2.42,
+    "btts_yes": 2,
+    "btts_no": 1.78,
+    "u25": 1.59,
+    "o25": 2.37,
+    "u35": 1.21,
+    "o35": 4.45
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127686"
+  },
+  "16310977": {
+   "status": "ok",
+   "eventId": 14127840,
+   "matchName": "Le Mans\u00b7Toulouse",
+   "utcDate": "2026-10-16T18:45:00Z",
+   "tournamentId": 100,
+   "betradarId": "72036224",
+   "odds": {
+    "home": 3,
+    "draw": 3.55,
+    "away": 2.3,
+    "btts_yes": 1.54,
+    "btts_no": 2.42,
+    "u25": 2.25,
+    "o25": 1.65,
+    "u35": 1.52,
+    "o35": 2.55
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127840"
+  },
+  "16310982": {
+   "status": "ok",
+   "eventId": 14127845,
+   "matchName": "Strasbourg\u00b7PSG",
+   "utcDate": "2026-10-17T15:15:00Z",
+   "tournamentId": 100,
+   "betradarId": "72036234",
+   "odds": {
+    "home": 6.3,
+    "draw": 5.4,
+    "away": 1.4,
+    "btts_yes": 1.54,
+    "btts_no": 2.45,
+    "u25": 3.2,
+    "o25": 1.35,
+    "u35": 1.92,
+    "o35": 1.88
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127845"
+  },
+  "16310978": {
+   "status": "ok",
+   "eventId": 14127841,
+   "matchName": "Lille\u00b7Brest",
+   "utcDate": "2026-10-17T18:45:00Z",
+   "tournamentId": 100,
+   "betradarId": "72036226",
+   "odds": {
+    "home": 1.88,
+    "draw": 3.75,
+    "away": 3.9,
+    "btts_yes": 1.63,
+    "btts_no": 2.25,
+    "u25": 2.2,
+    "o25": 1.68,
+    "u35": 1.48,
+    "o35": 2.67
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127841"
+  },
+  "16310983": {
+   "status": "ok",
+   "eventId": 14127846,
+   "matchName": "Troyes\u00b7Lens",
+   "utcDate": "2026-10-17T18:45:00Z",
+   "tournamentId": 100,
+   "betradarId": "72036236",
+   "odds": {
+    "home": 3.85,
+    "draw": 3.85,
+    "away": 1.87,
+    "btts_yes": 1.55,
+    "btts_no": 2.42,
+    "u25": 2.4,
+    "o25": 1.58,
+    "u35": 1.58,
+    "o35": 2.4
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127846"
+  },
+  "16310975": {
+   "status": "ok",
+   "eventId": 14127838,
+   "matchName": "Angers\u00b7Olympique Marseille",
+   "utcDate": "2026-10-18T13:00:00Z",
+   "tournamentId": 100,
+   "betradarId": "72036220",
+   "odds": {
+    "home": 3.25,
+    "draw": 3.7,
+    "away": 2.12,
+    "btts_yes": 1.53,
+    "btts_no": 2.45,
+    "u25": 2.32,
+    "o25": 1.61,
+    "u35": 1.55,
+    "o35": 2.47
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127838"
+  },
+  "16310979": {
+   "status": "ok",
+   "eventId": 14127842,
+   "matchName": "Lorient\u00b7Monaco",
+   "utcDate": "2026-10-18T15:15:00Z",
+   "tournamentId": 100,
+   "betradarId": "72036228",
+   "odds": {
+    "home": 3.55,
+    "draw": 3.4,
+    "away": 2.1,
+    "btts_yes": 1.75,
+    "btts_no": 2.05,
+    "u25": 1.88,
+    "o25": 1.92,
+    "u35": 1.34,
+    "o35": 3.25
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127842"
+  },
+  "16310981": {
+   "status": "ok",
+   "eventId": 14127844,
+   "matchName": "Paris FC\u00b7Rennes",
+   "utcDate": "2026-10-18T15:15:00Z",
+   "tournamentId": 100,
+   "betradarId": "72036232",
+   "odds": {
+    "home": 2.32,
+    "draw": 3.55,
+    "away": 2.95,
+    "btts_yes": 1.54,
+    "btts_no": 2.42,
+    "u25": 2.25,
+    "o25": 1.65,
+    "u35": 1.51,
+    "o35": 2.57
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127844"
+  },
+  "16310976": {
+   "status": "ok",
+   "eventId": 14127839,
+   "matchName": "Le Havre\u00b7Auxerre",
+   "utcDate": "2026-10-18T15:15:00Z",
+   "tournamentId": 100,
+   "betradarId": "72036222",
+   "odds": {
+    "home": 2.3,
+    "draw": 3.4,
+    "away": 3.1,
+    "btts_yes": 1.69,
+    "btts_no": 2.12,
+    "u25": 1.95,
+    "o25": 1.87,
+    "u35": 1.37,
+    "o35": 3.15
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127839"
+  },
+  "16310980": {
+   "status": "ok",
+   "eventId": 14127843,
+   "matchName": "Olympique Lyon\u00b7Nice",
+   "utcDate": "2026-10-18T18:45:00Z",
+   "tournamentId": 100,
+   "betradarId": "72036230",
+   "odds": {
+    "home": 1.69,
+    "draw": 4.1,
+    "away": 4.6,
+    "btts_yes": 1.66,
+    "btts_no": 2.17,
+    "u25": 2.27,
+    "o25": 1.65,
+    "u35": 1.51,
+    "o35": 2.6
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127843"
+  },
+  "16434063": {
+   "status": "ok",
+   "eventId": 14127664,
+   "matchName": "Eintracht Frankfurt\u00b7FC Koln",
+   "utcDate": "2026-10-16T18:30:00Z",
+   "tournamentId": 245,
+   "betradarId": "72513242",
+   "odds": {
+    "home": 1.87,
+    "draw": 4.25,
+    "away": 3.6,
+    "btts_yes": 1.35,
+    "btts_no": 3.1,
+    "u25": 3.35,
+    "o25": 1.33,
+    "u35": 2,
+    "o35": 1.82
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127664"
+  },
+  "16434068": {
+   "status": "ok",
+   "eventId": 14127665,
+   "matchName": "Union Berlin\u00b7Borussia Dortmund",
+   "utcDate": "2026-10-17T13:30:00Z",
+   "tournamentId": 245,
+   "betradarId": "72513244",
+   "odds": {
+    "home": 5,
+    "draw": 4.4,
+    "away": 1.59,
+    "btts_yes": 1.58,
+    "btts_no": 2.35,
+    "u25": 2.57,
+    "o25": 1.51,
+    "u35": 1.65,
+    "o35": 2.25
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127665"
+  },
+  "16434072": {
+   "status": "ok",
+   "eventId": 14127667,
+   "matchName": "Hamburger\u00b7Stuttgart",
+   "utcDate": "2026-10-17T13:30:00Z",
+   "tournamentId": 245,
+   "betradarId": "72513248",
+   "odds": {
+    "home": 3.85,
+    "draw": 4.1,
+    "away": 1.83,
+    "btts_yes": 1.42,
+    "btts_no": 2.82,
+    "u25": 2.92,
+    "o25": 1.41,
+    "u35": 1.82,
+    "o35": 2
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127667"
+  },
+  "16434071": {
+   "status": "ok",
+   "eventId": 14127669,
+   "matchName": "Schalke\u00b7Mainz",
+   "utcDate": "2026-10-17T13:30:00Z",
+   "tournamentId": 245,
+   "betradarId": "72513252",
+   "odds": {
+    "home": 2.95,
+    "draw": 3.6,
+    "away": 2.3,
+    "btts_yes": 1.52,
+    "btts_no": 2.47,
+    "u25": 2.32,
+    "o25": 1.61,
+    "u35": 1.54,
+    "o35": 2.5
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127669"
+  },
+  "16434067": {
+   "status": "ok",
+   "eventId": 14127668,
+   "matchName": "Werder Bremen\u00b7Paderborn",
+   "utcDate": "2026-10-17T13:30:00Z",
+   "tournamentId": 245,
+   "betradarId": "72513250",
+   "odds": {
+    "home": 1.82,
+    "draw": 4,
+    "away": 4,
+    "btts_yes": 1.53,
+    "btts_no": 2.47,
+    "u25": 2.5,
+    "o25": 1.54,
+    "u35": 1.62,
+    "o35": 2.32
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127668"
+  },
+  "16434066": {
+   "status": "ok",
+   "eventId": 14127670,
+   "matchName": "Elversberg\u00b7Augsburg",
+   "utcDate": "2026-10-17T13:30:00Z",
+   "tournamentId": 245,
+   "betradarId": "72513254",
+   "odds": {
+    "home": 2.5,
+    "draw": 3.75,
+    "away": 2.6,
+    "btts_yes": 1.41,
+    "btts_no": 2.85,
+    "u25": 2.72,
+    "o25": 1.46,
+    "u35": 1.73,
+    "o35": 2.12
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127670"
+  },
+  "16434062": {
+   "status": "ok",
+   "eventId": 14127662,
+   "matchName": "Bayern Munchen\u00b7RB Leipzig",
+   "utcDate": "2026-10-17T16:30:00Z",
+   "tournamentId": 245,
+   "betradarId": "72513238",
+   "odds": {
+    "home": 1.23,
+    "draw": 7.7,
+    "away": 9,
+    "btts_yes": 1.4,
+    "btts_no": 2.9,
+    "u25": 5.65,
+    "o25": 1.14,
+    "u35": 3,
+    "o35": 1.4
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127662"
+  },
+  "16434065": {
+   "status": "ok",
+   "eventId": 14127663,
+   "matchName": "Bayer Leverkusen\u00b7Freiburg",
+   "utcDate": "2026-10-18T13:30:00Z",
+   "tournamentId": 245,
+   "betradarId": "72513240",
+   "odds": {
+    "home": 1.73,
+    "draw": 4.2,
+    "away": 4.25,
+    "btts_yes": 1.5,
+    "btts_no": 2.55,
+    "u25": 2.67,
+    "o25": 1.48,
+    "u35": 1.7,
+    "o35": 2.17
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127663"
+  },
+  "16434061": {
+   "status": "ok",
+   "eventId": 14127666,
+   "matchName": "Borussia Monchengladbach\u00b7Hoffenheim",
+   "utcDate": "2026-10-18T15:30:00Z",
+   "tournamentId": 245,
+   "betradarId": "72513246",
+   "odds": {
+    "home": 3.05,
+    "draw": 4,
+    "away": 2.12,
+    "btts_yes": 1.39,
+    "btts_no": 2.92,
+    "u25": 2.92,
+    "o25": 1.41,
+    "u35": 1.82,
+    "o35": 2
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14127666"
+  },
+  "16483696": {
+   "status": "ok",
+   "eventId": 14142774,
+   "matchName": "Corum FK\u00b7Rizespor",
+   "utcDate": "2026-10-16T17:00:00Z",
+   "tournamentId": 323,
+   "betradarId": "72723260",
+   "odds": {
+    "home": 2.07,
+    "draw": 3.65,
+    "away": 3.35,
+    "btts_yes": 1.55,
+    "btts_no": 2.35,
+    "u25": 2.27,
+    "o25": 1.64,
+    "u35": 1.52,
+    "o35": 2.57
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142774"
+  },
+  "16483698": {
+   "status": "ok",
+   "eventId": 14142777,
+   "matchName": "Erzurumspor\u00b7Eyupspor",
+   "utcDate": "2026-10-17T10:30:00Z",
+   "tournamentId": 323,
+   "betradarId": "72723266",
+   "odds": {
+    "home": 1.63,
+    "draw": 3.8,
+    "away": 5.35,
+    "btts_yes": 2.05,
+    "btts_no": 1.72,
+    "u25": 1.76,
+    "o25": 2.07,
+    "u35": 1.28,
+    "o35": 3.7
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142777"
+  },
+  "16483702": {
+   "status": "ok",
+   "eventId": 14142773,
+   "matchName": "Genclerbirligi\u00b7Galatasaray",
+   "utcDate": "2026-10-17T13:00:00Z",
+   "tournamentId": 323,
+   "betradarId": "72723258",
+   "odds": {
+    "home": 6.4,
+    "draw": 5,
+    "away": 1.41,
+    "btts_yes": 1.69,
+    "btts_no": 2.1,
+    "u25": 2.65,
+    "o25": 1.49,
+    "u35": 1.68,
+    "o35": 2.2
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142773"
+  },
+  "16483700": {
+   "status": "ok",
+   "eventId": 14142772,
+   "matchName": "Amedspor\u00b7Konyaspor",
+   "utcDate": "2026-10-17T13:00:00Z",
+   "tournamentId": 323,
+   "betradarId": "72723256",
+   "odds": {
+    "home": 1.92,
+    "draw": 3.45,
+    "away": 4,
+    "btts_yes": 1.76,
+    "btts_no": 2,
+    "u25": 1.9,
+    "o25": 1.92,
+    "u35": 1.35,
+    "o35": 3.25
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142772"
+  },
+  "16483697": {
+   "status": "ok",
+   "eventId": 14142775,
+   "matchName": "Fenerbahce\u00b7Alanyaspor",
+   "utcDate": "2026-10-17T16:00:00Z",
+   "tournamentId": 323,
+   "betradarId": "72723262",
+   "odds": {
+    "home": 1.3,
+    "draw": 5.6,
+    "away": 8.6,
+    "btts_yes": 1.95,
+    "btts_no": 1.8,
+    "u25": 2.42,
+    "o25": 1.57,
+    "u35": 1.57,
+    "o35": 2.42
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142775"
+  },
+  "16483692": {
+   "status": "ok",
+   "eventId": 14142770,
+   "matchName": "Kas\u0131mpasa\u00b7Samsunspor",
+   "utcDate": "2026-10-18T10:30:00Z",
+   "tournamentId": 323,
+   "betradarId": "72723252",
+   "odds": {
+    "home": 2.5,
+    "draw": 3.35,
+    "away": 2.77,
+    "btts_yes": 1.77,
+    "btts_no": 1.97,
+    "u25": 1.82,
+    "o25": 2,
+    "u35": 1.31,
+    "o35": 3.5
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142770"
+  },
+  "16483695": {
+   "status": "ok",
+   "eventId": 14142776,
+   "matchName": "Kocaelispor\u00b7Goztepe",
+   "utcDate": "2026-10-18T13:00:00Z",
+   "tournamentId": 323,
+   "betradarId": "72723264",
+   "odds": {
+    "home": 2.87,
+    "draw": 3.4,
+    "away": 2.37,
+    "btts_yes": 1.71,
+    "btts_no": 2.07,
+    "u25": 1.9,
+    "o25": 1.9,
+    "u35": 1.35,
+    "o35": 3.25
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142776"
+  },
+  "16483701": {
+   "status": "ok",
+   "eventId": 14142771,
+   "matchName": "Basaksehir\u00b7Gaziantep",
+   "utcDate": "2026-10-18T16:00:00Z",
+   "tournamentId": 323,
+   "betradarId": "72723254",
+   "odds": {
+    "home": 1.68,
+    "draw": 4,
+    "away": 4.55,
+    "btts_yes": 1.61,
+    "btts_no": 2.22,
+    "u25": 2.35,
+    "o25": 1.6,
+    "u35": 1.55,
+    "o35": 2.47
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142771"
+  },
+  "16483694": {
+   "status": "ok",
+   "eventId": 14142769,
+   "matchName": "Trabzonspor\u00b7Besiktas",
+   "utcDate": "2026-10-19T17:00:00Z",
+   "tournamentId": 323,
+   "betradarId": "72723250",
+   "odds": {
+    "home": 2.87,
+    "draw": 3.65,
+    "away": 2.27,
+    "btts_yes": 1.49,
+    "btts_no": 2.52,
+    "u25": 2.4,
+    "o25": 1.57,
+    "u35": 1.58,
+    "o35": 2.4
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14142769"
+  },
+  "16939015": {
+   "status": "ok",
+   "eventId": 14738976,
+   "matchName": "Sabah Baku\u00b7Borussia Dortmund",
+   "utcDate": "2026-10-20T16:45:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165942",
+   "odds": {
+    "home": 8.3,
+    "draw": 5.9,
+    "away": 1.3,
+    "btts_yes": 1.74,
+    "btts_no": 2.05,
+    "u25": 2.9,
+    "o25": 1.42,
+    "u35": 1.78,
+    "o35": 2.05
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14738976"
+  },
+  "16938965": {
+   "status": "ok",
+   "eventId": 14738984,
+   "matchName": "Fenerbahce\u00b7Slavia Praga",
+   "utcDate": "2026-10-20T16:45:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165940",
+   "odds": {
+    "home": 1.68,
+    "draw": 4.1,
+    "away": 4.7,
+    "btts_yes": 1.65,
+    "btts_no": 2.2,
+    "u25": 2.3,
+    "o25": 1.63,
+    "u35": 1.53,
+    "o35": 2.52
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14738984"
+  },
+  "16938793": {
+   "status": "ok",
+   "eventId": 14738978,
+   "matchName": "PSG\u00b7Barcelona",
+   "utcDate": "2026-10-20T19:00:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165952",
+   "odds": {
+    "home": 2.45,
+    "draw": 4.1,
+    "away": 2.52,
+    "btts_yes": 1.23,
+    "btts_no": 4,
+    "u25": 4.3,
+    "o25": 1.22,
+    "u35": 2.45,
+    "o35": 1.56
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14738978"
+  },
+  "16938775": {
+   "status": "ok",
+   "eventId": 14738986,
+   "matchName": "Manchester City\u00b7AEK Atena",
+   "utcDate": "2026-10-20T19:00:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165950",
+   "odds": {
+    "home": 1.07,
+    "draw": 13,
+    "away": 27,
+    "btts_yes": 2.57,
+    "btts_no": 1.49,
+    "u25": 3.7,
+    "o25": 1.28,
+    "u35": 2.15,
+    "o35": 1.72
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14738986"
+  },
+  "16938800": {
+   "status": "ok",
+   "eventId": 14738980,
+   "matchName": "Liverpool\u00b7Villarreal",
+   "utcDate": "2026-10-20T19:00:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165948",
+   "odds": {
+    "home": 1.51,
+    "draw": 4.6,
+    "away": 5.65,
+    "btts_yes": 1.65,
+    "btts_no": 2.2,
+    "u25": 2.52,
+    "o25": 1.53,
+    "u35": 1.62,
+    "o35": 2.32
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14738980"
+  },
+  "16939025": {
+   "status": "ok",
+   "eventId": 14738979,
+   "matchName": "Stuttgart\u00b7Atletico Madrid",
+   "utcDate": "2026-10-20T19:00:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165956",
+   "odds": {
+    "home": 2.87,
+    "draw": 3.7,
+    "away": 2.3,
+    "btts_yes": 1.48,
+    "btts_no": 2.6,
+    "u25": 2.47,
+    "o25": 1.55,
+    "u35": 1.61,
+    "o35": 2.35
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14738979"
+  },
+  "16938987": {
+   "status": "ok",
+   "eventId": 14738987,
+   "matchName": "Napoli\u00b7Bodo/Glimt",
+   "utcDate": "2026-10-20T19:00:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165954",
+   "odds": {
+    "home": 1.6,
+    "draw": 4.45,
+    "away": 4.9,
+    "btts_yes": 1.57,
+    "btts_no": 2.37,
+    "u25": 2.62,
+    "o25": 1.49,
+    "u35": 1.67,
+    "o35": 2.22
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14738987"
+  },
+  "16938855": {
+   "status": "ok",
+   "eventId": 14738977,
+   "matchName": "Porto\u00b7PSV Eindhoven",
+   "utcDate": "2026-10-20T19:00:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165946",
+   "odds": {
+    "home": 1.8,
+    "draw": 4,
+    "away": 4.1,
+    "btts_yes": 1.57,
+    "btts_no": 2.37,
+    "u25": 2.42,
+    "o25": 1.57,
+    "u35": 1.58,
+    "o35": 2.4
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14738977"
+  },
+  "16938875": {
+   "status": "ok",
+   "eventId": 14738985,
+   "matchName": "AS Roma\u00b7Slovan Bratislava",
+   "utcDate": "2026-10-20T19:00:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165944",
+   "odds": {
+    "home": 1.16,
+    "draw": 8.3,
+    "away": 13,
+    "btts_yes": 1.9,
+    "btts_no": 1.87,
+    "u25": 3.45,
+    "o25": 1.31,
+    "u35": 2.02,
+    "o35": 1.8
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14738985"
+  },
+  "16939033": {
+   "status": "ok",
+   "eventId": 14738988,
+   "matchName": "Como\u00b7Manchester United",
+   "utcDate": "2026-10-21T16:45:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165958",
+   "odds": {
+    "home": 2.3,
+    "draw": 3.65,
+    "away": 2.92,
+    "btts_yes": 1.55,
+    "btts_no": 2.42,
+    "u25": 2.27,
+    "o25": 1.64,
+    "u35": 1.52,
+    "o35": 2.55
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14738988"
+  },
+  "16938992": {
+   "status": "ok",
+   "eventId": 14738989,
+   "matchName": "Lille\u00b7Galatasaray",
+   "utcDate": "2026-10-21T16:45:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165960",
+   "odds": {
+    "home": 2.25,
+    "draw": 3.55,
+    "away": 3.05,
+    "btts_yes": 1.55,
+    "btts_no": 2.42,
+    "u25": 2.25,
+    "o25": 1.65,
+    "u35": 1.51,
+    "o35": 2.57
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14738989"
+  },
+  "16938770": {
+   "status": "ok",
+   "eventId": 14738994,
+   "matchName": "Real Madrid\u00b7RB Leipzig",
+   "utcDate": "2026-10-21T19:00:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165970",
+   "odds": {
+    "home": 1.27,
+    "draw": 6.5,
+    "away": 8.6,
+    "btts_yes": 1.56,
+    "btts_no": 2.37,
+    "u25": 3.75,
+    "o25": 1.28,
+    "u35": 2.17,
+    "o35": 1.7
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14738994"
+  },
+  "16938859": {
+   "status": "ok",
+   "eventId": 14738990,
+   "matchName": "Bayern Munchen\u00b7Arsenal",
+   "utcDate": "2026-10-21T19:00:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165966",
+   "odds": {
+    "home": 2.2,
+    "draw": 3.6,
+    "away": 3.15,
+    "btts_yes": 1.52,
+    "btts_no": 2.5,
+    "u25": 2.35,
+    "o25": 1.61,
+    "u35": 1.56,
+    "o35": 2.45
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14738990"
+  },
+  "16938778": {
+   "status": "ok",
+   "eventId": 14738983,
+   "matchName": "Inter Milano\u00b7Shakhtar Donetsk",
+   "utcDate": "2026-10-21T19:00:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165968",
+   "odds": {
+    "home": 1.22,
+    "draw": 7.2,
+    "away": 10,
+    "btts_yes": 1.75,
+    "btts_no": 2.05,
+    "u25": 3.4,
+    "o25": 1.32,
+    "u35": 2,
+    "o35": 1.82
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14738983"
+  },
+  "16938853": {
+   "status": "ok",
+   "eventId": 14738982,
+   "matchName": "Aston Villa\u00b7Viking",
+   "utcDate": "2026-10-21T19:00:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165962",
+   "odds": {
+    "home": 1.25,
+    "draw": 6.4,
+    "away": 9.9,
+    "btts_yes": 1.68,
+    "btts_no": 2.15,
+    "u25": 3.35,
+    "o25": 1.33,
+    "u35": 2,
+    "o35": 1.82
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14738982"
+  },
+  "16938870": {
+   "status": "ok",
+   "eventId": 14738991,
+   "matchName": "Betis\u00b7Feyenoord Rotterdam",
+   "utcDate": "2026-10-21T19:00:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165972",
+   "odds": {
+    "home": 1.54,
+    "draw": 4.75,
+    "away": 5.2,
+    "btts_yes": 1.53,
+    "btts_no": 2.47,
+    "u25": 2.9,
+    "o25": 1.42,
+    "u35": 1.78,
+    "o35": 2.05
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14738991"
+  },
+  "16938889": {
+   "status": "ok",
+   "eventId": 14739000,
+   "matchName": "Sporting Lisabona\u00b7LASK Linz",
+   "utcDate": "2026-10-21T19:00:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165974",
+   "odds": {
+    "home": 1.28,
+    "draw": 6.4,
+    "away": 8.6,
+    "btts_yes": 1.7,
+    "btts_no": 2.12,
+    "u25": 3.2,
+    "o25": 1.36,
+    "u35": 1.9,
+    "o35": 1.9
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14739000"
+  },
+  "16938843": {
+   "status": "ok",
+   "eventId": 14738981,
+   "matchName": "Club Brugge\u00b7Lens",
+   "utcDate": "2026-10-21T19:00:00Z",
+   "tournamentId": 80794,
+   "betradarId": "74165964",
+   "odds": {
+    "home": 2.15,
+    "draw": 3.7,
+    "away": 3.15,
+    "btts_yes": 1.53,
+    "btts_no": 2.45,
+    "u25": 2.32,
+    "o25": 1.61,
+    "u35": 1.55,
+    "o35": 2.47
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14738981"
+  },
+  "16943954": {
+   "status": "ok",
+   "eventId": 14744322,
+   "matchName": "Juventus\u00b7Rennes",
+   "utcDate": "2026-10-22T16:45:00Z",
+   "tournamentId": 688,
+   "betradarId": "74172992",
+   "odds": {
+    "home": 1.62,
+    "draw": 4.15,
+    "away": 5.15,
+    "btts_yes": 1.8,
+    "btts_no": 2,
+    "u25": 2.1,
+    "o25": 1.75,
+    "u35": 1.43,
+    "o35": 2.85
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744322"
+  },
+  "16945558": {
+   "status": "ok",
+   "eventId": 14744330,
+   "matchName": "OFI Crete\u00b7Bayer Leverkusen",
+   "utcDate": "2026-10-22T16:45:00Z",
+   "tournamentId": 688,
+   "betradarId": "74172996",
+   "odds": {
+    "home": 9.6,
+    "draw": 6.3,
+    "away": 1.26,
+    "btts_yes": 1.78,
+    "btts_no": 2,
+    "u25": 3,
+    "o25": 1.4,
+    "u35": 1.83,
+    "o35": 2
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744330"
+  },
+  "16945023": {
+   "status": "ok",
+   "eventId": 14744323,
+   "matchName": "Sturm Graz\u00b7Olympique Marseille",
+   "utcDate": "2026-10-22T16:45:00Z",
+   "tournamentId": 688,
+   "betradarId": "74173000",
+   "odds": {
+    "home": 3.55,
+    "draw": 3.6,
+    "away": 2.02,
+    "btts_yes": 1.62,
+    "btts_no": 2.27,
+    "u25": 2.15,
+    "o25": 1.71,
+    "u35": 1.46,
+    "o35": 2.72
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744323"
+  },
+  "16945030": {
+   "status": "ok",
+   "eventId": 14744327,
+   "matchName": "Lech Poznan\u00b7Sunderland",
+   "utcDate": "2026-10-22T16:45:00Z",
+   "tournamentId": 688,
+   "betradarId": "74172994",
+   "odds": {
+    "home": 4.85,
+    "draw": 4.1,
+    "away": 1.66,
+    "btts_yes": 1.82,
+    "btts_no": 1.95,
+    "u25": 2.02,
+    "o25": 1.8,
+    "u35": 1.39,
+    "o35": 3
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744327"
+  },
+  "16944506": {
+   "status": "ok",
+   "eventId": 14744324,
+   "matchName": "Dinamo Zagreb\u00b7NEC Nijmegen",
+   "utcDate": "2026-10-22T16:45:00Z",
+   "tournamentId": 688,
+   "betradarId": "74172990",
+   "odds": {
+    "home": 1.74,
+    "draw": 4.1,
+    "away": 4.35,
+    "btts_yes": 1.56,
+    "btts_no": 2.37,
+    "u25": 2.47,
+    "o25": 1.55,
+    "u35": 1.6,
+    "o35": 2.35
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744324"
+  },
+  "16944963": {
+   "status": "ok",
+   "eventId": 14744333,
+   "matchName": "Royale Union SG\u00b7Hapoel Beer Sheva",
+   "utcDate": "2026-10-22T16:45:00Z",
+   "tournamentId": 688,
+   "betradarId": "74172998",
+   "odds": {
+    "home": 1.31,
+    "draw": 5.75,
+    "away": 8.3,
+    "btts_yes": 1.85,
+    "btts_no": 1.92,
+    "u25": 2.62,
+    "o25": 1.5,
+    "u35": 1.65,
+    "o35": 2.25
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744333"
+  },
+  "16945548": {
+   "status": "ok",
+   "eventId": 14744325,
+   "matchName": "Ararat Armenia\u00b7AZ Alkmaar",
+   "utcDate": "2026-10-22T16:45:00Z",
+   "tournamentId": 688,
+   "betradarId": "74172986",
+   "odds": {
+    "home": 6,
+    "draw": 4.55,
+    "away": 1.5,
+    "btts_yes": 1.7,
+    "btts_no": 2.12,
+    "u25": 2.42,
+    "o25": 1.57,
+    "u35": 1.58,
+    "o35": 2.4
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744325"
+  },
+  "16944999": {
+   "status": "ok",
+   "eventId": 14744321,
+   "matchName": "Ferencvaros\u00b7SCU Torreense",
+   "utcDate": "2026-10-22T16:45:00Z",
+   "tournamentId": 688,
+   "betradarId": "74172988",
+   "odds": {
+    "home": 1.37,
+    "draw": 5.2,
+    "away": 7.4,
+    "btts_yes": 1.92,
+    "btts_no": 1.87,
+    "u25": 2.32,
+    "o25": 1.62,
+    "u35": 1.52,
+    "o35": 2.55
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744321"
+  },
+  "16945019": {
+   "status": "ok",
+   "eventId": 14744332,
+   "matchName": "Bournemouth\u00b7AC Milan",
+   "utcDate": "2026-10-22T19:00:00Z",
+   "tournamentId": 688,
+   "betradarId": "74173002",
+   "odds": {
+    "home": 2.2,
+    "draw": 3.6,
+    "away": 3.15,
+    "btts_yes": 1.61,
+    "btts_no": 2.27,
+    "u25": 2.12,
+    "o25": 1.72,
+    "u35": 1.45,
+    "o35": 2.77
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744332"
+  },
+  "16945040": {
+   "status": "ok",
+   "eventId": 14744344,
+   "matchName": "Omonia Nicosia\u00b7Benfica",
+   "utcDate": "2026-10-22T19:00:00Z",
+   "tournamentId": 688,
+   "betradarId": "74173018",
+   "odds": {
+    "home": 6.5,
+    "draw": 4.75,
+    "away": 1.45,
+    "btts_yes": 1.85,
+    "btts_no": 1.92,
+    "u25": 2.22,
+    "o25": 1.66,
+    "u35": 1.49,
+    "o35": 2.65
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744344"
+  },
+  "16945541": {
+   "status": "ok",
+   "eventId": 14744326,
+   "matchName": "Besiktas\u00b7Crystal Palace",
+   "utcDate": "2026-10-22T19:00:00Z",
+   "tournamentId": 688,
+   "betradarId": "74173004",
+   "odds": {
+    "home": 2.2,
+    "draw": 3.75,
+    "away": 3.05,
+    "btts_yes": 1.52,
+    "btts_no": 2.5,
+    "u25": 2.37,
+    "o25": 1.59,
+    "u35": 1.56,
+    "o35": 2.45
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744326"
+  },
+  "16945010": {
+   "status": "ok",
+   "eventId": 14744328,
+   "matchName": "Celtic\u00b7Celta Vigo",
+   "utcDate": "2026-10-22T19:00:00Z",
+   "tournamentId": 688,
+   "betradarId": "74173006",
+   "odds": {
+    "home": 3,
+    "draw": 3.5,
+    "away": 2.32,
+    "btts_yes": 1.66,
+    "btts_no": 2.2,
+    "u25": 2.02,
+    "o25": 1.8,
+    "u35": 1.4,
+    "o35": 2.95
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744328"
+  },
+  "16945531": {
+   "status": "ok",
+   "eventId": 14744345,
+   "matchName": "Hoffenheim\u00b7Olympique Lyon",
+   "utcDate": "2026-10-22T19:00:00Z",
+   "tournamentId": 688,
+   "betradarId": "74173020",
+   "odds": {
+    "home": 2.05,
+    "draw": 3.85,
+    "away": 3.3,
+    "btts_yes": 1.5,
+    "btts_no": 2.55,
+    "u25": 2.47,
+    "o25": 1.55,
+    "u35": 1.61,
+    "o35": 2.35
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744345"
+  },
+  "16945562": {
+   "status": "ok",
+   "eventId": 14744337,
+   "matchName": "Lillestrom\u00b7Real Sociedad",
+   "utcDate": "2026-10-22T19:00:00Z",
+   "tournamentId": 688,
+   "betradarId": "74173012",
+   "odds": {
+    "home": 5.5,
+    "draw": 4.5,
+    "away": 1.54,
+    "btts_yes": 1.73,
+    "btts_no": 2.07,
+    "u25": 2.3,
+    "o25": 1.63,
+    "u35": 1.52,
+    "o35": 2.55
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744337"
+  },
+  "16944476": {
+   "status": "ok",
+   "eventId": 14744349,
+   "matchName": "Olympiacos\u00b7Sparta Praga",
+   "utcDate": "2026-10-22T19:00:00Z",
+   "tournamentId": 688,
+   "betradarId": "74173016",
+   "odds": {
+    "home": 1.62,
+    "draw": 4,
+    "away": 5.3,
+    "btts_yes": 1.83,
+    "btts_no": 1.95,
+    "u25": 2.02,
+    "o25": 1.8,
+    "u35": 1.4,
+    "o35": 3
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744349"
+  },
+  "16945526": {
+   "status": "ok",
+   "eventId": 14744336,
+   "matchName": "Celje\u00b7RB Salzburg",
+   "utcDate": "2026-10-22T19:00:00Z",
+   "tournamentId": 688,
+   "betradarId": "74173014",
+   "odds": {
+    "home": 3.9,
+    "draw": 3.75,
+    "away": 1.9,
+    "btts_yes": 1.66,
+    "btts_no": 2.2,
+    "u25": 2.12,
+    "o25": 1.73,
+    "u35": 1.45,
+    "o35": 2.77
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744336"
+  },
+  "16945016": {
+   "status": "ok",
+   "eventId": 14744331,
+   "matchName": "Jagiellonia Bialystok\u00b7Anderlecht",
+   "utcDate": "2026-10-22T19:00:00Z",
+   "tournamentId": 688,
+   "betradarId": "74173010",
+   "odds": {
+    "home": 3.05,
+    "draw": 3.5,
+    "away": 2.3,
+    "btts_yes": 1.63,
+    "btts_no": 2.25,
+    "u25": 2.07,
+    "o25": 1.77,
+    "u35": 1.43,
+    "o35": 2.87
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744331"
+  },
+  "16944995": {
+   "status": "ok",
+   "eventId": 14744329,
+   "matchName": "Viktoria Plzen\u00b7Levski Sofia",
+   "utcDate": "2026-10-22T19:00:00Z",
+   "tournamentId": 688,
+   "betradarId": "74173008",
+   "odds": {
+    "home": 1.72,
+    "draw": 3.9,
+    "away": 4.65,
+    "btts_yes": 1.71,
+    "btts_no": 2.12,
+    "u25": 2.15,
+    "o25": 1.71,
+    "u35": 1.46,
+    "o35": 2.75
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744329"
+  },
+  "16945678": {
+   "status": "ok",
+   "eventId": 14744381,
+   "matchName": "Kairat Almaty\u00b7Panathinaikos",
+   "utcDate": "2026-10-22T14:30:00Z",
+   "tournamentId": 80813,
+   "betradarId": "74173212",
+   "odds": {
+    "home": 4.1,
+    "draw": 3.7,
+    "away": 1.85,
+    "btts_yes": 1.75,
+    "btts_no": 2.05,
+    "u25": 1.97,
+    "o25": 1.83,
+    "u35": 1.38,
+    "o35": 3.05
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744381"
+  },
+  "16945692": {
+   "status": "ok",
+   "eventId": 14744390,
+   "matchName": "Jablonec\u00b7Brighton",
+   "utcDate": "2026-10-22T16:45:00Z",
+   "tournamentId": 80813,
+   "betradarId": "74173228",
+   "odds": {
+    "home": 6.6,
+    "draw": 4.9,
+    "away": 1.43,
+    "btts_yes": 1.7,
+    "btts_no": 2.12,
+    "u25": 2.55,
+    "o25": 1.52,
+    "u35": 1.64,
+    "o35": 2.27
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744390"
+  },
+  "16945631": {
+   "status": "ok",
+   "eventId": 14744389,
+   "matchName": "Crvena Zvezda\u00b7FC Copenhaga",
+   "utcDate": "2026-10-22T16:45:00Z",
+   "tournamentId": 80813,
+   "betradarId": "74173224",
+   "odds": {
+    "home": 2.45,
+    "draw": 3.55,
+    "away": 2.77,
+    "btts_yes": 1.58,
+    "btts_no": 2.35,
+    "u25": 2.17,
+    "o25": 1.7,
+    "u35": 1.47,
+    "o35": 2.7
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744389"
+  },
+  "16945666": {
+   "status": "listed_no_odds",
+   "eventId": 14744384,
+   "matchName": "Trabzonspor\u00b7Hearts",
+   "checked_at": "2026-10-16 ~11:20 UTC"
+  },
+  "16945652": {
+   "status": "listed_no_odds",
+   "eventId": 14744382,
+   "matchName": "Getafe\u00b7Lugano",
+   "checked_at": "2026-10-16 ~11:20 UTC"
+  },
+  "16945627": {
+   "status": "ok",
+   "eventId": 14744391,
+   "matchName": "Pafos\u00b7Riga FC",
+   "utcDate": "2026-10-22T16:45:00Z",
+   "tournamentId": 80813,
+   "betradarId": "74173242",
+   "odds": {
+    "home": 1.57,
+    "draw": 4.25,
+    "away": 5.55,
+    "btts_yes": 1.83,
+    "btts_no": 1.95,
+    "u25": 2.1,
+    "o25": 1.75,
+    "u35": 1.43,
+    "o35": 2.85
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744391"
+  },
+  "16945707": {
+   "status": "ok",
+   "eventId": 14744376,
+   "matchName": "Nordsjalland\u00b7CSKA Sofia FC",
+   "utcDate": "2026-10-22T16:45:00Z",
+   "tournamentId": 80813,
+   "betradarId": "74173220",
+   "odds": {
+    "home": 1.53,
+    "draw": 4.45,
+    "away": 5.65,
+    "btts_yes": 1.72,
+    "btts_no": 2.07,
+    "u25": 2.32,
+    "o25": 1.62,
+    "u35": 1.53,
+    "o35": 2.52
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744376"
+  },
+  "16945710": {
+   "status": "listed_no_odds",
+   "eventId": 14744378,
+   "matchName": "Kauno Zalgiris\u00b7Brann",
+   "checked_at": "2026-10-16 ~11:20 UTC"
+  },
+  "16945720": {
+   "status": "listed_no_odds",
+   "eventId": 14744375,
+   "matchName": "Iberia 1999\u00b7Mjallby",
+   "checked_at": "2026-10-16 ~11:20 UTC"
+  },
+  "16945702": {
+   "status": "ok",
+   "eventId": 14744383,
+   "matchName": "Inter Escaldes\u00b7Universitatea Craiova",
+   "utcDate": "2026-10-22T16:45:00Z",
+   "tournamentId": 80813,
+   "betradarId": "74173240",
+   "odds": {
+    "home": 5.4,
+    "draw": 3.85,
+    "away": 1.65,
+    "btts_yes": 1.95,
+    "btts_no": 1.83,
+    "u25": 1.87,
+    "o25": 1.95,
+    "u35": 1.34,
+    "o35": 3.3
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744383"
+  },
+  "16945613": {
+   "status": "ok",
+   "eventId": 14744387,
+   "matchName": "Ajax Amsterdam\u00b7Atalanta",
+   "utcDate": "2026-10-22T19:00:00Z",
+   "tournamentId": 80813,
+   "betradarId": "74173250",
+   "odds": {
+    "home": 2.47,
+    "draw": 3.6,
+    "away": 2.7,
+    "btts_yes": 1.63,
+    "btts_no": 2.25,
+    "u25": 2.1,
+    "o25": 1.75,
+    "u35": 1.43,
+    "o35": 2.85
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744387"
+  },
+  "16945619": {
+   "status": "ok",
+   "eventId": 14744386,
+   "matchName": "Monaco\u00b7Freiburg",
+   "utcDate": "2026-10-22T19:00:00Z",
+   "tournamentId": 80813,
+   "betradarId": "74173258",
+   "odds": {
+    "home": 2.27,
+    "draw": 3.7,
+    "away": 2.95,
+    "btts_yes": 1.55,
+    "btts_no": 2.42,
+    "u25": 2.27,
+    "o25": 1.64,
+    "u35": 1.52,
+    "o35": 2.55
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744386"
+  },
+  "16945609": {
+   "status": "ok",
+   "eventId": 14744394,
+   "matchName": "Braga\u00b7Gent",
+   "utcDate": "2026-10-22T19:00:00Z",
+   "tournamentId": 80813,
+   "betradarId": "74173274",
+   "odds": {
+    "home": 1.82,
+    "draw": 3.75,
+    "away": 4.3,
+    "btts_yes": 1.78,
+    "btts_no": 2,
+    "u25": 1.97,
+    "o25": 1.85,
+    "u35": 1.37,
+    "o35": 3.1
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744394"
+  },
+  "16945636": {
+   "status": "ok",
+   "eventId": 14744399,
+   "matchName": "Midtjylland\u00b7Sint-Truiden",
+   "utcDate": "2026-10-22T19:00:00Z",
+   "tournamentId": 80813,
+   "betradarId": "74173262",
+   "odds": {
+    "home": 1.85,
+    "draw": 3.85,
+    "away": 4,
+    "btts_yes": 1.55,
+    "btts_no": 2.42,
+    "u25": 2.37,
+    "o25": 1.59,
+    "u35": 1.57,
+    "o35": 2.42
+   },
+   "url": "https://superbet.ro/pariuri-sportive/fotbal/14744399"
+  },
+  "16945717": {
+   "status": "listed_no_odds",
+   "eventId": 14744395,
+   "matchName": "Thun\u00b7Hajduk Split",
+   "checked_at": "2026-10-16 ~11:20 UTC"
+  },
+  "16945649": {
+   "status": "listed_no_odds",
+   "eventId": 14744393,
+   "matchName": "Lincoln Red Imps\u00b7Twente",
+   "checked_at": "2026-10-16 ~11:20 UTC"
+  },
+  "16945663": {
+   "status": "listed_no_odds",
+   "eventId": 14744400,
+   "matchName": "Borac Banja Luka\u00b7KuPS",
+   "checked_at": "2026-10-16 ~11:20 UTC"
+  },
+  "16945691": {
+   "status": "listed_no_odds",
+   "eventId": 14744385,
+   "matchName": "AGF Aarhus\u00b7Egnatia Rrogozhine",
+   "checked_at": "2026-10-16 ~11:20 UTC"
+  }
+ },
+ "audit": {
+  "verified_fixtures": 103,
+  "verified_prices": 927,
+  "discrepancies": 0,
+  "method": "6 independent auditors re-derived event identity and all 9 prices per fixture from the raw Superbet event files; a completeness critic located the 8 remaining events (listed, 0 markets open)"
+ }
+}

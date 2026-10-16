@@ -59,6 +59,9 @@ th.sortable:hover { color: var(--ink); }
 td.num, th.num { text-align: right; font-family: var(--f-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
 tr:last-child td { border-bottom: 0; }
 .heat { position: relative; }
+#matrix { width: max-content; min-width: 100%; }
+#matrix td.num, #matrix th.num { width: 1%; }
+#matrix .matchcell { width: auto; }
 .matchcell { min-width: 220px; }
 .matchcell a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--muted); }
 .matchcell small { display: block; color: var(--muted); font-size: 11.5px; font-family: var(--f-mono); }
@@ -110,6 +113,13 @@ details.dossier .body { padding: 4px 14px 16px; display: grid; gap: 16px; border
 .flaggroup ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
 .mini { font-size: 12px; }
 .mini td, .mini th { padding: 4px 6px; }
+.sbodds { display: block; font-size: 11px; font-weight: 500; color: var(--muted); margin-top: 1px; }
+.sbodds b { color: var(--ink); font-weight: 600; }
+.val { display: inline-block; font-size: 10.5px; font-weight: 600; padding: 0 5px; border-radius: 3px; margin-left: 3px; }
+.val.pos { color: var(--hi); background: var(--hi-bg); }
+.val.neg { color: var(--muted); }
+.na { color: var(--muted); font-size: 11px; }
+label.check { display: inline-flex; gap: 6px; align-items: center; font-size: 12px; font-family: var(--f-mono); color: var(--ink); cursor: pointer; }
 .legend { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--muted); }
 .callout { border-left: 3px solid var(--accent); padding: 8px 12px; background: var(--accent-soft); border-radius: 0 4px 4px 0; font-size: 13.5px; }
 .warnline { color: var(--lo); }
@@ -140,17 +150,19 @@ details.dossier .body { padding: 4px 14px 16px; display: grid; gap: 16px; border
 
 <section id="s2">
   <div class="sechead"><span class="secnum">SECTION 2</span><h2>Complete probability matrix</h2>
-  <p class="note">Every uploaded fixture. Final estimates are a single Dixon-Coles scoreline distribution fitted to a blend of 25% independent model and 75% de-vigged bookmaker prices (model only where no price exists yet). Switch the view to compare the model and the market. Click a column to sort, or a match to open its dossier.</p></div>
+  <p class="note">Every uploaded fixture. Final estimates are a single Dixon-Coles scoreline distribution fitted to a blend of 25% independent model and 75% de-vigged bookmaker prices (model only where no price exists). Under each estimate is the <b>Superbet.ro</b> decimal price for that outcome, with its value at our estimate. Switch the view to compare the model, the market anchor and Superbet's own de-vigged probabilities. Click a column to sort, or a match to open its dossier.</p></div>
   <div class="controls">
     <div class="seg" role="group" aria-label="Estimate source" id="viewseg">
-      <button type="button" data-v="final" aria-pressed="true">Final</button><button type="button" data-v="model" aria-pressed="false">Model</button><button type="button" data-v="market" aria-pressed="false">Market</button>
+      <button type="button" data-v="final" aria-pressed="true">Final</button><button type="button" data-v="model" aria-pressed="false">Model</button><button type="button" data-v="market" aria-pressed="false">Market anchor</button><button type="button" data-v="superbet" aria-pressed="false">Superbet</button>
     </div>
+    <label class="check" for="sbtoggle"><input type="checkbox" id="sbtoggle" checked> Superbet odds</label>
     <label for="compsel">Competition</label>
     <select id="compsel"></select>
     <input type="search" id="q" placeholder="Filter by team" aria-label="Filter by team">
   </div>
   <div class="scroll"><table id="matrix"></table></div>
-  <div class="legend"><span>Shading = probability.</span><span>xG = projected goals (home v away) from the final distribution.</span><span>Rel. = lowest data-reliability rating across the five markets.</span></div>
+  <div class="legend" id="sblegend"></div>
+  <div class="legend"><span>Shading = probability in the selected view.</span><span>xG = projected goals (home v away) from the final distribution.</span><span>Rel. = lowest data-reliability rating across the five markets.</span><span>Market anchor = the de-vigged prices blended into the estimate: Sofascore's odds feed for 75 fixtures, Superbet.ro for 28, none yet for 8.</span></div>
 </section>
 
 <section id="s3"><div class="sechead"><span class="secnum">SECTION 3</span><h2>Over 2.5 goals ranking</h2></div><div id="rk-o25"></div></section>
@@ -218,7 +230,7 @@ details.dossier .body { padding: 4px 14px 16px; display: grid; gap: 16px; border
     [A.unique_current_matches.toLocaleString(), 'current-season matches reviewed'],
     ['29,478', 'matches in the rating model (2024–26)'],
     [A.backtest.n.toLocaleString(), 'out-of-sample matches in the backtest'],
-    [A.with_market + ' / ' + A.fixtures_identified, 'fixtures with a market cross-check']
+    [A.with_market + ' / ' + A.fixtures_identified, 'fixtures with a market anchor (incl. Superbet.ro)']
   ].map(([b, s]) => `<div><b>${esc(b)}</b><span>${esc(s)}</span></div>`).join('');
 
   // ---------- section 1
@@ -248,7 +260,8 @@ details.dossier .body { padding: 4px 14px 16px; display: grid; gap: 16px; border
           </ul></div>
         <div class="panel"><h3>Limitations</h3>
           <ul class="clean">
-            <li>Bookmaker prices were not yet published for the <b>36</b> Thursday Europa and Conference League fixtures. Those estimates are model-only and carry at most Medium reliability.</li>
+            <li>The odds feed used for the first version had no prices for the <b>36</b> Thursday Europa and Conference League fixtures. Superbet.ro prices <b>28</b> of them, and those now use Superbet as the market anchor (flagged as a single-bookmaker anchor). The remaining <b>8</b> Conference League fixtures are listed on Superbet but had no markets open yet, so they stay model-only with at most Medium reliability.</li>
+            <li>Superbet.ro odds (captured ${esc(D.superbet_meta.fetched_at)}) were matched to ${D.superbet_meta.offered} fixtures by kickoff time and team names. Every match and all nine prices per fixture (1, X, 2, over/under 2.5, over/under 3.5, GG yes/no) were then re-derived from the raw Superbet files by six independent auditors: 927 prices, 0 discrepancies. A completeness check found the last 8 fixtures as listed Superbet events with no markets open yet.</li>
             <li>Primary source is Sofascore's match database (results, xG, shots, lineups, injuries, suspensions, coaches). Results for ${xc.checked} current-season matches in the six domestic leagues and the Champions League were cross-checked against ESPN: ${xc.matched} matched exactly, ${xc.not_found} could not be paired by name/date, and 1 disagreed (Mainz 3-4 Leverkusen, 10 Oct). Sofascore's goal-by-goal log confirms 3-4, so it was kept.</li>
             <li>FBref refused automated access and the ClubElo API was down, so neither was used. Understat was reachable but covers only the big-five leagues, so Sofascore's xG was used throughout for consistency. Its xG is its own model and will not match other providers exactly.</li>
             <li>No injury or suspension feed existed yet for ${A.news_missing.length} fixtures (${A.news_missing.map(esc).join('; ')}); those carry a reliability flag and no absentee adjustment.</li>
@@ -282,7 +295,13 @@ details.dossier .body { padding: 4px 14px 16px; display: grid; gap: 16px; border
 
   // ---------- section 2 matrix
   let view = 'final', sortKey = 'ts', sortDir = 1, compF = '', qF = '';
-  const cols = [['ts', 'Kickoff', false], ['comp', 'Comp', false], ['match', 'Match', false], ['o25', 'O2.5', true], ['o35', 'O3.5', true], ['btts', 'BTTS', true], ['home', '1', true], ['draw', 'X', true], ['away', '2', true], ['xg', 'xG', true], ['rel', 'Rel.', false]];
+  const cols = [['ts', 'Kickoff', false], ['comp', 'Comp', false], ['match', 'Match', false], ['o25', 'O2.5', true], ['o35', 'O3.5', true], ['btts', 'BTTS', true], ['home', '1', true], ['draw', 'X', true], ['away', '2', true], ['xg', 'xG', true], ['best', 'Best SB value', true], ['sbm', 'SB margin', true], ['rel', 'Rel.', false]];
+  const SBK = { o25: 'o25', o35: 'o35', btts: 'btts_yes', home: 'home', draw: 'draw', away: 'away' };
+  const MKS = { o25: 'O2.5', o35: 'O3.5', btts: 'BTTS', home: '1', draw: 'X', away: '2' };
+  let showSB = true;
+  const SBM = D.superbet_meta;
+  document.getElementById('sblegend').innerHTML = `<span><b>Superbet.ro</b> prematch prices, decimal, captured ${esc(SBM.fetched_at)} for ${SBM.offered} of ${SBM.total} fixtures. Odds move; check the live price before acting.</span><span>Value = our final estimate × Superbet price − 1. <span class="val pos">+5%</span> marks prices at least 5% above fair odds.</span><span>For the 28 fixtures whose market anchor is Superbet itself, any positive value comes only from the independent model disagreeing with Superbet, which the backtest found less reliable than the market. Treat those with extra caution.</span><span>${SBM.listed_no_odds} Conference League fixtures are listed on Superbet but their markets had not opened yet.</span><span>All ${SBM.audit.verified_prices} prices for ${SBM.audit.verified_fixtures} fixtures were independently re-derived from Superbet's raw data: ${SBM.audit.discrepancies} discrepancies.</span>`;
+  const srcOf = f => view === 'final' ? f.final : view === 'model' ? f.model : view === 'market' ? f.market : (f.superbet.status === 'ok' ? f.superbet.implied : null);
   const compSel = document.getElementById('compsel');
   compSel.innerHTML = '<option value="">All competitions</option>' + Object.entries(COMP).map(([k, v]) => `<option value="${k}">${v}</option>`).join('');
   function renderMatrix() {
@@ -290,20 +309,33 @@ details.dossier .body { padding: 4px 14px 16px; display: grid; gap: 16px; border
     const val = (f, k) => {
       if (k === 'ts') return f.ts; if (k === 'comp') return f.comp; if (k === 'match') return f.home;
       if (k === 'xg') return f.lam_final[0] + f.lam_final[1]; if (k === 'rel') return minRel(f);
-      const src = view === 'final' ? f.final : view === 'model' ? f.model : f.market; return src && src[k] != null ? src[k] : -1;
+      if (k === 'best') return f.superbet.status === 'ok' ? f.superbet.best.value : -9;
+      if (k === 'sbm') return f.superbet.status === 'ok' ? f.superbet.margin['1x2'] : 9;
+      const src = srcOf(f); return src && src[k] != null ? src[k] : -1;
     };
     rows.sort((a, b) => { const x = val(a, sortKey), y = val(b, sortKey); return (x > y ? 1 : x < y ? -1 : 0) * sortDir; });
     const head = '<thead><tr>' + cols.map(([k, l, n]) => `<th class="sortable ${n ? 'num' : ''}" data-k="${k}" aria-sort="${sortKey === k ? (sortDir > 0 ? 'ascending' : 'descending') : 'none'}">${l}${sortKey === k ? (sortDir > 0 ? ' ↑' : ' ↓') : ''}</th>`).join('') + '</tr></thead>';
     const body = rows.map(f => {
-      const src = view === 'final' ? f.final : view === 'model' ? f.model : f.market;
-      const cell = k => { const v = src ? src[k] : null; return v == null ? '<td class="num">N/A</td>' : `<td class="num heat" style="${shade(v)}">${p1(v)}</td>`; };
-      return `<tr><td class="num">${esc(f.kickoff.replace(' UTC', ''))}</td><td><span class="chip comp">${esc(f.comp)}</span></td><td class="matchcell"><a href="#fx-${f.id}">${fxLabel(f)}</a></td>${['o25', 'o35', 'btts', 'home', 'draw', 'away'].map(cell).join('')}<td class="num">${n2(f.lam_final[0])}–${n2(f.lam_final[1])}</td><td>${chip(minRel(f))}</td></tr>`;
+      const src = srcOf(f);
+      const sb = f.superbet;
+      const sbLine = k => {
+        if (!showSB) return '';
+        if (sb.status !== 'ok') return '<span class="sbodds na">SB odds not open yet</span>';
+        const o = sb.odds[SBK[k]], v = sb.value[k];
+        const tag = v != null && v >= 0.05 ? `<span class="val pos">+${Math.round(v * 100)}%</span>` : '';
+        return `<span class="sbodds">SB <b>${o.toFixed(2)}</b>${tag}</span>`;
+      };
+      const cell = k => { const v = src ? src[k] : null; return v == null ? `<td class="num">N/A${sbLine(k)}</td>` : `<td class="num heat" style="${shade(v)}">${p1(v)}${sbLine(k)}</td>`; };
+      const best = sb.status === 'ok' ? `<td class="num">${MKS[sb.best.market]} <span class="val ${sb.best.value >= 0.05 ? 'pos' : 'neg'}">${sb.best.value >= 0 ? '+' : ''}${(sb.best.value * 100).toFixed(1)}%</span></td>` : '<td class="num na">n/a</td>';
+      const marg = sb.status === 'ok' ? `<td class="num">${(sb.margin['1x2'] * 100).toFixed(1)}%</td>` : '<td class="num na">n/a</td>';
+      return `<tr><td class="num">${esc(f.kickoff.replace(' UTC', ''))}</td><td><span class="chip comp">${esc(f.comp)}</span></td><td class="matchcell"><a href="#fx-${f.id}">${fxLabel(f)}</a>${f.market_source === 'superbet' ? '<small>market anchor: Superbet.ro</small>' : !f.has_market ? '<small>model-only estimate</small>' : ''}</td>${['o25', 'o35', 'btts', 'home', 'draw', 'away'].map(cell).join('')}<td class="num">${n2(f.lam_final[0])}–${n2(f.lam_final[1])}</td>${best}${marg}<td>${chip(minRel(f))}</td></tr>`;
     }).join('');
     document.getElementById('matrix').innerHTML = head + '<tbody>' + body + '</tbody>';
-    document.querySelectorAll('#matrix th.sortable').forEach(th => th.addEventListener('click', () => { const k = th.dataset.k; if (sortKey === k) sortDir *= -1; else { sortKey = k; sortDir = ['o25', 'o35', 'btts', 'home', 'draw', 'away', 'xg'].includes(k) ? -1 : 1; } renderMatrix(); }));
+    document.querySelectorAll('#matrix th.sortable').forEach(th => th.addEventListener('click', () => { const k = th.dataset.k; if (sortKey === k) sortDir *= -1; else { sortKey = k; sortDir = ['o25', 'o35', 'btts', 'home', 'draw', 'away', 'xg', 'best'].includes(k) ? -1 : 1; } renderMatrix(); }));
   }
   document.querySelectorAll('#viewseg button').forEach(b => b.addEventListener('click', () => { view = b.dataset.v; document.querySelectorAll('#viewseg button').forEach(x => x.setAttribute('aria-pressed', x === b ? 'true' : 'false')); renderMatrix(); }));
   compSel.addEventListener('change', () => { compF = compSel.value; renderMatrix(); });
+  document.getElementById('sbtoggle').addEventListener('change', e => { showSB = e.target.checked; renderMatrix(); });
   document.getElementById('q').addEventListener('input', e => { qF = e.target.value.trim().toLowerCase(); renderMatrix(); });
   renderMatrix();
 
@@ -370,8 +402,8 @@ details.dossier .body { padding: 4px 14px 16px; display: grid; gap: 16px; border
   ['o25', 'o35', 'btts', 'home', 'away'].forEach(rankSection);
 
   // ---------- section 8 master
-  document.getElementById('master').innerHTML = '<thead><tr><th class="num">Rank</th><th>Fixture</th><th>Outcome</th><th class="num">Estimate</th><th class="num">Model</th><th class="num">Market</th><th>Reliability</th><th>Correlation</th></tr></thead><tbody>' +
-    D.master.map((x, n) => { const f = F[x.idx]; return `<tr><td class="num">${n + 1}</td><td class="matchcell"><a href="#ev-${n + 1}">${fxLabel(f)}</a><small>${esc(COMP[f.comp])} · ${esc(f.kickoff)}</small></td><td>${MK[x.market]}</td><td class="num" style="${shade(x.p)}"><b>${p1(x.p)}</b></td><td class="num">${p1(f.model[x.market])}</td><td class="num">${f.market[x.market] == null ? 'n/a' : p1(f.market[x.market])}</td><td>${chip(f.rel[x.market].level)}</td><td>${x.corr_with ? `<span class="chip ghost">same match as #${x.corr_with}</span>` : ''}</td></tr>`; }).join('') + '</tbody>';
+  document.getElementById('master').innerHTML = '<thead><tr><th class="num">Rank</th><th>Fixture</th><th>Outcome</th><th class="num">Estimate</th><th class="num">Model</th><th class="num">Market</th><th class="num">Superbet odds</th><th>Reliability</th><th>Correlation</th></tr></thead><tbody>' +
+    D.master.map((x, n) => { const f = F[x.idx]; return `<tr><td class="num">${n + 1}</td><td class="matchcell"><a href="#ev-${n + 1}">${fxLabel(f)}</a><small>${esc(COMP[f.comp])} · ${esc(f.kickoff)}</small></td><td>${MK[x.market]}</td><td class="num" style="${shade(x.p)}"><b>${p1(x.p)}</b></td><td class="num">${p1(f.model[x.market])}</td><td class="num">${f.market[x.market] == null ? 'n/a' : p1(f.market[x.market])}</td><td class="num">${f.superbet.status === 'ok' ? `${f.superbet.odds[SBK[x.market]].toFixed(2)} <span class="val ${f.superbet.value[x.market] >= 0.05 ? 'pos' : 'neg'}">${f.superbet.value[x.market] >= 0 ? '+' : ''}${(f.superbet.value[x.market] * 100).toFixed(1)}%</span>` : '<span class="na">odds not open</span>'}</td><td>${chip(f.rel[x.market].level)}</td><td>${x.corr_with ? `<span class="chip ghost">same match as #${x.corr_with}</span>` : ''}</td></tr>`; }).join('') + '</tbody>';
 
   // ---------- section 9 evidence
   document.getElementById('evidence').innerHTML = D.master.map((x, n) => {
@@ -438,7 +470,7 @@ details.dossier .body { padding: 4px 14px 16px; display: grid; gap: 16px; border
     const h2h = f.h2h.length ? f.h2h.map(x => `${x.date} ${esc(x.hn)} ${x.hg}-${x.ag} ${esc(x.an)} <span class="note">(${esc(x.comp)})</span>`).join('; ') : 'No meetings since mid-2024 in the dataset.';
     const mk = f.market;
     const tbl = `<div class="scroll"><table class="mini"><thead><tr><th>Source</th><th class="num">O2.5</th><th class="num">O3.5</th><th class="num">BTTS</th><th class="num">1</th><th class="num">X</th><th class="num">2</th></tr></thead><tbody>
-      ${[['Final (coherent)', f.final], ['Independent model (xG-weighted)', f.model], ['Alternative: goals-only model', f.goals_only], ['Market (de-vigged)', mk]].map(([l, s]) => `<tr><td>${l}</td>${['o25', 'o35', 'btts', 'home', 'draw', 'away'].map(k => `<td class="num">${s && s[k] != null ? p1(s[k]) : 'N/A'}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+      ${[['Final (coherent)', f.final], ['Independent model (xG-weighted)', f.model], ['Alternative: goals-only model', f.goals_only], [f.market_source === 'superbet' ? 'Market anchor: Superbet.ro (de-vigged)' : 'Market anchor (de-vigged)', mk], ['Superbet.ro (de-vigged)', f.superbet.status === 'ok' ? f.superbet.implied : null], ['Superbet.ro decimal odds', f.superbet.status === 'ok' ? Object.fromEntries(Object.entries(SBK).map(([k, o]) => [k, f.superbet.odds[o]])) : null, true]].map(([l, s, raw]) => `<tr><td>${l}</td>${['o25', 'o35', 'btts', 'home', 'draw', 'away'].map(k => `<td class="num">${s && s[k] != null ? (raw ? s[k].toFixed(2) : p1(s[k])) : 'N/A'}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
     const bl = f.baseline;
     return `<div class="grid2"><div class="sub"><h4>Projection</h4><p class="mini mono">Expected goals ${n2(f.lam_final[0])} v ${n2(f.lam_final[1])} · ρ ${n2(f.rho)} · model before team news ${n2(f.lam_model_base[0])} v ${n2(f.lam_model_base[1])}</p><div class="scores">${f.top_scores.map(s => `<span>${s[0]} · ${p1(s[1])}</span>`).join('')}</div>${tbl}</div>
       <div class="sub"><h4>Context</h4><p class="mini">${esc(f.tactical)}</p><p class="mini">Competition baseline this season (${bl ? bl.n : 0} matches): ${bl ? `${n2(bl.gpg)} goals per game, over 2.5 ${p0(bl.o25)}, BTTS ${p0(bl.btts)}, home ${p0(bl.home)} / draw ${p0(bl.draw)} / away ${p0(bl.away)}` : 'n/a'}.</p><p class="mini">Venue: ${esc(w.venue || '?')}, ${esc(w.city || '')}. Forecast: ${w.temp != null ? `${w.temp}°C, wind ${w.wind} m/s, ${w.precip} mm over ${w.nxt}, ${esc((w.symbol || '').replace(/_/g, ' '))}` : 'unavailable'}.</p><p class="mini">Head-to-head: ${h2h}</p>
@@ -465,6 +497,8 @@ details.dossier .body { padding: 4px 14px 16px; display: grid; gap: 16px; border
       <li>Comparable opponents: past current-season opponents whose (attack, defence) rating lies within 0.30 (widened to 0.45 if fewer than four exist) of the upcoming opponent. 2025-26 matches are added only when the current season has too few. Unfavourable comparables are shown alongside favourable ones.</li>
     </ul></div>
     <div class="panel"><h3>From model to final estimate</h3><ul class="clean">
+      <li>Market anchor: Sofascore's pre-match odds feed for 75 fixtures; Superbet.ro for the 28 Thursday fixtures that feed had not priced (added in version 2; their earlier model-only numbers remain visible in the Model view); none for 8. All prices are de-vigged proportionally before blending.</li>
+      <li>Superbet value = final estimate × Superbet decimal price − 1. Because the estimates are 75% market-based, most values are slightly negative (Superbet's 1X2 margin runs about 5%). A positive value means Superbet's price is longer than the consensus-anchored estimate, not that the bet is certain to profit.</li>
       <li>Tuning: a grid over half-life (100–365 days), xG weight (0–1) and shrinkage, scored walk-forward on ${bt.n.toLocaleString()} matches. The best supremacy settings were ${esc(bt.S_cfg.join(' / '))} and the best totals settings ${esc(bt.T_cfg.join(' / '))} (half-life / xG weight / ridge).</li>
       <li>The de-vigged closing market beat the model on every metric. Model weights of 0, 20, 25, 30, 40, 50, 60, 80 and 100% were tested, and 25% was used as a deliberate compromise: it costs about 0.0005 Brier against the market alone and keeps the independent evidence in the estimate.</li>
       <li>For each fixture, one Dixon-Coles distribution (λ home, λ away, ρ) is fitted by least squares to the six blended probabilities. The average fit error is 0.5 points, and the reported 1X2, O2.5, O3.5 and BTTS are all read from that one grid, so they are mutually consistent.</li>
@@ -474,6 +508,7 @@ details.dossier .body { padding: 4px 14px 16px; display: grid; gap: 16px; border
     <div class="panel"><h3>Sources</h3><ul class="clean">
       <li>Sofascore (api.sofascore.com): fixtures, results, halftime and 90-minute scores, xG, shots, shots on target, big chances, possession, lineups and minutes, injuries and suspensions, coaches, standings, and pre-match odds for 75 fixtures. Pages: <a href="https://www.sofascore.com/football" target="_blank" rel="noopener">sofascore.com/football</a>.</li>
       <li>ESPN scoreboard API: an independent cross-check of ${A.xcheck.checked} current-season results. <a href="https://www.espn.com/soccer/" target="_blank" rel="noopener">espn.com/soccer</a>.</li>
+      <li>Superbet.ro: prematch prices for 1X2, total goals (over/under 2.5 and 3.5) and GG (both teams to score) from the public offer feed that superbet.ro itself loads, captured ${esc(D.superbet_meta.fetched_at)}. <a href="https://superbet.ro/pariuri-sportive/fotbal" target="_blank" rel="noopener">superbet.ro/pariuri-sportive/fotbal</a>.</li>
       <li>MET Norway Locationforecast: kickoff-time weather at each venue. <a href="https://api.met.no/" target="_blank" rel="noopener">api.met.no</a>.</li>
       <li>Background on 2026-27 Premier League coaching appointments: <a href="https://theanalyst.com/articles/premier-league-new-managers-2026-27" target="_blank" rel="noopener">The Analyst</a>, <a href="https://www.modernghana.com/sports/1516276/premier-league-managerial-debuts-hit-record-high.html" target="_blank" rel="noopener">BBC Sport research via Modern Ghana</a>. Coaches named in the report come from Sofascore's per-match records.</li>
     </ul></div>`;
