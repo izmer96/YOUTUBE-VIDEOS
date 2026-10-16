@@ -1,0 +1,481 @@
+<title>Fixture Probability Ledger</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: a matchday ledger. Sticky section rail on top, long-form report below; numbers set in mono, headings in a wide grotesque. */
+:root {
+  --bg: #f3f5f2; --surface: #ffffff; --sunk: #e9ede8; --ink: #142019; --muted: #56635b; --line: #d6ddd6;
+  --accent: #1f4f86; --accent-soft: #dbe6f3; --chalk: #2c6e49;
+  --hi: #2f7a4d; --hi-bg: #ddefe3; --mid: #9a6a08; --mid-bg: #f6e8c8; --lo: #a8362a; --lo-bg: #f7dcd8;
+  --f-display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "IBM Plex Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0e1411; --surface: #151d19; --sunk: #1b2520; --ink: #e4ebe6; --muted: #9aa8a0; --line: #2a3530;
+  --accent: #8db8ea; --accent-soft: #1d2f45; --chalk: #7cc79a;
+  --hi: #6ccb92; --hi-bg: #173325; --mid: #e3b555; --mid-bg: #3a2e12; --lo: #f08a7c; --lo-bg: #40201c; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0e1411; --surface: #151d19; --sunk: #1b2520; --ink: #e4ebe6; --muted: #9aa8a0; --line: #2a3530;
+  --accent: #8db8ea; --accent-soft: #1d2f45; --chalk: #7cc79a;
+  --hi: #6ccb92; --hi-bg: #173325; --mid: #e3b555; --mid-bg: #3a2e12; --lo: #f08a7c; --lo-bg: #40201c; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.55; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header.top { background: var(--surface); border-bottom: 1px solid var(--line); }
+header.top .wrap { padding-block: 28px 22px; display: grid; gap: 14px; }
+.eyebrow { font-family: var(--f-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1 { font-family: var(--f-display); font-stretch: 112%; font-weight: 800; font-size: clamp(30px, 5vw, 48px); line-height: 1.02; margin: 0; letter-spacing: -.01em; text-wrap: balance; }
+h2 { font-family: var(--f-display); font-stretch: 108%; font-weight: 800; font-size: clamp(22px, 3vw, 30px); line-height: 1.1; margin: 0; text-wrap: balance; }
+h3 { font-family: var(--f-display); font-stretch: 100%; font-weight: 700; font-size: 18px; margin: 0; line-height: 1.2; text-wrap: balance; }
+h4 { font-family: var(--f-body); font-weight: 600; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 0; }
+.lede { max-width: 72ch; color: var(--muted); margin: 0; }
+.statstrip { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.statstrip > div { background: var(--surface); padding: 12px 14px; display: grid; gap: 2px; }
+.statstrip b { font-family: var(--f-mono); font-size: 22px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.statstrip span { font-size: 12px; color: var(--muted); }
+nav.rail { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
+nav.rail .wrap { display: flex; gap: 4px; overflow-x: auto; padding-block: 8px; scrollbar-width: thin; }
+nav.rail a { flex: none; font-family: var(--f-mono); font-size: 12px; text-decoration: none; color: var(--ink); padding: 6px 10px; border-radius: 4px; border: 1px solid transparent; white-space: nowrap; }
+nav.rail a:hover, nav.rail a:focus-visible { border-color: var(--line); background: var(--sunk); outline: none; }
+main .wrap { display: grid; gap: 56px; padding-block: 36px 80px; }
+section { display: grid; gap: 18px; min-width: 0; scroll-margin-top: 64px; }
+.sechead { display: grid; gap: 6px; border-top: 3px solid var(--ink); padding-top: 12px; }
+.secnum { font-family: var(--f-mono); font-size: 12px; color: var(--accent); letter-spacing: .08em; }
+.note { color: var(--muted); font-size: 13.5px; max-width: 80ch; margin: 0; }
+p { margin: 0; max-width: 80ch; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px; display: grid; gap: 10px; min-width: 0; }
+ul.clean { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.scroll { overflow-x: auto; min-width: 0; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { padding: 6px 8px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+th { font-family: var(--f-mono); font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); background: var(--sunk); position: sticky; top: 0; white-space: nowrap; }
+th.sortable { cursor: pointer; user-select: none; }
+th.sortable:hover { color: var(--ink); }
+td.num, th.num { text-align: right; font-family: var(--f-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+.heat { position: relative; }
+.matchcell { min-width: 220px; }
+.matchcell a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--muted); }
+.matchcell small { display: block; color: var(--muted); font-size: 11.5px; font-family: var(--f-mono); }
+.chip { display: inline-block; font-family: var(--f-mono); font-size: 11px; font-weight: 600; padding: 1px 7px; border-radius: 999px; white-space: nowrap; }
+.chip.High { color: var(--hi); background: var(--hi-bg); }
+.chip.Medium { color: var(--mid); background: var(--mid-bg); }
+.chip.Low { color: var(--lo); background: var(--lo-bg); }
+.chip.comp { color: var(--accent); background: var(--accent-soft); }
+.chip.ghost { color: var(--muted); background: var(--sunk); }
+.verdict-supports { color: var(--hi); } .verdict-contradicts { color: var(--lo); } .verdict-mixed { color: var(--mid); } .verdict-none { color: var(--muted); }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.controls label { font-size: 12px; color: var(--muted); font-family: var(--f-mono); }
+select, input[type="search"] { font: inherit; font-size: 13px; padding: 6px 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); color: var(--ink); }
+input[type="search"] { min-width: 200px; flex: 1 1 200px; max-width: 320px; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+.seg button { font: inherit; font-family: var(--f-mono); font-size: 12px; padding: 6px 10px; border: 0; background: var(--surface); color: var(--ink); cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+button.more { font: inherit; font-family: var(--f-mono); font-size: 12px; padding: 7px 12px; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); color: var(--ink); cursor: pointer; justify-self: start; }
+button:focus-visible, select:focus-visible, input:focus-visible, summary:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.rankrow { display: grid; grid-template-columns: 34px minmax(0, 1fr) minmax(90px, 220px) 64px; gap: 10px; align-items: center; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+.rankrow:last-child { border-bottom: 0; }
+.rankrow .rk { font-family: var(--f-mono); color: var(--muted); font-size: 12px; text-align: right; }
+.rankrow .nm { min-width: 0; font-size: 13.5px; }
+.rankrow .nm small { color: var(--muted); font-family: var(--f-mono); font-size: 11px; display: block; }
+.bar { height: 10px; background: var(--sunk); border-radius: 2px; position: relative; overflow: hidden; }
+.bar i { position: absolute; inset: 0 auto 0 0; background: var(--accent); border-radius: 2px; }
+.bar u { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--ink); opacity: .55; }
+.rankrow .pv { font-family: var(--f-mono); font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+.ranklist { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
+.cards { display: grid; gap: 14px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px; display: grid; gap: 12px; min-width: 0; }
+.card header { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: baseline; justify-content: space-between; }
+.bigp { font-family: var(--f-mono); font-size: 26px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.kv { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 6px 14px; font-size: 13.5px; }
+.kv > dt { font-family: var(--f-mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); padding-top: 3px; }
+.kv > dd { margin: 0; min-width: 0; }
+.mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+.scores { display: flex; flex-wrap: wrap; gap: 6px; }
+.scores span { font-family: var(--f-mono); font-size: 12.5px; padding: 2px 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--sunk); }
+details.dossier { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
+details.dossier > summary { cursor: pointer; padding: 10px 14px; display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; list-style: none; }
+details.dossier > summary::-webkit-details-marker { display: none; }
+details.dossier > summary::before { content: "+"; font-family: var(--f-mono); color: var(--muted); width: 12px; }
+details.dossier[open] > summary::before { content: "–"; }
+details.dossier .body { padding: 4px 14px 16px; display: grid; gap: 16px; border-top: 1px solid var(--line); }
+.dossiers { display: grid; gap: 8px; }
+.sub { display: grid; gap: 8px; min-width: 0; }
+.flaggroup { display: grid; gap: 8px; }
+.flaggroup ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.mini { font-size: 12px; }
+.mini td, .mini th { padding: 4px 6px; }
+.legend { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--muted); }
+.callout { border-left: 3px solid var(--accent); padding: 8px 12px; background: var(--accent-soft); border-radius: 0 4px 4px 0; font-size: 13.5px; }
+.warnline { color: var(--lo); }
+.footer { color: var(--muted); font-size: 12.5px; }
+@media (max-width: 640px) {
+  .kv { grid-template-columns: 1fr; }
+  .rankrow { grid-template-columns: 26px minmax(0, 1fr) 54px; }
+  .rankrow .bar { grid-column: 2 / 4; }
+}
+@media (prefers-reduced-motion: no-preference) { .bar i { transition: width .4s ease; } }
+</style>
+
+<header class="top"><div class="wrap">
+  <div class="eyebrow">Research report · data to 15 Oct 2026 · fixtures 16–22 Oct 2026</div>
+  <h1>Fixture Probability Ledger</h1>
+  <p class="lede">All 111 uploaded fixtures across nine competitions: Premier League, LaLiga, Serie A, Ligue 1, Bundesliga, Süper Lig, and the Champions, Europa and Conference League matchdays. Every team's full current season was reviewed, every opponent was rated on one cross-league scale, and every estimate comes from a single scoreline distribution per match.</p>
+  <div class="statstrip" id="strip"></div>
+</div></header>
+<nav class="rail" aria-label="Sections"><div class="wrap">
+  <a href="#s1">1 Audit</a><a href="#s2">2 Matrix</a><a href="#s3">3 Over 2.5</a><a href="#s4">4 Over 3.5</a><a href="#s5">5 BTTS</a><a href="#s6">6 Home win</a><a href="#s7">7 Away win</a><a href="#s8">8 Master ranking</a><a href="#s9">9 Evidence</a><a href="#s10">10 Weak evidence</a><a href="#dossiers">Fixture dossiers</a><a href="#method">Method &amp; sources</a>
+</div></nav>
+<main><div class="wrap">
+
+<section id="s1">
+  <div class="sechead"><span class="secnum">SECTION 1</span><h2>Research completion audit</h2></div>
+  <div id="audit"></div>
+</section>
+
+<section id="s2">
+  <div class="sechead"><span class="secnum">SECTION 2</span><h2>Complete probability matrix</h2>
+  <p class="note">Every uploaded fixture. Final estimates are a single Dixon-Coles scoreline distribution fitted to a blend of 25% independent model and 75% de-vigged bookmaker prices (model only where no price exists yet). Switch the view to compare the model and the market. Click a column to sort, or a match to open its dossier.</p></div>
+  <div class="controls">
+    <div class="seg" role="group" aria-label="Estimate source" id="viewseg">
+      <button type="button" data-v="final" aria-pressed="true">Final</button><button type="button" data-v="model" aria-pressed="false">Model</button><button type="button" data-v="market" aria-pressed="false">Market</button>
+    </div>
+    <label for="compsel">Competition</label>
+    <select id="compsel"></select>
+    <input type="search" id="q" placeholder="Filter by team" aria-label="Filter by team">
+  </div>
+  <div class="scroll"><table id="matrix"></table></div>
+  <div class="legend"><span>Shading = probability.</span><span>xG = projected goals (home v away) from the final distribution.</span><span>Rel. = lowest data-reliability rating across the five markets.</span></div>
+</section>
+
+<section id="s3"><div class="sechead"><span class="secnum">SECTION 3</span><h2>Over 2.5 goals ranking</h2></div><div id="rk-o25"></div></section>
+<section id="s4"><div class="sechead"><span class="secnum">SECTION 4</span><h2>Over 3.5 goals ranking</h2><p class="note">Ranked independently of Over 2.5. Four goals needs both a high total and the right distribution of it, so this list is not simply the Over 2.5 list shifted down.</p></div><div id="rk-o35"></div></section>
+<section id="s5"><div class="sechead"><span class="secnum">SECTION 5</span><h2>Both teams to score ranking</h2></div><div id="rk-btts"></div></section>
+<section id="s6"><div class="sechead"><span class="secnum">SECTION 6</span><h2>Home win ranking</h2></div><div id="rk-home"></div></section>
+<section id="s7"><div class="sechead"><span class="secnum">SECTION 7</span><h2>Away win ranking</h2></div><div id="rk-away"></div></section>
+
+<section id="s8">
+  <div class="sechead"><span class="secnum">SECTION 8</span><h2>Overall master ranking</h2>
+  <p class="note">The 40 highest final probabilities across all five outcome types. Forty is a display length, not a threshold: every other outcome is in the matrix and the per-market lists. Selections from the same fixture are correlated and marked; nothing here is combined into an accumulator.</p></div>
+  <div class="scroll"><table id="master"></table></div>
+</section>
+
+<section id="s9">
+  <div class="sechead"><span class="secnum">SECTION 9</span><h2>Detailed evidence for the master selections</h2>
+  <p class="note">One card per master-ranking selection, in rank order. The counterargument and final assessment were written by the analyst from the data shown; the other fields are computed.</p></div>
+  <div class="cards" id="evidence"></div>
+</section>
+
+<section id="s10">
+  <div class="sechead"><span class="secnum">SECTION 10</span><h2>Matches with weak or conflicting evidence</h2>
+  <p class="note">A fixture appears here if its best outcome is below 55%, or if two or more evidence problems apply. It is listed under its main problem, and every problem is shown.</p></div>
+  <div id="weak"></div>
+</section>
+
+<section id="dossiers">
+  <div class="sechead"><span class="secnum">APPENDIX</span><h2>Fixture dossiers</h2>
+  <p class="note">The full research file for each match: both teams' current-season splits (all, home, away, last 10, last 5, league, UEFA, cup), every match played this season with halftime score, xG, shots, shots on target, big chances and opponent strength, comparable-opponent results, absentees weighted by minutes played, rest days, coaching changes, weather and head-to-head.</p></div>
+  <div class="controls"><input type="search" id="dq" placeholder="Find a fixture" aria-label="Find a fixture"></div>
+  <div class="dossiers" id="dlist"></div>
+</section>
+
+<section id="method">
+  <div class="sechead"><span class="secnum">METHOD</span><h2>Method, validation and sources</h2></div>
+  <div id="methodbody"></div>
+</section>
+
+<p class="footer">Probabilities are estimates, not guarantees, and cover 90 minutes plus stoppage time only. The model and backtest were built for this report; calibration is shown in Section 1. No outcome here is certain, and correlated selections should not be treated as independent.</p>
+</div></main>
+
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(function () {
+  const D = JSON.parse(document.getElementById('data').textContent);
+  const F = D.fixtures;
+  const COMP = { PL: 'Premier League', LaLiga: 'LaLiga', SerieA: 'Serie A', Ligue1: 'Ligue 1', Bundesliga: 'Bundesliga', SuperLig: 'Süper Lig', UCL: 'Champions League', UEL: 'Europa League', UECL: 'Conference League' };
+  const MK = { o25: 'Over 2.5', o35: 'Over 3.5', btts: 'BTTS Yes', home: 'Home Win', away: 'Away Win' };
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const p1 = x => x == null ? '–' : (x * 100).toFixed(1) + '%';
+  const p0 = x => x == null ? '–' : Math.round(x * 100) + '%';
+  const n2 = x => x == null ? '–' : Number(x).toFixed(2);
+  const n1 = x => x == null ? '–' : Number(x).toFixed(1);
+  const chip = (lvl) => `<span class="chip ${lvl}">${lvl}</span>`;
+  const fxLabel = f => `${esc(f.home)} v ${esc(f.away)}`;
+  const shade = (p) => `background: color-mix(in srgb, var(--accent) ${Math.round(Math.max(0, p - 0.1) * 70)}%, transparent);`;
+  const minRel = f => { const o = { High: 0, Medium: 1, Low: 2 }; let w = 'High'; for (const k in MK) if (o[f.rel[k].level] > o[w]) w = f.rel[k].level; return w; };
+  const sortedIdx = (k) => D.rank[k];
+
+  // ---------- header strip
+  const A = D.audit;
+  document.getElementById('strip').innerHTML = [
+    [A.fixtures_analyzed + ' / ' + A.fixtures_identified, 'fixtures analysed / identified'],
+    [A.unique_teams, 'unique teams researched'],
+    [A.unique_current_matches.toLocaleString(), 'current-season matches reviewed'],
+    ['29,478', 'matches in the rating model (2024–26)'],
+    [A.backtest.n.toLocaleString(), 'out-of-sample matches in the backtest'],
+    [A.with_market + ' / ' + A.fixtures_identified, 'fixtures with a market cross-check']
+  ].map(([b, s]) => `<div><b>${esc(b)}</b><span>${esc(s)}</span></div>`).join('');
+
+  // ---------- section 1
+  (function audit() {
+    const bt = A.backtest, gr = bt.grid;
+    const mk = bt.market, cm = bt.combined, bl = bt.blends['0.25'];
+    const xc = A.xcheck;
+    const thin = [];
+    const seen = new Set();
+    F.forEach(f => ['home', 'away'].forEach(s => { const t = f.teams[s], a = t.splits.all; if (seen.has(t.id)) return; seen.add(t.id); if ((a.xg_n || 0) < 0.5 * a.n) thin.push(`${t.name} (xG ${a.xg_n || 0}/${a.n})`); }));
+    const coach = [];
+    const seenc = new Set();
+    F.forEach(f => ['home', 'away'].forEach(s => { const t = f.teams[s]; if (t.coach_change && !seenc.has(t.id)) { seenc.add(t.id); coach.push(`${t.name}: ${t.coach_change.coach} since ${t.coach_change.since} (${t.coach_change.matches} match${t.coach_change.matches > 1 ? 'es' : ''})`); } }));
+    const cal = bt.calib;
+    const calRows = (k, lbl) => (cal[k] || []).map(r => `<tr><td>${lbl}</td><td class="num">${r[0]}</td><td class="num">${r[1]}</td><td class="num">${p1(r[2])}</td><td class="num">${p1(r[3])}</td></tr>`).join('');
+    document.getElementById('audit').innerHTML = `
+      <div class="grid2">
+        <div class="panel"><h3>Coverage</h3>
+          <ul class="clean">
+            <li><b>${A.fixtures_identified}</b> fixtures identified from the upload; all <b>${A.fixtures_identified}</b> matched unambiguously to a scheduled event (none ambiguous, none had kicked off when data were collected).</li>
+            <li><b>${A.fixtures_analyzed}</b> fixtures fully analysed: 10 Premier League, 10 LaLiga, 10 Serie A, 9 Ligue 1, 9 Bundesliga, 9 Süper Lig, 18 Champions League (MD3), 18 Europa League (MD3), 18 Conference League (MD2).</li>
+            <li><b>${A.unique_teams}</b> unique teams; <b>${A.unique_current_matches.toLocaleString()}</b> unique current-season competitive matches reviewed (${A.team_match_records.toLocaleString()} team-match records), every competition included and friendlies excluded.</li>
+            <li>Current season means 2026-27 for August–May leagues (from the first summer qualifier) and the 2026 calendar season for Norway, Sweden, Finland, Lithuania, Latvia, Kazakhstan and Georgia.</li>
+            <li><b>All 180 teams</b> have a full current-season match list from Sofascore (results, halftime scores, venue, competition). Results for the six domestic leagues and the Champions League were independently cross-checked (see Limitations). Smaller leagues rest on Sofascore alone, so those histories are complete as far as that source records them, not independently verified.</li>
+            <li><b>${180 - thin.length}</b> teams have xG for at least half their matches; <b>${thin.length}</b> have thinner statistical coverage: ${thin.map(esc).join('; ')}. Lineups (minutes, goals, assists) were retrieved for 1,534 of the 1,542 matches.</li>
+            <li>Opponent strength comes from a rating model fitted on <b>29,478</b> competitive matches (Mar 2024 – 15 Oct 2026) across 48 domestic leagues, domestic cups and all three UEFA competitions, covering 1,308 clubs.</li>
+          </ul></div>
+        <div class="panel"><h3>Limitations</h3>
+          <ul class="clean">
+            <li>Bookmaker prices were not yet published for the <b>36</b> Thursday Europa and Conference League fixtures. Those estimates are model-only and carry at most Medium reliability.</li>
+            <li>Primary source is Sofascore's match database (results, xG, shots, lineups, injuries, suspensions, coaches). Results for ${xc.checked} current-season matches in the six domestic leagues and the Champions League were cross-checked against ESPN: ${xc.matched} matched exactly, ${xc.not_found} could not be paired by name/date, and 1 disagreed (Mainz 3-4 Leverkusen, 10 Oct). Sofascore's goal-by-goal log confirms 3-4, so it was kept.</li>
+            <li>FBref refused automated access and the ClubElo API was down, so neither was used. Understat was reachable but covers only the big-five leagues, so Sofascore's xG was used throughout for consistency. Its xG is its own model and will not match other providers exactly.</li>
+            <li>No injury or suspension feed existed yet for ${A.news_missing.length} fixtures (${A.news_missing.map(esc).join('; ')}); those carry a reliability flag and no absentee adjustment.</li>
+            <li>Injury and suspension lists are Sofascore's pre-match feeds as of 16 Oct. Midweek European fixtures follow a weekend round, so new knocks and suspensions from 17–19 Oct are not included.</li>
+            <li>Tactical descriptions are limited to what the match statistics show (possession, shot volume, xG tempo, big chances). No pressing or formation data were available, so none is claimed.</li>
+            <li>Weather is a met.no forecast 1–6 days out. It is shown for context and not used to adjust any probability.</li>
+            <li>Coaching changes: ${coach.length ? coach.map(esc).join('; ') : 'none detected'}. Apparent flip-flops in the feed (assistants standing in for one match) were treated as data artefacts.</li>
+          </ul></div>
+      </div>
+      <div class="grid2">
+        <div class="panel"><h3>Backtest: does the method predict well?</h3>
+          <p class="note">Walk-forward test on ${bt.n.toLocaleString()} matches (big-six leagues plus UEFA competitions, 12 Sep – 30 Nov 2025 and 15 Jan – 31 May 2026). The model was refitted weekly using only data available before each match. Lower is better.</p>
+          <div class="scroll"><table class="mini">
+            <tr><th>Estimator</th><th class="num">O2.5 Brier</th><th class="num">O3.5 Brier</th><th class="num">BTTS Brier</th><th class="num">1X2 RPS</th></tr>
+            <tr><td>Independent model</td><td class="num">${cm.o25.toFixed(4)}</td><td class="num">${cm.o35.toFixed(4)}</td><td class="num">${cm.btts.toFixed(4)}</td><td class="num">${cm['1x2_rps'].toFixed(4)}</td></tr>
+            <tr><td>Closing market (de-vigged)</td><td class="num">${mk.o25.toFixed(4)}</td><td class="num">${mk.o35.toFixed(4)}</td><td class="num">${mk.btts.toFixed(4)}</td><td class="num">${mk['1x2_rps'].toFixed(4)}</td></tr>
+            <tr><td>25% model + 75% market</td><td class="num">${bl.o25.toFixed(4)}</td><td class="num">${bl.o35.toFixed(4)}</td><td class="num">${bl.btts.toFixed(4)}</td><td class="num">${bl['1x2_rps'].toFixed(4)}</td></tr>
+            <tr><td><b>Same blend, one coherent scoreline grid (used)</b></td><td class="num"><b>${bt.coherent.o25.toFixed(4)}</b></td><td class="num"><b>${bt.coherent.o35.toFixed(4)}</b></td><td class="num"><b>${bt.coherent.btts.toFixed(4)}</b></td><td class="num"><b>${bt.coherent['1x2_rps'].toFixed(4)}</b></td></tr>
+            <tr><td>Constant base rate (test-set frequency, hindsight)</td><td class="num">${A.base_rate.o25.toFixed(4)}</td><td class="num">${A.base_rate.o35.toFixed(4)}</td><td class="num">${A.base_rate.btts.toFixed(4)}</td><td class="num">${A.base_rate['1x2_rps'].toFixed(4)}</td></tr>
+          </table></div>
+          <p class="note">The closing market is the sharpest single estimator. The blend gives up almost nothing against it while keeping the independent research in the number, and its coherent single-distribution version, which is what this report uses, scored marginally better still. A stretch recalibration of the model was tested and rejected because it worsened held-out results.</p>
+        </div>
+        <div class="panel"><h3>Calibration of the independent model</h3>
+          <p class="note">Predicted probability v observed frequency on the same ${bt.n.toLocaleString()} matches. Close agreement means a stated 65% happened about 65% of the time.</p>
+          <div class="scroll"><table class="mini"><tr><th>Market</th><th class="num">Bin</th><th class="num">n</th><th class="num">Predicted</th><th class="num">Observed</th></tr>
+            ${calRows('o25', 'Over 2.5')}${calRows('btts', 'BTTS')}${calRows('home', 'Home win')}${calRows('away', 'Away win')}
+          </table></div>
+        </div>
+      </div>`;
+  })();
+
+  // ---------- section 2 matrix
+  let view = 'final', sortKey = 'ts', sortDir = 1, compF = '', qF = '';
+  const cols = [['ts', 'Kickoff', false], ['comp', 'Comp', false], ['match', 'Match', false], ['o25', 'O2.5', true], ['o35', 'O3.5', true], ['btts', 'BTTS', true], ['home', '1', true], ['draw', 'X', true], ['away', '2', true], ['xg', 'xG', true], ['rel', 'Rel.', false]];
+  const compSel = document.getElementById('compsel');
+  compSel.innerHTML = '<option value="">All competitions</option>' + Object.entries(COMP).map(([k, v]) => `<option value="${k}">${v}</option>`).join('');
+  function renderMatrix() {
+    let rows = F.filter(f => (!compF || f.comp === compF) && (!qF || (f.home + ' ' + f.away).toLowerCase().includes(qF)));
+    const val = (f, k) => {
+      if (k === 'ts') return f.ts; if (k === 'comp') return f.comp; if (k === 'match') return f.home;
+      if (k === 'xg') return f.lam_final[0] + f.lam_final[1]; if (k === 'rel') return minRel(f);
+      const src = view === 'final' ? f.final : view === 'model' ? f.model : f.market; return src && src[k] != null ? src[k] : -1;
+    };
+    rows.sort((a, b) => { const x = val(a, sortKey), y = val(b, sortKey); return (x > y ? 1 : x < y ? -1 : 0) * sortDir; });
+    const head = '<thead><tr>' + cols.map(([k, l, n]) => `<th class="sortable ${n ? 'num' : ''}" data-k="${k}" aria-sort="${sortKey === k ? (sortDir > 0 ? 'ascending' : 'descending') : 'none'}">${l}${sortKey === k ? (sortDir > 0 ? ' ↑' : ' ↓') : ''}</th>`).join('') + '</tr></thead>';
+    const body = rows.map(f => {
+      const src = view === 'final' ? f.final : view === 'model' ? f.model : f.market;
+      const cell = k => { const v = src ? src[k] : null; return v == null ? '<td class="num">N/A</td>' : `<td class="num heat" style="${shade(v)}">${p1(v)}</td>`; };
+      return `<tr><td class="num">${esc(f.kickoff.replace(' UTC', ''))}</td><td><span class="chip comp">${esc(f.comp)}</span></td><td class="matchcell"><a href="#fx-${f.id}">${fxLabel(f)}</a></td>${['o25', 'o35', 'btts', 'home', 'draw', 'away'].map(cell).join('')}<td class="num">${n2(f.lam_final[0])}–${n2(f.lam_final[1])}</td><td>${chip(minRel(f))}</td></tr>`;
+    }).join('');
+    document.getElementById('matrix').innerHTML = head + '<tbody>' + body + '</tbody>';
+    document.querySelectorAll('#matrix th.sortable').forEach(th => th.addEventListener('click', () => { const k = th.dataset.k; if (sortKey === k) sortDir *= -1; else { sortKey = k; sortDir = ['o25', 'o35', 'btts', 'home', 'draw', 'away', 'xg'].includes(k) ? -1 : 1; } renderMatrix(); }));
+  }
+  document.querySelectorAll('#viewseg button').forEach(b => b.addEventListener('click', () => { view = b.dataset.v; document.querySelectorAll('#viewseg button').forEach(x => x.setAttribute('aria-pressed', x === b ? 'true' : 'false')); renderMatrix(); }));
+  compSel.addEventListener('change', () => { compF = compSel.value; renderMatrix(); });
+  document.getElementById('q').addEventListener('input', e => { qF = e.target.value.trim().toLowerCase(); renderMatrix(); });
+  renderMatrix();
+
+  // ---------- helpers for evidence
+  function splitLine(a) {
+    if (!a) return '–';
+    let s = `${a.n} played, ${a.w}-${a.d}-${a.l}, goals ${a.gf}-${a.ga} (${n2(a.gf_pg)} / ${n2(a.ga_pg)} per game), over 2.5 ${p0(a.o25)}, over 3.5 ${p0(a.o35)}, BTTS ${p0(a.btts)}, clean sheets ${p0(a.cs)}, failed to score ${p0(a.fts)}`;
+    if (a.xgf_pg != null) s += `, xG ${n2(a.xgf_pg)} / ${n2(a.xga_pg)} (${a.xg_n} games)`;
+    return s;
+  }
+  function compList(t) {
+    if (!t.comps.length) return `<span class="note">No comparable opponents for ${esc(t.name)} within the rating band.</span>`;
+    return t.comps.map(c => `${esc(c.date)} ${c.venue} ${esc(c.opp)} <span class="mono">${c.gf}-${c.ga}</span>${c.xgf != null ? ` <span class="note">(xG ${n2(c.xgf)}-${n2(c.xga)})</span>` : ''}${c.season === 'previous' ? ' <span class="chip ghost">2025-26</span>' : ''}`).join('; ');
+  }
+  function newsLine(t, f, side) {
+    if (f && !f.news_available) return esc((f.news_note && f.news_note[side]) || 'No injury or suspension feed was published for this fixture, so no absentee adjustment was made.');
+    const reg = t.absent.filter(x => x.min_share >= 0.2 || x.regular);
+    const other = t.absent.length - reg.length;
+    let s = reg.length ? reg.map(x => `${esc(x.name)} (${x.pos || '?'}, ${x.status}${x.reason ? ', ' + esc(x.reason.replace(/_/g, ' ')) : ''}; ${p0(x.min_share)} of minutes, ${x.goals}g ${x.assists}a)`).join('; ') : 'No regular starter listed as absent';
+    if (other > 0) s += `; plus ${other} fringe/long-term absentee${other > 1 ? 's' : ''}`;
+    if (t.att_mult < 0.999 || t.opp_mult > 1.001) s += `. Adjustment: own attack ×${t.att_mult.toFixed(2)}, opponent attack ×${t.opp_mult.toFixed(2)}`;
+    return s + '.';
+  }
+  function restLine(t) {
+    const r = t.rest || {};
+    return `${r.prev_days != null ? r.prev_days.toFixed(0) + ' days since ' + esc((r.prev_match || '').replace(/ \(.*\)$/, '')) : 'rest unknown'}; next match in ${r.next_days != null ? r.next_days.toFixed(0) + ' days (' + esc(r.next_match || '') + ')' : '?'}`;
+  }
+  function relevantSplit(f, side) { const t = f.teams[side]; return t.splits[side === 'home' ? 'home' : 'away']; }
+
+  // ---------- sections 3-7
+  function rankSection(k) {
+    const order = sortedIdx(k);
+    const el = document.getElementById('rk-' + k);
+    const row = (i, r) => {
+      const f = F[i]; const p = f.final[k]; const m = f.market[k];
+      return `<div class="rankrow"><span class="rk">${r}</span><span class="nm"><a href="#fx-${f.id}" style="color:inherit;text-decoration:none">${fxLabel(f)}</a><small>${esc(COMP[f.comp])} · model ${p0(f.model[k])} · market ${m == null ? 'n/a' : p0(m)} · ${f.rel[k].level}</small></span><span class="bar" aria-hidden="true"><i style="width:${(p * 100).toFixed(1)}%"></i>${m != null ? `<u style="left:${(m * 100).toFixed(1)}%"></u>` : ''}</span><span class="pv">${p1(p)}</span></div>`;
+    };
+    const top = order.slice(0, 8);
+    const cards = top.map((i, n) => {
+      const f = F[i], h = f.teams.home, a = f.teams.away, au = f.auto[k];
+      const extra = k === 'btts' ? `<dt>Scoring chances</dt><dd>${esc(h.name)} score in ${p0(f.p_h_scores)} of simulations, ${esc(a.name)} in ${p0(f.p_a_scores)}. ${esc(h.name)} have scored in ${p0(1 - h.splits.all.fts)} of their matches; ${esc(a.name)} in ${p0(1 - a.splits.all.fts)}.</dd>` :
+        (k === 'home' || k === 'away') ? `<dt>Full 1X2</dt><dd class="mono">Home ${p1(f.final.home)} · Draw ${p1(f.final.draw)} · Away ${p1(f.final.away)}</dd>` : '';
+      return `<article class="card"><header><div><h3>${n + 1}. ${fxLabel(f)}</h3><span class="note">${esc(COMP[f.comp])} · ${esc(f.kickoff)}</span></div><div style="display:flex;gap:10px;align-items:baseline"><span class="bigp">${p1(f.final[k])}</span>${chip(f.rel[k].level)}</div></header>
+        <dl class="kv">
+          <dt>Expected goals</dt><dd class="mono">${n2(f.lam_final[0])} v ${n2(f.lam_final[1])} (model ${n2(f.lam_model[0])} v ${n2(f.lam_model[1])})</dd>
+          ${extra}
+          <dt>Full season</dt><dd><b>${esc(h.name)}</b>: ${splitLine(h.splits.all)}<br><b>${esc(a.name)}</b>: ${splitLine(a.splits.all)}</dd>
+          <dt>Home / away</dt><dd><b>${esc(h.name)} at home</b>: ${splitLine(h.splits.home)}<br><b>${esc(a.name)} away</b>: ${splitLine(a.splits.away)}</dd>
+          <dt>Comparable opponents</dt><dd><span class="verdict-${au.comp.verdict}">${esc(au.comp.verdict === 'none' ? 'No comparables' : au.comp.verdict.charAt(0).toUpperCase() + au.comp.verdict.slice(1))}</span>: ${esc(au.comp.text)}.<br><span class="note">${esc(h.name)}:</span> ${compList(h)}<br><span class="note">${esc(a.name)}:</span> ${compList(a)}</dd>
+          <dt>Main counterargument</dt><dd>${esc(au.manual_counter || au.counter)}</dd>
+        </dl></article>`;
+    }).join('');
+    el.innerHTML = `<p class="note">All 111 fixtures, highest to lowest. The bar is the final estimate; the thin marker is the de-vigged market price where one exists.</p>
+      <div class="ranklist" id="rl-${k}">${order.slice(0, 15).map((i, n) => row(i, n + 1)).join('')}</div>
+      <button class="more" type="button" id="more-${k}" aria-expanded="false">Show all 111</button>
+      <h3>Strongest candidates</h3><div class="cards">${cards}</div>`;
+    const btn = document.getElementById('more-' + k);
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      document.getElementById('rl-' + k).innerHTML = order.slice(0, open ? 15 : 111).map((i, n) => row(i, n + 1)).join('');
+      btn.setAttribute('aria-expanded', open ? 'false' : 'true'); btn.textContent = open ? 'Show all 111' : 'Show top 15';
+    });
+  }
+  ['o25', 'o35', 'btts', 'home', 'away'].forEach(rankSection);
+
+  // ---------- section 8 master
+  document.getElementById('master').innerHTML = '<thead><tr><th class="num">Rank</th><th>Fixture</th><th>Outcome</th><th class="num">Estimate</th><th class="num">Model</th><th class="num">Market</th><th>Reliability</th><th>Correlation</th></tr></thead><tbody>' +
+    D.master.map((x, n) => { const f = F[x.idx]; return `<tr><td class="num">${n + 1}</td><td class="matchcell"><a href="#ev-${n + 1}">${fxLabel(f)}</a><small>${esc(COMP[f.comp])} · ${esc(f.kickoff)}</small></td><td>${MK[x.market]}</td><td class="num" style="${shade(x.p)}"><b>${p1(x.p)}</b></td><td class="num">${p1(f.model[x.market])}</td><td class="num">${f.market[x.market] == null ? 'n/a' : p1(f.market[x.market])}</td><td>${chip(f.rel[x.market].level)}</td><td>${x.corr_with ? `<span class="chip ghost">same match as #${x.corr_with}</span>` : ''}</td></tr>`; }).join('') + '</tbody>';
+
+  // ---------- section 9 evidence
+  document.getElementById('evidence').innerHTML = D.master.map((x, n) => {
+    const f = F[x.idx], k = x.market, h = f.teams.home, a = f.teams.away, au = f.auto[k], rel = f.rel[k];
+    const sel = MK[k] + (k === 'home' ? ` (${esc(h.name)})` : k === 'away' ? ` (${esc(a.name)})` : '');
+    const form = t => `<b>${esc(t.name)}</b>, last 5: ${splitLine(t.splits.last5)}<br><span class="note">Last 10: ${t.splits.last10 ? `${t.splits.last10.w}-${t.splits.last10.d}-${t.splits.last10.l}, ${t.splits.last10.gf}-${t.splits.last10.ga}, over 2.5 ${p0(t.splits.last10.o25)}, BTTS ${p0(t.splits.last10.btts)}` : '–'}</span>`;
+    const coach = t => t.coach_change ? ` New coach ${esc(t.coach_change.coach)} since ${esc(t.coach_change.since)} (${t.coach_change.matches} match${t.coach_change.matches > 1 ? 'es' : ''}).` : '';
+    const relWhy = rel.issues.length ? rel.issues.map(esc).join('; ') : 'Model and market agree within 5 points, both teams have full xG coverage and normal samples, and there is no major team-news or coaching disruption.';
+    return `<article class="card" id="ev-${n + 1}"><header><div><span class="eyebrow">#${n + 1}${x.corr_with ? ` · same match as #${x.corr_with}` : ''}</span><h3>${fxLabel(f)}</h3><span class="note">${esc(COMP[f.comp])} · ${esc(f.kickoff)}${f.weather && f.weather.venue ? ' · ' + esc(f.weather.venue) : ''}</span></div><div style="display:flex;gap:10px;align-items:baseline"><span class="bigp">${p1(x.p)}</span>${chip(rel.level)}</div></header>
+      <dl class="kv">
+        <dt>Prediction</dt><dd><b>${sel}</b> · model ${p1(f.model[k])} · market ${f.market[k] == null ? 'not yet priced' : p1(f.market[k])} · goals-only model ${p1(f.goals_only[k])}</dd>
+        <dt>Expected goals</dt><dd class="mono">Home ${n2(f.lam_final[0])} / Away ${n2(f.lam_final[1])}</dd>
+        <dt>Most probable scores</dt><dd><div class="scores">${f.top_scores.slice(0, 3).map(s => `<span>${s[0]} · ${p1(s[1])}</span>`).join('')}</div></dd>
+        <dt>Complete season</dt><dd><b>${esc(h.name)}</b>: ${splitLine(h.splits.all)}<br><b>${esc(a.name)}</b>: ${splitLine(a.splits.all)}<br><span class="note">Opponent-adjusted (v an average team of their own league, neutral venue): ${esc(h.name)} ${n2(h.nr[0])} scored / ${n2(h.nr[1])} conceded; ${esc(a.name)} ${n2(a.nr[0])} / ${n2(a.nr[1])}. Schedule strength faced: ${n2(h.sos)} v ${n2(a.sos)}.</span></dd>
+        <dt>Recent form</dt><dd>${form(h)}<br>${form(a)}</dd>
+        <dt>Home / away</dt><dd><b>${esc(h.name)} at home</b>: ${splitLine(h.splits.home)}<br><b>${esc(a.name)} away</b>: ${splitLine(a.splits.away)}</dd>
+        <dt>Similar-strength opponents</dt><dd><span class="verdict-${au.comp.verdict}"><b>${au.comp.verdict === 'none' ? 'No comparables' : au.comp.verdict.charAt(0).toUpperCase() + au.comp.verdict.slice(1)}</b></span>: ${esc(au.comp.text)}.<br><span class="note">${esc(h.name)} v opponents like ${esc(a.name)}:</span> ${compList(h)}<br><span class="note">${esc(a.name)} v opponents like ${esc(h.name)}:</span> ${compList(a)}</dd>
+        <dt>Tactical matchup</dt><dd>${esc(f.tactical)}</dd>
+        <dt>Team news</dt><dd><b>${esc(h.name)}</b>: ${newsLine(h, f, 'home')}${coach(h)} Rest: ${restLine(h)}.<br><b>${esc(a.name)}</b>: ${newsLine(a, f, 'away')}${coach(a)} Rest: ${restLine(a)}.</dd>
+        <dt>Strongest counterargument</dt><dd>${esc(au.manual_counter || au.counter)}</dd>
+        <dt>Data reliability</dt><dd>${chip(rel.level)} ${relWhy}</dd>
+        <dt>Final assessment</dt><dd>${esc(au.manual_assessment || '')}</dd>
+      </dl></article>`;
+  }).join('');
+
+  // ---------- section 10
+  (function weak() {
+    const order = ['Low scoring expectations', 'Balanced teams, high draw probability', 'Model and market disagree', 'Opponent-quality differences', 'Inconsistent home/away evidence', 'Injuries and team news', 'Tactical uncertainty (new coach)', 'Small sample', 'Unavailable reliable statistics', 'No market cross-check'];
+    const groups = {};
+    F.forEach(f => {
+      const allFlags = f.weak.flags;
+      if (!(f.weak.best < 0.55 || allFlags.length >= 2)) return;
+      let main = null;
+      for (const o of order) if (allFlags.some(x => x[0] === o)) { main = o; break; }
+      if (!main) main = 'No standout outcome';
+      (groups[main] = groups[main] || []).push(f);
+    });
+    const keys = order.filter(o => groups[o]).concat(groups['No standout outcome'] ? ['No standout outcome'] : []);
+    document.getElementById('weak').innerHTML = keys.map(g => `<div class="panel flaggroup"><h3>${esc(g)} <span class="chip ghost">${groups[g].length}</span></h3><ul>${groups[g].map(f => `<li><a href="#fx-${f.id}"><b>${fxLabel(f)}</b></a> <span class="note">(${esc(COMP[f.comp])}; best outcome ${p0(f.weak.best)})</span><br>${f.weak.flags.map(x => `<span class="note">${esc(x[0])}:</span> ${esc(x[1])}`).join('<br>')}</li>`).join('')}</ul></div>`).join('');
+  })();
+
+  // ---------- dossiers (rendered lazily on open)
+  const SPLITS = [['all', 'All'], ['home', 'Home'], ['away', 'Away'], ['last10', 'Last 10'], ['last5', 'Last 5'], ['league', 'League'], ['league_home', 'League home'], ['league_away', 'League away'], ['uefa', 'UEFA'], ['cup', 'Cups']];
+  function splitTable(t) {
+    const rows = SPLITS.filter(([k]) => t.splits[k]).map(([k, l]) => { const a = t.splits[k]; return `<tr><td>${l}</td><td class="num">${a.n}</td><td class="num">${a.w}-${a.d}-${a.l}</td><td class="num">${a.gf}-${a.ga}</td><td class="num">${n2(a.gf_pg)}</td><td class="num">${n2(a.ga_pg)}</td><td class="num">${n2(a.tot_pg)}</td><td class="num">${p0(a.o25)}</td><td class="num">${p0(a.o35)}</td><td class="num">${p0(a.btts)}</td><td class="num">${p0(a.cs)}</td><td class="num">${p0(a.fts)}</td><td class="num">${p0(a.gf2)}</td><td class="num">${p0(a.ga2)}</td><td class="num">${a.xgf_pg != null ? n2(a.xgf_pg) + '/' + n2(a.xga_pg) : '–'}</td><td class="num">${a.sotf_pg != null ? n1(a.sotf_pg) + '/' + n1(a.sota_pg) : '–'}</td><td class="num">${a.bcf_pg != null ? n1(a.bcf_pg) + '/' + n1(a.bca_pg) : '–'}</td><td class="num">${a.posf_pg != null ? n1(a.posf_pg) + '%' : '–'}</td><td class="num">${n2(a.opp_str_avg)}</td></tr>`; }).join('');
+    return `<div class="scroll"><table class="mini"><thead><tr><th>Split</th><th class="num">P</th><th class="num">W-D-L</th><th class="num">GF-GA</th><th class="num">GF/g</th><th class="num">GA/g</th><th class="num">Tot/g</th><th class="num">O2.5</th><th class="num">O3.5</th><th class="num">BTTS</th><th class="num">CS</th><th class="num">FTS</th><th class="num">2+GF</th><th class="num">2+GA</th><th class="num">xG F/A</th><th class="num">SoT F/A</th><th class="num">BC F/A</th><th class="num">Poss</th><th class="num">Opp str</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  }
+  function logTable(t) {
+    const rows = t.rows.slice().reverse().map(r => { const [date, comp, ctype, venue, opp, gf, ga, htf, hta, xgf, xga, shf, sha, sotf, sota, bcf, bca, os, rf, ra, et] = r; const res = gf > ga ? 'W' : gf === ga ? 'D' : 'L';
+      const notes = [rf ? `${rf} red (own)` : '', ra ? `${ra} red (opp)` : '', et ? 'went to extra time (90-min score shown)' : ''].filter(Boolean).join('; ');
+      return `<tr><td class="num">${date}</td><td>${esc(comp)}</td><td>${venue}</td><td>${esc(opp)}</td><td class="num"><b>${res}</b> ${gf}-${ga}</td><td class="num">${htf != null ? htf + '-' + hta : '–'}</td><td class="num">${xgf != null ? n2(xgf) + '-' + n2(xga) : '–'}</td><td class="num">${shf != null ? shf + '-' + sha : '–'}</td><td class="num">${sotf != null ? sotf + '-' + sota : '–'}</td><td class="num">${bcf != null ? bcf + '-' + bca : '–'}</td><td class="num">${gf + ga >= 3 ? 'Y' : '·'}</td><td class="num">${gf + ga >= 4 ? 'Y' : '·'}</td><td class="num">${gf > 0 && ga > 0 ? 'Y' : '·'}</td><td class="num">${n2(os)}</td><td class="mini">${esc(notes)}</td></tr>`; }).join('');
+    return `<div class="scroll"><table class="mini"><thead><tr><th class="num">Date</th><th>Competition</th><th>V</th><th>Opponent</th><th class="num">FT</th><th class="num">HT</th><th class="num">xG</th><th class="num">Shots</th><th class="num">SoT</th><th class="num">BC</th><th class="num">O2.5</th><th class="num">O3.5</th><th class="num">BTTS</th><th class="num">Opp str</th><th>Notes</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  }
+  function teamBlock(f, side) {
+    const t = f.teams[side];
+    return `<div class="sub"><h3>${esc(t.name)} <span class="note">${esc(t.league || '')} · rated ${t.tier_own} in own league, would be ${t.tier_vs} in opponent's league · strength ${n2(t.strength)} (attack ${n2(t.att)}, defence ${n2(t.dfn)})</span></h3>
+      ${splitTable(t)}
+      <h4>Every current-season match (newest first)</h4>${logTable(t)}
+      <h4>Comparable opponents to ${esc(f.teams[side === 'home' ? 'away' : 'home'].name)} (rating distance ≤ ${t.comp_band})</h4><p class="mini">${compList(t)}</p>
+      <h4>Team news, coach and schedule</h4><p class="mini">${newsLine(t, f, side)} Coach: ${esc(t.coach || '?')}.${t.coach_change ? ` Appointed ${esc(t.coach_change.since)} replacing ${esc(t.coach_change.previous)}.` : ''} Rest: ${restLine(t)}.</p></div>`;
+  }
+  function dossierBody(f) {
+    const w = f.weather || {};
+    const h2h = f.h2h.length ? f.h2h.map(x => `${x.date} ${esc(x.hn)} ${x.hg}-${x.ag} ${esc(x.an)} <span class="note">(${esc(x.comp)})</span>`).join('; ') : 'No meetings since mid-2024 in the dataset.';
+    const mk = f.market;
+    const tbl = `<div class="scroll"><table class="mini"><thead><tr><th>Source</th><th class="num">O2.5</th><th class="num">O3.5</th><th class="num">BTTS</th><th class="num">1</th><th class="num">X</th><th class="num">2</th></tr></thead><tbody>
+      ${[['Final (coherent)', f.final], ['Independent model (xG-weighted)', f.model], ['Alternative: goals-only model', f.goals_only], ['Market (de-vigged)', mk]].map(([l, s]) => `<tr><td>${l}</td>${['o25', 'o35', 'btts', 'home', 'draw', 'away'].map(k => `<td class="num">${s && s[k] != null ? p1(s[k]) : 'N/A'}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+    const bl = f.baseline;
+    return `<div class="grid2"><div class="sub"><h4>Projection</h4><p class="mini mono">Expected goals ${n2(f.lam_final[0])} v ${n2(f.lam_final[1])} · ρ ${n2(f.rho)} · model before team news ${n2(f.lam_model_base[0])} v ${n2(f.lam_model_base[1])}</p><div class="scores">${f.top_scores.map(s => `<span>${s[0]} · ${p1(s[1])}</span>`).join('')}</div>${tbl}</div>
+      <div class="sub"><h4>Context</h4><p class="mini">${esc(f.tactical)}</p><p class="mini">Competition baseline this season (${bl ? bl.n : 0} matches): ${bl ? `${n2(bl.gpg)} goals per game, over 2.5 ${p0(bl.o25)}, BTTS ${p0(bl.btts)}, home ${p0(bl.home)} / draw ${p0(bl.draw)} / away ${p0(bl.away)}` : 'n/a'}.</p><p class="mini">Venue: ${esc(w.venue || '?')}, ${esc(w.city || '')}. Forecast: ${w.temp != null ? `${w.temp}°C, wind ${w.wind} m/s, ${w.precip} mm over ${w.nxt}, ${esc((w.symbol || '').replace(/_/g, ' '))}` : 'unavailable'}.</p><p class="mini">Head-to-head: ${h2h}</p>
+      <p class="mini">Reliability by market: ${Object.keys(MK).map(k => `${MK[k]} ${chip(f.rel[k].level)}`).join(' ')}</p></div></div>
+      ${teamBlock(f, 'home')}${teamBlock(f, 'away')}`;
+  }
+  const dl = document.getElementById('dlist');
+  dl.innerHTML = F.slice().sort((a, b) => a.ts - b.ts).map(f => `<details class="dossier" id="fx-${f.id}" data-i="${f.idx}" data-s="${esc((f.home + ' ' + f.away + ' ' + COMP[f.comp]).toLowerCase())}"><summary><b>${fxLabel(f)}</b><span class="chip comp">${esc(f.comp)}</span><span class="note mono">${esc(f.kickoff)}</span><span class="note mono">O2.5 ${p0(f.final.o25)} · BTTS ${p0(f.final.btts)} · 1X2 ${p0(f.final.home)}/${p0(f.final.draw)}/${p0(f.final.away)}</span></summary><div class="body"></div></details>`).join('');
+  dl.querySelectorAll('details').forEach(d => d.addEventListener('toggle', () => { if (d.open && !d.dataset.r) { d.querySelector('.body').innerHTML = dossierBody(F[+d.dataset.i]); d.dataset.r = '1'; } }));
+  document.getElementById('dq').addEventListener('input', e => { const q = e.target.value.trim().toLowerCase(); dl.querySelectorAll('details').forEach(d => { d.hidden = q && !d.dataset.s.includes(q); }); });
+  function openHash() { const id = location.hash.slice(1); if (id.startsWith('fx-')) { const d = document.getElementById(id); if (d) { d.open = true; d.scrollIntoView(); } } }
+  window.addEventListener('hashchange', openHash); openHash();
+  document.addEventListener('click', e => { const a = e.target.closest('a[href^="#fx-"]'); if (a) { const d = document.getElementById(a.getAttribute('href').slice(1)); if (d) d.open = true; } });
+
+  // ---------- method
+  const bt = A.backtest;
+  document.getElementById('methodbody').innerHTML = `<div class="grid2">
+    <div class="panel"><h3>Rating model</h3><ul class="clean">
+      <li>Poisson goal model: log expected home goals = μ + home advantage (league-specific, shrunk toward a global value) + attack(home) − defence(away); the away side has no home term.</li>
+      <li>Each team's attack and defence = its league's level + a team deviation (ridge-penalised). League levels are set by cross-league games (UEFA ties, plus cup games against other divisions), so a Greek or Azerbaijani champion is rated on the same scale as a Premier League side.</li>
+      <li>Fitted on 29,478 competitive matches with exponential time decay (half-life 240 days). Domestic cups are weighted 0.7 and super cups 0.5. Targets blend actual goals with Sofascore xG where available: 50% xG for the supremacy component, 100% xG for the totals component (both chosen by backtest).</li>
+      <li>Supremacy (who wins) and total goals use separately tuned shrinkage. Combined, they give one expected-goals pair per match, and a Dixon-Coles low-score correction (ρ = ${bt.rho}) produces the full scoreline grid. Every market is read off that grid.</li>
+      <li>Team news: absentees from Sofascore's pre-match feed are weighted by their share of the team's minutes and goal involvement this season. Only regulars (≥45% of minutes) move the numbers: up to −15% on own attack and +12% on the opponent's.</li>
+      <li>Comparable opponents: past current-season opponents whose (attack, defence) rating lies within 0.30 (widened to 0.45 if fewer than four exist) of the upcoming opponent. 2025-26 matches are added only when the current season has too few. Unfavourable comparables are shown alongside favourable ones.</li>
+    </ul></div>
+    <div class="panel"><h3>From model to final estimate</h3><ul class="clean">
+      <li>Tuning: a grid over half-life (100–365 days), xG weight (0–1) and shrinkage, scored walk-forward on ${bt.n.toLocaleString()} matches. The best supremacy settings were ${esc(bt.S_cfg.join(' / '))} and the best totals settings ${esc(bt.T_cfg.join(' / '))} (half-life / xG weight / ridge).</li>
+      <li>The de-vigged closing market beat the model on every metric. Model weights of 0, 20, 25, 30, 40, 50, 60, 80 and 100% were tested, and 25% was used as a deliberate compromise: it costs about 0.0005 Brier against the market alone and keeps the independent evidence in the estimate.</li>
+      <li>For each fixture, one Dixon-Coles distribution (λ home, λ away, ρ) is fitted by least squares to the six blended probabilities. The average fit error is 0.5 points, and the reported 1X2, O2.5, O3.5 and BTTS are all read from that one grid, so they are mutually consistent.</li>
+      <li>Reliability: <b>High</b> = model and market within 5 points, full xG coverage, normal samples, no major team-news or coaching disruption. <b>Medium</b> = one or two minor issues (a 5–10 point gap, model-only, a new coach, three or more regulars out, thin data). <b>Low</b> = a model-market gap over 10 points, or three or more minor issues.</li>
+      <li>What this cannot see: late lineup decisions, motivation and dead-rubber effects, in-game red cards, and anything published after 16 Oct. Probabilities are calibrated estimates, not certainties.</li>
+    </ul></div></div>
+    <div class="panel"><h3>Sources</h3><ul class="clean">
+      <li>Sofascore (api.sofascore.com): fixtures, results, halftime and 90-minute scores, xG, shots, shots on target, big chances, possession, lineups and minutes, injuries and suspensions, coaches, standings, and pre-match odds for 75 fixtures. Pages: <a href="https://www.sofascore.com/football" target="_blank" rel="noopener">sofascore.com/football</a>.</li>
+      <li>ESPN scoreboard API: an independent cross-check of ${A.xcheck.checked} current-season results. <a href="https://www.espn.com/soccer/" target="_blank" rel="noopener">espn.com/soccer</a>.</li>
+      <li>MET Norway Locationforecast: kickoff-time weather at each venue. <a href="https://api.met.no/" target="_blank" rel="noopener">api.met.no</a>.</li>
+      <li>Background on 2026-27 Premier League coaching appointments: <a href="https://theanalyst.com/articles/premier-league-new-managers-2026-27" target="_blank" rel="noopener">The Analyst</a>, <a href="https://www.modernghana.com/sports/1516276/premier-league-managerial-debuts-hit-record-high.html" target="_blank" rel="noopener">BBC Sport research via Modern Ghana</a>. Coaches named in the report come from Sofascore's per-match records.</li>
+    </ul></div>`;
+})();
+</script>
