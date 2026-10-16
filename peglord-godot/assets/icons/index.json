@@ -1,0 +1,872 @@
+{
+ "pocket_jackpot.png": {
+  "emoji": "💰",
+  "codepoints": "1f4b0",
+  "source": "twemoji 15.1.0 72x72/1f4b0.png",
+  "used_for": "POCKETS.jackpot",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "pocket_double.png": {
+  "emoji": "✖2",
+  "codepoints": "2716-32",
+  "source": "hand-drawn pixel glyph (text, not a single emoji)",
+  "used_for": "POCKETS.double (text, custom)",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "pocket_freeball.png": {
+  "emoji": "⚪",
+  "codepoints": "26aa",
+  "source": "twemoji 15.1.0 72x72/26aa.png",
+  "used_for": "POCKETS.freeball",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "pocket_patch.png": {
+  "emoji": "✚",
+  "codepoints": "271a",
+  "source": "hand-drawn pixel glyph (text, not a single emoji)",
+  "used_for": "POCKETS.patch (text glyph, custom)",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "pocket_guard.png": {
+  "emoji": "🛡",
+  "codepoints": "1f6e1",
+  "source": "twemoji 15.1.0 72x72/1f6e1.png",
+  "used_for": "POCKETS.guard",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "pocket_treasure.png": {
+  "emoji": "🎁",
+  "codepoints": "1f381",
+  "source": "twemoji 15.1.0 72x72/1f381.png",
+  "used_for": "POCKETS.treasure",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "pocket_rally.png": {
+  "emoji": "⚔",
+  "codepoints": "2694",
+  "source": "twemoji 15.1.0 72x72/2694.png",
+  "used_for": "POCKETS.rally",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "pocket_hotball.png": {
+  "emoji": "🔥",
+  "codepoints": "1f525",
+  "source": "twemoji 15.1.0 72x72/1f525.png",
+  "used_for": "POCKETS.hotball",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "pocket_taxman.png": {
+  "emoji": "🧾",
+  "codepoints": "1f9fe",
+  "source": "twemoji 15.1.0 72x72/1f9fe.png",
+  "used_for": "POCKETS.taxman",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "pocket_leaky.png": {
+  "emoji": "💧",
+  "codepoints": "1f4a7",
+  "source": "twemoji 15.1.0 72x72/1f4a7.png",
+  "used_for": "POCKETS.leaky",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "pocket_curse.png": {
+  "emoji": "☠",
+  "codepoints": "2620",
+  "source": "twemoji 15.1.0 72x72/2620.png",
+  "used_for": "POCKETS.curse",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "pocket_rust.png": {
+  "emoji": "🦀",
+  "codepoints": "1f980",
+  "source": "twemoji 15.1.0 72x72/1f980.png",
+  "used_for": "POCKETS.rust",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "pocket_plague.png": {
+  "emoji": "🤢",
+  "codepoints": "1f922",
+  "source": "twemoji 15.1.0 72x72/1f922.png",
+  "used_for": "POCKETS.plague",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "pocket_jam.png": {
+  "emoji": "⛔",
+  "codepoints": "26d4",
+  "source": "twemoji 15.1.0 72x72/26d4.png",
+  "used_for": "POCKETS.jam",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "hero_knight.png": {
+  "emoji": "🛡️",
+  "codepoints": "1f6e1-fe0f",
+  "source": "twemoji 15.1.0 72x72/1f6e1.png",
+  "used_for": "HEROES.knight",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "hero_mage.png": {
+  "emoji": "🔮",
+  "codepoints": "1f52e",
+  "source": "twemoji 15.1.0 72x72/1f52e.png",
+  "used_for": "HEROES.mage",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "hero_priest.png": {
+  "emoji": "🍺",
+  "codepoints": "1f37a",
+  "source": "twemoji 15.1.0 72x72/1f37a.png",
+  "used_for": "HEROES.priest",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "hero_rogue.png": {
+  "emoji": "🗡️",
+  "codepoints": "1f5e1-fe0f",
+  "source": "twemoji 15.1.0 72x72/1f5e1.png",
+  "used_for": "HEROES.rogue",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "hero_ranger.png": {
+  "emoji": "🏹",
+  "codepoints": "1f3f9",
+  "source": "twemoji 15.1.0 72x72/1f3f9.png",
+  "used_for": "HEROES.ranger",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "foe_brute.png": {
+  "emoji": "👊",
+  "codepoints": "1f44a",
+  "source": "twemoji 15.1.0 72x72/1f44a.png",
+  "used_for": "ENEMIES.brute",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "foe_sneak.png": {
+  "emoji": "🥷",
+  "codepoints": "1f977",
+  "source": "twemoji 15.1.0 72x72/1f977.png",
+  "used_for": "ENEMIES.sneak",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "foe_bomber.png": {
+  "emoji": "💣",
+  "codepoints": "1f4a3",
+  "source": "twemoji 15.1.0 72x72/1f4a3.png",
+  "used_for": "ENEMIES.bomber",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "foe_shaman.png": {
+  "emoji": "🧙",
+  "codepoints": "1f9d9",
+  "source": "twemoji 15.1.0 72x72/1f9d9.png",
+  "used_for": "ENEMIES.shaman",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "foe_bulwark.png": {
+  "emoji": "🧱",
+  "codepoints": "1f9f1",
+  "source": "twemoji 15.1.0 72x72/1f9f1.png",
+  "used_for": "ENEMIES.bulwark",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "foe_leech.png": {
+  "emoji": "🦇",
+  "codepoints": "1f987",
+  "source": "twemoji 15.1.0 72x72/1f987.png",
+  "used_for": "ENEMIES.leech",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "foe_drunk.png": {
+  "emoji": "🥴",
+  "codepoints": "1f974",
+  "source": "twemoji 15.1.0 72x72/1f974.png",
+  "used_for": "ENEMIES.drunk",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "foe_hound.png": {
+  "emoji": "🐕",
+  "codepoints": "1f415",
+  "source": "twemoji 15.1.0 72x72/1f415.png",
+  "used_for": "ENEMIES.hound",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "foe_boss.png": {
+  "emoji": "🎩",
+  "codepoints": "1f3a9",
+  "source": "twemoji 15.1.0 72x72/1f3a9.png",
+  "used_for": "BOSS (The Landlord)",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "slot_weapon.png": {
+  "emoji": "⚔️",
+  "codepoints": "2694-fe0f",
+  "source": "twemoji 15.1.0 72x72/2694.png",
+  "used_for": "SLOT_ICONS.weapon",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "slot_offhand.png": {
+  "emoji": "🛡️",
+  "codepoints": "1f6e1-fe0f",
+  "source": "twemoji 15.1.0 72x72/1f6e1.png",
+  "used_for": "SLOT_ICONS.offhand",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "slot_helm.png": {
+  "emoji": "⛑️",
+  "codepoints": "26d1-fe0f",
+  "source": "twemoji 15.1.0 72x72/26d1.png",
+  "used_for": "SLOT_ICONS.helm",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "slot_chest.png": {
+  "emoji": "🥋",
+  "codepoints": "1f94b",
+  "source": "twemoji 15.1.0 72x72/1f94b.png",
+  "used_for": "SLOT_ICONS.chest",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "slot_gloves.png": {
+  "emoji": "🧤",
+  "codepoints": "1f9e4",
+  "source": "twemoji 15.1.0 72x72/1f9e4.png",
+  "used_for": "SLOT_ICONS.gloves",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "slot_legs.png": {
+  "emoji": "👖",
+  "codepoints": "1f456",
+  "source": "twemoji 15.1.0 72x72/1f456.png",
+  "used_for": "SLOT_ICONS.legs",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "slot_boots.png": {
+  "emoji": "🥾",
+  "codepoints": "1f97e",
+  "source": "twemoji 15.1.0 72x72/1f97e.png",
+  "used_for": "SLOT_ICONS.boots",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "slot_amulet.png": {
+  "emoji": "📿",
+  "codepoints": "1f4ff",
+  "source": "twemoji 15.1.0 72x72/1f4ff.png",
+  "used_for": "SLOT_ICONS.amulet",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "slot_ring.png": {
+  "emoji": "💍",
+  "codepoints": "1f48d",
+  "source": "twemoji 15.1.0 72x72/1f48d.png",
+  "used_for": "SLOT_ICONS.ring",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_goldtooth.png": {
+  "emoji": "🦷",
+  "codepoints": "1f9b7",
+  "source": "twemoji 15.1.0 72x72/1f9b7.png",
+  "used_for": "JOKERS.goldtooth",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_pintglass.png": {
+  "emoji": "🍺",
+  "codepoints": "1f37a",
+  "source": "twemoji 15.1.0 72x72/1f37a.png",
+  "used_for": "JOKERS.pintglass",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_penny.png": {
+  "emoji": "🪙",
+  "codepoints": "1fa99",
+  "source": "twemoji 15.1.0 72x72/1fa99.png",
+  "used_for": "JOKERS.penny",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_bombsquad.png": {
+  "emoji": "🧨",
+  "codepoints": "1f9e8",
+  "source": "twemoji 15.1.0 72x72/1f9e8.png",
+  "used_for": "JOKERS.bombsquad",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_horseshoe.png": {
+  "emoji": "🧲",
+  "codepoints": "1f9f2",
+  "source": "twemoji 15.1.0 72x72/1f9f2.png",
+  "used_for": "JOKERS.horseshoe",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_secondwind.png": {
+  "emoji": "🌬",
+  "codepoints": "1f32c",
+  "source": "hand-drawn pixel glyph (twemoji unreadable at this size)",
+  "used_for": "JOKERS.secondwind",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_crowbar.png": {
+  "emoji": "🔧",
+  "codepoints": "1f527",
+  "source": "twemoji 15.1.0 72x72/1f527.png",
+  "used_for": "JOKERS.crowbar",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_tipjar.png": {
+  "emoji": "🫙",
+  "codepoints": "1fad9",
+  "source": "twemoji 15.1.0 72x72/1fad9.png",
+  "used_for": "JOKERS.tipjar",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_bartab.png": {
+  "emoji": "📒",
+  "codepoints": "1f4d2",
+  "source": "twemoji 15.1.0 72x72/1f4d2.png",
+  "used_for": "JOKERS.bartab",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_lastorders.png": {
+  "emoji": "🔔",
+  "codepoints": "1f514",
+  "source": "twemoji 15.1.0 72x72/1f514.png",
+  "used_for": "JOKERS.lastorders",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_comboking.png": {
+  "emoji": "👑",
+  "codepoints": "1f451",
+  "source": "twemoji 15.1.0 72x72/1f451.png",
+  "used_for": "JOKERS.comboking",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_debt.png": {
+  "emoji": "💼",
+  "codepoints": "1f4bc",
+  "source": "twemoji 15.1.0 72x72/1f4bc.png",
+  "used_for": "JOKERS.debt",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_sparekey.png": {
+  "emoji": "🔑",
+  "codepoints": "1f511",
+  "source": "twemoji 15.1.0 72x72/1f511.png",
+  "used_for": "JOKERS.sparekey",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_glasscannon.png": {
+  "emoji": "💥",
+  "codepoints": "1f4a5",
+  "source": "twemoji 15.1.0 72x72/1f4a5.png",
+  "used_for": "JOKERS.glasscannon",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_fever.png": {
+  "emoji": "🎰",
+  "codepoints": "1f3b0",
+  "source": "twemoji 15.1.0 72x72/1f3b0.png",
+  "used_for": "JOKERS.fever",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_chalk.png": {
+  "emoji": "🧂",
+  "codepoints": "1f9c2",
+  "source": "twemoji 15.1.0 72x72/1f9c2.png",
+  "used_for": "JOKERS.chalk",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_peephole.png": {
+  "emoji": "🔍",
+  "codepoints": "1f50d",
+  "source": "twemoji 15.1.0 72x72/1f50d.png",
+  "used_for": "JOKERS.peephole",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_luckyseven.png": {
+  "emoji": "7️⃣",
+  "codepoints": "37-fe0f-20e3",
+  "source": "hand-drawn pixel glyph (text, not a single emoji)",
+  "used_for": "JOKERS.luckyseven (custom)",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_overclock.png": {
+  "emoji": "⚙️",
+  "codepoints": "2699-fe0f",
+  "source": "twemoji 15.1.0 72x72/2699.png",
+  "used_for": "JOKERS.overclock",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_echo.png": {
+  "emoji": "📣",
+  "codepoints": "1f4e3",
+  "source": "twemoji 15.1.0 72x72/1f4e3.png",
+  "used_for": "JOKERS.echo",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "joker_happyhour.png": {
+  "emoji": "🕔",
+  "codepoints": "1f554",
+  "source": "twemoji 15.1.0 72x72/1f554.png",
+  "used_for": "JOKERS.happyhour",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_whetstone.png": {
+  "emoji": "🪨",
+  "codepoints": "1faa8",
+  "source": "twemoji 15.1.0 72x72/1faa8.png",
+  "used_for": "ui.js reward card 'Whetstone'",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_bed.png": {
+  "emoji": "🛏️",
+  "codepoints": "1f6cf-fe0f",
+  "source": "twemoji 15.1.0 72x72/1f6cf.png",
+  "used_for": "ui.js reward card 'Warm Bed'",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_xp.png": {
+  "emoji": "🪙",
+  "codepoints": "1fa99",
+  "source": "twemoji 15.1.0 72x72/1fa99.png",
+  "used_for": "UI: XP coin",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_ball.png": {
+  "emoji": "⚪",
+  "codepoints": "26aa",
+  "source": "twemoji 15.1.0 72x72/26aa.png",
+  "used_for": "UI: ball",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_hp.png": {
+  "emoji": "❤️",
+  "codepoints": "2764-fe0f",
+  "source": "twemoji 15.1.0 72x72/2764.png",
+  "used_for": "UI: HP",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_attack.png": {
+  "emoji": "⚔️",
+  "codepoints": "2694-fe0f",
+  "source": "twemoji 15.1.0 72x72/2694.png",
+  "used_for": "UI: attack",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_guard.png": {
+  "emoji": "🛡️",
+  "codepoints": "1f6e1-fe0f",
+  "source": "twemoji 15.1.0 72x72/1f6e1.png",
+  "used_for": "UI: guard",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_sparkle.png": {
+  "emoji": "✨",
+  "codepoints": "2728",
+  "source": "twemoji 15.1.0 72x72/2728.png",
+  "used_for": "UI: sparkle",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_skull.png": {
+  "emoji": "💀",
+  "codepoints": "1f480",
+  "source": "twemoji 15.1.0 72x72/1f480.png",
+  "used_for": "UI: skull",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_lock.png": {
+  "emoji": "🔒",
+  "codepoints": "1f512",
+  "source": "twemoji 15.1.0 72x72/1f512.png",
+  "used_for": "UI: lock (also ui.js locked item)",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_settings.png": {
+  "emoji": "⚙️",
+  "codepoints": "2699-fe0f",
+  "source": "twemoji 15.1.0 72x72/2699.png",
+  "used_for": "UI: settings",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_music.png": {
+  "emoji": "🎵",
+  "codepoints": "1f3b5",
+  "source": "twemoji 15.1.0 72x72/1f3b5.png",
+  "used_for": "UI: music",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_sound.png": {
+  "emoji": "🔊",
+  "codepoints": "1f50a",
+  "source": "twemoji 15.1.0 72x72/1f50a.png",
+  "used_for": "UI: sound on",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_mute.png": {
+  "emoji": "🔇",
+  "codepoints": "1f507",
+  "source": "twemoji 15.1.0 72x72/1f507.png",
+  "used_for": "UI: mute",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_help.png": {
+  "emoji": "❓",
+  "codepoints": "2753",
+  "source": "twemoji 15.1.0 72x72/2753.png",
+  "used_for": "UI: help",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_salvage.png": {
+  "emoji": "♻️",
+  "codepoints": "267b-fe0f",
+  "source": "twemoji 15.1.0 72x72/267b.png",
+  "used_for": "UI: salvage",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_levelup.png": {
+  "emoji": "⬆️",
+  "codepoints": "2b06-fe0f",
+  "source": "twemoji 15.1.0 72x72/2b06.png",
+  "used_for": "UI: level up",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_star.png": {
+  "emoji": "⭐",
+  "codepoints": "2b50",
+  "source": "twemoji 15.1.0 72x72/2b50.png",
+  "used_for": "UI: star",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_crown.png": {
+  "emoji": "👑",
+  "codepoints": "1f451",
+  "source": "twemoji 15.1.0 72x72/1f451.png",
+  "used_for": "UI: crown",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_scroll.png": {
+  "emoji": "📜",
+  "codepoints": "1f4dc",
+  "source": "twemoji 15.1.0 72x72/1f4dc.png",
+  "used_for": "UI: scroll",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_pack.png": {
+  "emoji": "🎒",
+  "codepoints": "1f392",
+  "source": "twemoji 15.1.0 72x72/1f392.png",
+  "used_for": "UI: pack",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_trophy.png": {
+  "emoji": "🏆",
+  "codepoints": "1f3c6",
+  "source": "twemoji 15.1.0 72x72/1f3c6.png",
+  "used_for": "UI: trophy (also ui.js 'Golden Tankard' card)",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_time.png": {
+  "emoji": "⏳",
+  "codepoints": "23f3",
+  "source": "twemoji 15.1.0 72x72/23f3.png",
+  "used_for": "UI: hourglass",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_seed.png": {
+  "emoji": "🎲",
+  "codepoints": "1f3b2",
+  "source": "twemoji 15.1.0 72x72/1f3b2.png",
+  "used_for": "UI: dice/seed",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_fist.png": {
+  "emoji": "✊",
+  "codepoints": "270a",
+  "source": "twemoji 15.1.0 72x72/270a.png",
+  "used_for": "UI: fist",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_fire.png": {
+  "emoji": "🔥",
+  "codepoints": "1f525",
+  "source": "twemoji 15.1.0 72x72/1f525.png",
+  "used_for": "UI: fire",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_bolt.png": {
+  "emoji": "⚡",
+  "codepoints": "26a1",
+  "source": "twemoji 15.1.0 72x72/26a1.png",
+  "used_for": "UI: lightning",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_drop.png": {
+  "emoji": "💧",
+  "codepoints": "1f4a7",
+  "source": "twemoji 15.1.0 72x72/1f4a7.png",
+  "used_for": "UI: droplet",
+  "size": [
+   26,
+   26
+  ]
+ },
+ "ui_herb.png": {
+  "emoji": "🌿",
+  "codepoints": "1f33f",
+  "source": "twemoji 15.1.0 72x72/1f33f.png",
+  "used_for": "UI: herb",
+  "size": [
+   26,
+   26
+  ]
+ }
+}

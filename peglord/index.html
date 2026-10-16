@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peglord</title>
+<meta name="description" content="Drop balls through pegs to bank XP, level three heroes, and fight your way to The Landlord.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="mode-board">
+<div id="app">
+  <header class="topbar">
+    <h1 class="logo">Peglord</h1>
+    <div class="stageinfo" id="stageinfo" aria-live="polite"></div>
+    <div class="tools">
+      <button id="btnSpeed" class="chip" aria-label="Ball speed">1×</button>
+      <button id="btnSkip" class="chip" aria-pressed="false" aria-label="Skip fight animations">Skip anim</button>
+      <button id="btnSfx" class="chip" aria-pressed="true" aria-label="Sound effects">Sound</button>
+      <button id="btnMusic" class="chip" aria-pressed="true" aria-label="Music">Music</button>
+      <button id="btnHelp" class="chip" aria-label="Help: pockets and controls">?</button>
+      <button id="btnMenu" class="chip" aria-label="Menu and settings">☰</button>
+    </div>
+  </header>
+
+  <section class="jokerbar" aria-label="Jokers">
+    <div id="jokers" class="jokers"></div>
+    <div class="jokercount" id="jokercount"></div>
+  </section>
+
+  <main class="layout">
+    <section class="boardcol" aria-label="Pin board">
+      <div class="frame">
+        <canvas id="board" tabindex="0" aria-label="Pin board. Move the mouse or drag to aim, click or release to drop. Arrow keys aim, Space drops."></canvas>
+      </div>
+      <div class="underboard panel">
+        <div class="hudrow">
+          <span class="balls" id="balls" aria-label="Balls left"></span>
+          <span id="combo" class="combo"></span>
+          <span id="bank" class="bankpill"></span>
+          <span id="split" class="split" data-tip="Each launch rolls six hidden pockets. This is how many are good and bad. Press ? to see every pocket."></span>
+        </div>
+        <p id="hint" class="hint" aria-live="polite"></p>
+        <details class="pegguide">
+          <summary>Peg guide</summary>
+          <ul id="pegguide"></ul>
+        </details>
+      </div>
+    </section>
+
+    <section class="battle panel" aria-label="Battle">
+      <div class="stagebar"><span id="stagename"></span><span id="roundno"></span></div>
+      <div class="scenewrap"><canvas id="scene" aria-label="Fight scene. Tap a foe to target it."></canvas></div>
+      <div id="foes" class="foes" role="group" aria-label="Foes. Tap a foe to target it."></div>
+      <div class="xpbar" id="xpbar"></div>
+      <div id="party" class="party" role="group" aria-label="Party"></div>
+      <div id="console" class="console"></div>
+      <div class="actions">
+        <button id="btnAuto" class="btn">Auto-level</button>
+        <button id="btnFight" class="btn primary">Fight</button>
+      </div>
+      <ol id="log" class="log" aria-live="polite" aria-label="Battle log"></ol>
+    </section>
+  </main>
+</div>
+
+<div id="overlay" class="overlay" hidden></div>
+<div id="tip" class="tip" role="tooltip" hidden></div>
+
+<script src="js/data.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/rules.js"></script>
+<script src="js/sprites.js"></script>
+<script src="js/board.js"></script>
+<script src="js/scene.js"></script>
+<script src="js/battle.js"></script>
+<script src="js/game.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
